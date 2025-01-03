@@ -1,0 +1,4866 @@
+[
+    {
+        "claim": [
+            "Question",
+            "What was the difference in engine size between Luigi Arcangeli and Louis Chiron?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "No., Driver, Entrant, Constructor, Chassis, Engine"
+        ],
+        "category": "performance",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "The US and China are tied in total medal count. Which country has more silver medals, the US or China?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Rank, Nation, Gold, Silver, Bronze, Total"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "How long did it take Jeff Lastennet to finish?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Rank, Name, Nationality, Time, Notes, Points"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "What’s the total number of festivals that occurred in October?"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Date, Festival, Location, Awards"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "In what position did team Penske finish the first year a Honda engine was used?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Year, Chassis, Engine, Start, Finish, Team"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "How many championships were in the $150,000 category?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Result, Date, Category, Tournament, Surface, Partnering, Opponents, Score"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "Which position was recorded the most?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Year, Competition, Venue, Position, Event, Notes"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Question",
+            "Which was the only episode to gain a 7 or higher rating?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "No., Episode, Air date, Rating, Share, 18-49 (Rating/Share), Viewers (m), Rank (night), Rank (timesolt), Rank (overall)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Column Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "R[C].records"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Example",
+            "R[Year].City.Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Translation",
+            "”value of column Year where City is Athens”"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧r​e​c​o​r​d​(c).I​n​d​e​x∈r​e​c​o​r​d​s.I​n​d​i​c​e​s}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequence𝑐𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑐𝐼𝑛𝑑𝑒𝑥𝑟𝑒𝑐𝑜𝑟𝑑𝑠𝐼𝑛𝑑𝑖𝑐𝑒𝑠P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;record(c).Index\\in records.Indices\\} \nPE​(Q)=PO​(Q)∪PE​(r​e​c​o​r​d​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{E}(Q)=P_{O}(Q)\\cup P_{E}(records) \nPC​(Q)={c∣c∈C}∪PC​(r​e​c​o​r​d​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\cup P_{C}(records)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Aggregation on Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "aggr(vals) \naggr ∈\\in {count, max, min, sum, avg}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Example",
+            "sum(R[Year].City.Athens)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Translation",
+            "”the sum of values in column Year where City is Athens”"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)=PO​(v​a​l​s)∪{A​G​G​R}subscript𝑃𝑂𝑄subscript𝑃𝑂𝑣𝑎𝑙𝑠𝐴𝐺𝐺𝑅P_{O}(Q)=P_{O}(vals)\\cup\\{AGGR\\} \nPE​(Q)=PO​(Q)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄P_{E}(Q)=P_{O}(Q) \nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Difference of Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "sub(R[C1].C2.v, R[C1].C2.u)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Example",
+            "sub(R[Year].City.London, R[Year].City.Beijing)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Translation",
+            "”the difference in column Year between London and Beijing”"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO(Q)=PO(R[C1].C2.v)∪PO(R[C1].C2.u)P_{O}(Q)=P_{O}(R[C_{1}].C_{2}.v)\\cup P_{O}(R[C_{1}].C_{2}.u) \nPE(Q)=PE(R[C1].C2.v)∪PE(R[C1].C2.u)P_{E}(Q)=P_{E}(R[C_{1}].C_{2}.v)\\cup P_{E}(R[C_{1}].C_{2}.u) \nPC​(Q)={c∣c∈C1∨c∈C2}subscript𝑃𝐶𝑄conditional-set𝑐𝑐subscript𝐶1𝑐subscript𝐶2P_{C}(Q)=\\{c\\mid c\\in C_{1}\\;\\lor\\;c\\in C_{2}\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Intersection of Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "records1 ⊓square-intersection\\sqcap records2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Example",
+            "City.London ⊓square-intersection\\sqcap Country.UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Translation",
+            "”rows where value of City is London and also where value of Country is UK”"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)=PO​(r​e​c​o​r​d​s1)∩PO​(r​e​c​o​r​d​s2)subscript𝑃𝑂𝑄subscript𝑃𝑂𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝑂𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{O}(Q)=P_{O}(records_{1})\\cap P_{O}(records_{2}) \nPE​(Q)=PE​(r​e​c​o​r​d​s1)∪PE​(r​e​c​o​r​d​s2)subscript𝑃𝐸𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{E}(Q)=P_{E}(records_{1})\\cup P_{E}(records_{2}) \nPC​(Q)=PC​(r​e​c​o​r​d​s1)∪PC​(r​e​c​o​r​d​s2)subscript𝑃𝐶𝑄subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{C}(Q)=P_{C}(records_{1})\\cup P_{C}(records_{2})"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Rule",
+            "Entity →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "Athens."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”is at most” Entity →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "is at most 17."
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”rows where value in column” Binary ”is” Values →→\\rightarrow Records"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "rows where value in column City is Athens or London."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”values in column” Binary ”in rows” Records →→\\rightarrow Values"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "values of column Year in rows where value of column City is Athens."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”right above” Records →→\\rightarrow Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "right above rows where value of column City is Athens."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”the number of” Records →→\\rightarrow Entity"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "the number of rows where value of column City is Athens."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”maximum of” Values →→\\rightarrow Entity"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "maximum of values in column Year in rows where value of column City is Athens."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”difference in value of column” ValueFunc Values ”and” Values →→\\rightarrow Values \nBinary ”between rows where” Binary ”is” →→\\rightarrow ValueFunc"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "difference in values of column Year between rows where values of column City is London and Beijing."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”in column” Binary ”what is the difference between rows with value” Entity ”and rows with value” Entity →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "in column City, what is the difference between rows with value Athens and rows with value London."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "Entity ”or” Entity →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "China or Greece."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "Records ”and also” Records →→\\rightarrow Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "rows where value of column City is London and also where value of column Country is UK."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "Records ”that have the highest value in column” Binary →→\\rightarrow Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "rows that have the highest value in column Year."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”where it is the last row” Records →→\\rightarrow Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "where it is the last row in rows where value of column City is Athens."
+        ],
+        "category": "dataset",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”the value of” Values ”that appears the most in column” Binary →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "the value of Athens or London that appears the most in column City."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rule",
+            "”between” Values ”who has the highest value of column” Binary →→\\rightarrow Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Example Utterance",
+            "between London or Beijing who has the highest value of column Year."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "distinct questions",
+            "405"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "explanations",
+            "2,835"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "avg. success",
+            "78.4%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "method",
+            "Utterances + Highlights"
+        ],
+        "category": "performance",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "avg",
+            "16.2m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "median",
+            "16.6m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "min",
+            "6.45m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "max",
+            "22.5m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "method",
+            "Utterances"
+        ],
+        "category": "general",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "avg",
+            "24.7m"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "median",
+            "20.7m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "min",
+            "17.5m"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "max",
+            "35.4m"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "correct examples",
+            "260/700"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correctness",
+            "37.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correct examples",
+            "312/700††\\dagger"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correctness",
+            "44.6%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correct examples",
+            "341/700††\\dagger"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correctness",
+            "48.7%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correct examples",
+            "392/700"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "correctness",
+            "56%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "Questions",
+            "4,344"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Cand. Gen.",
+            "1.22"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Utter. Gen.",
+            "0.22"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Highlights Gen.",
+            "1.36"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Question",
+            "What is the difference in number of defensive player of the year awards received by Gabriel Gervais and Mauricio Vincello?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Year, MVP, Defensive Player of the Year, Unsung Hero, Newcomer of the Year"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "in column Defensive Player of the Year, what is the difference between rows with value Mauricio Vincello and rows with value Gabriel Gervais"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "in column Defensive Player of the Year, what is the difference between rows with value Mauricio Vincello and rows with value Mauricio Vincello"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Question",
+            "The next European team Haiti played after Spain on June 8, 2013 was which team?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Date, Location, Opponent, Result, Competition"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "values in column Opponent in rows right below rows where value of column Date is June 8 2013"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "values in column Opponent in rows right below rows where value of column Opponent is June 8 2013 or Spain"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Question",
+            "Who superseded lord high steward?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Position, Officer, Current Officers, Superseded By, Royal Household"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "values in column Superseded By in rows where value of column Officer is lord high steward"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "values in column Royal Household in rows where value of column Officer is lord high steward"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Question",
+            "Who has won the least amount of medals?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Rank, Nation, Gold, Silver, Bronze, Total"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "values in column Nation in rows that have the lowest value in column Total"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "between values in column Nation in rows, who has the lowest value of column Bronze out of the values in Nation"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Question",
+            "Who is older, Tatiana Abramenko or Myriam Asfry?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "Represent, Candidate, in Russian, Age, Height, Hometown"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "between Myriam Asfry or Tatiana Abramenko, who has the highest value of column Age out of the values in Candidate"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "between Myriam Asfry or Tatiana Abramenko, who has the lowest value of column Age out of the values in Candidate"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Question",
+            "The title of the last show was?"
+        ],
+        "category": "performance",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Table Attributes",
+            "No., Episode, Air date, Rating, Share, Viewers"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "User explanation choice",
+            "between values in column Episode in rows, who has the highest value of column Air date out of the values in Episode"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "Parser baseline",
+            "between values in column No. in rows, who has the highest value of column Air date out of the values in No."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_8"
+    },
+    {
+        "claim": [
+            "train ex.",
+            "1650"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "annotations",
+            "1650"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "correctness",
+            "49.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "MRR",
+            "0.586"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "train ex.",
+            "1650"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "annotations",
+            "0"
+        ],
+        "category": "general",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "correctness",
+            "41.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "MRR",
+            "0.499"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "train ex.",
+            "11000"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "annotations",
+            "1650"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "correctness",
+            "51.6%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "MRR",
+            "0.60"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "train ex.",
+            "11000"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "annotations",
+            "0"
+        ],
+        "category": "general",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "correctness",
+            "49.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "MRR",
+            "0.570"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_9"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Column Records"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "C.v"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "City.Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT * FROM T\nWHERE C = ’v’;"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧T​[c]=v}subscript𝑃𝑂𝑄conditional-set𝑐𝑐𝐶𝑇delimited-[]𝑐𝑣P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;T[c]=v\\} \nPE​(Q)=PO​(Q)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄P_{E}(Q)=P_{O}(Q)\nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Column Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "R[C].records"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "R[Year].City.Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM (records);"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧r​e​c​o​r​d​(c).I​n​d​e​x∈r​e​c​o​r​d​s.I​n​d​i​c​e​s}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequence𝑐𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑐𝐼𝑛𝑑𝑒𝑥𝑟𝑒𝑐𝑜𝑟𝑑𝑠𝐼𝑛𝑑𝑖𝑐𝑒𝑠P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;record(c).Index\\in records.Indices\\} \nPE​(Q)=PO​(Q)∪PE​(r​e​c​o​r​d​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{E}(Q)=P_{O}(Q)\\cup P_{E}(records) \nPC​(Q)={c∣c∈C}∪PC​(r​e​c​o​r​d​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\cup P_{C}(records)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Values in Preceding Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "R[C].Prev.records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "R[Year].Prev.City.\nAthens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM T \nWHERE Index IN (\n          SELECT Index-1 \n          FROM (records));"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧r​e​c​o​r​d​(c).I​n​d​e​x+1∈r​e​c​o​r​d​s.I​n​d​i​c​e​s}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequence𝑐𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑐𝐼𝑛𝑑𝑒𝑥1𝑟𝑒𝑐𝑜𝑟𝑑𝑠𝐼𝑛𝑑𝑖𝑐𝑒𝑠P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;record(c).Index+1\\in records.Indices\\} \nPE​(Q)=PO​(Q)∪PE​(r​e​c​o​r​d​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{E}(Q)=P_{O}(Q)\\cup P_{E}(records) \nPC​(Q)={c∣c∈C}∪PC​(r​e​c​o​r​d​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\cup P_{C}(records)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Values in Following Records"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "R[C].R[Prev].\nrecords"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "R[Year].R[Prev].City.\nAthens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM T \nWHERE Index IN (\n          SELECT Index+1 \n          FROM (records));"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧r​e​c​o​r​d​(c).I​n​d​e​x−1∈r​e​c​o​r​d​s.I​n​d​i​c​e​s}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequence𝑐𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑐𝐼𝑛𝑑𝑒𝑥1𝑟𝑒𝑐𝑜𝑟𝑑𝑠𝐼𝑛𝑑𝑖𝑐𝑒𝑠P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;record(c).Index-1\\in records.Indices\\} \nPE​(Q)=PO​(Q)∪PE​(r​e​c​o​r​d​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{E}(Q)=P_{O}(Q)\\cup P_{E}(records) \nPC​(Q)={c∣c∈C}∪PC​(r​e​c​o​r​d​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\cup P_{C}(records)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Aggregation on Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "aggr(vals) \naggr ∈\\in {count, max, min, sum, avg}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "sum(R[Year].City.\nAthens)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT AGGR(C) FROM (vals);"
+        ],
+        "category": "general",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)=PO​(v​a​l​s)∪{A​G​G​R}subscript𝑃𝑂𝑄subscript𝑃𝑂𝑣𝑎𝑙𝑠𝐴𝐺𝐺𝑅P_{O}(Q)=P_{O}(vals)\\cup\\{AGGR\\} \nPE​(Q)=PO​(Q)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄P_{E}(Q)=P_{O}(Q) \nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Difference of Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "sub(R[C1].C2.v, R[C1].C2.u)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "sub(\nR[Year].City.London, R[Year].City.Beijing)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "(\nSELECT C1 FROM T\nWHERE Index IN(\n          SELECT Index FROM T\n          WHERE C2 = ’v’))\n- (\nSELECT C1 FROM T\nWHERE Index IN(\n          SELECT Index FROM T\n          WHERE C2 = ’u’));"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO(Q)=PO(R[C1].C2.v)∪PO(R[C1].C2.u)P_{O}(Q)=P_{O}(R[C_{1}].C_{2}.v)\\cup P_{O}(R[C_{1}].C_{2}.u) \nPE(Q)=PE(R[C1].C2.v)∪PE(R[C1].C2.u)P_{E}(Q)=P_{E}(R[C_{1}].C_{2}.v)\\cup P_{E}(R[C_{1}].C_{2}.u) \nPC​(Q)={c∣c∈C1∨c∈C2}subscript𝑃𝐶𝑄conditional-set𝑐𝑐subscript𝐶1𝑐subscript𝐶2P_{C}(Q)=\\{c\\mid c\\in C_{1}\\;\\lor\\;c\\in C_{2}\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Difference of Value Occurrences"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "sub(count(C.v), count(C.u))"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "sub(\ncount(City.Athens), count(City.London))"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "(\nSELECT COUNT(Index) FROM T \nWHERE C = ’v’) \n- (\nSELECT COUNT(Index) FROM T \nWHERE C = ’u’);"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO(Q)=PO(C.v)∪PO(C.u)P_{O}(Q)=P_{O}(C.v)\\cup P_{O}(C.u) \nPE(Q)=PE(C.v)∪PE(C.u)P_{E}(Q)=P_{E}(C.v)\\cup P_{E}(C.u) \nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Union of Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "vals1 ⊔square-union\\sqcup vals2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "Country.China ⊔square-union\\sqcup Country.Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM (vals1)\nUNION \nSELECT C FROM (vals2);"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)=PO​(v​a​l​s1)∪PO​(v​a​l​s2)subscript𝑃𝑂𝑄subscript𝑃𝑂𝑣𝑎𝑙subscript𝑠1subscript𝑃𝑂𝑣𝑎𝑙subscript𝑠2P_{O}(Q)=P_{O}(vals_{1})\\cup P_{O}(vals_{2}) \nPE​(Q)=PE​(v​a​l​s1)∪PE​(v​a​l​s2)subscript𝑃𝐸𝑄subscript𝑃𝐸𝑣𝑎𝑙subscript𝑠1subscript𝑃𝐸𝑣𝑎𝑙subscript𝑠2P_{E}(Q)=P_{E}(vals_{1})\\cup P_{E}(vals_{2}) \nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Intersection of Records"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "records1 ⊓square-intersection\\sqcap records2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "City.London ⊓square-intersection\\sqcap Country.UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT * FROM T \nWHERE Index IN (\n          (SELECT Index FROM records1) \nAND Index IN \n          (SELECT Index FROM records2));"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)=PO​(r​e​c​o​r​d​s1)∩PO​(r​e​c​o​r​d​s2)subscript𝑃𝑂𝑄subscript𝑃𝑂𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝑂𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{O}(Q)=P_{O}(records_{1})\\cap P_{O}(records_{2}) \nPE​(Q)=PE​(r​e​c​o​r​d​s1)∪PE​(r​e​c​o​r​d​s2)subscript𝑃𝐸𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{E}(Q)=P_{E}(records_{1})\\cup P_{E}(records_{2}) \nPC​(Q)=PC​(r​e​c​o​r​d​s1)∪PC​(r​e​c​o​r​d​s2)subscript𝑃𝐶𝑄subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠1subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑠2P_{C}(Q)=P_{C}(records_{1})\\cup P_{C}(records_{2})"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Records with Highest Value"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "argmax(Record, λ𝜆\\lambdax[C.x])"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "argmax(Record, λ𝜆\\lambdax[Year.x])"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT * FROM T \nWHERE C = (\n          SELECT MAX(C) FROM T );"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣c∈C∧∀c′∈C.T​[c′]≤T​[c]}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequence𝑐𝐶for-allsuperscript𝑐′𝐶𝑇delimited-[]superscript𝑐′𝑇delimited-[]𝑐P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;\\forall c^{\\prime}\\in C.\\;T[c^{\\prime}]\\leq T[c]\\} \nPE​(Q)=PO​(Q)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄P_{E}(Q)=P_{O}(Q) \nPC​(Q)={c∣c∈C}subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶P_{C}(Q)=\\{c\\mid c\\in C\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Value in Record with Highest Index"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "R[C].argmax(\nrecords, Index)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "R[Year].argmax(City.\nAthens, Index)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM T \nWHERE Index = (\n          SELECT MAX(Index) \n          FROM (records));"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c∣∀r∈r​e​c​o​r​d​s​r.I​n​d​e​x≤r​e​c​o​r​d​(c).I​n​d​e​x}subscript𝑃𝑂𝑄conditional-set𝑐formulae-sequencefor-all𝑟𝑟𝑒𝑐𝑜𝑟𝑑𝑠𝑟𝐼𝑛𝑑𝑒𝑥𝑟𝑒𝑐𝑜𝑟𝑑𝑐𝐼𝑛𝑑𝑒𝑥P_{O}(Q)=\\{c\\mid\\forall r\\in records\\;r.Index\\leq record(c).Index\\} \nPE​(Q)=PO​(Q)∪PE​(r​e​c​o​r​d​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{E}(Q)=P_{O}(Q)\\;\\cup\\;P_{E}(records) \nPC​(Q)={c∣c∈C}∪PC​(r​e​c​o​r​d​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑟𝑒𝑐𝑜𝑟𝑑𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\;\\cup\\;P_{C}(records)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Value with Most Appearances"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "argmax(vals, R[λ𝜆\\lambdax.count(C.x)])"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "argmax(Athens ⊔square-union\\sqcup London, R[λ𝜆\\lambdax.count(City.x)])"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT C FROM T\nWHERE Index = (\n          SELECT COUNT(Index) \n          FROM T \n          WHERE C IN (vals) \n          GROUP BY C \n          ORDER BY COUNT(Index) DESC\n          LIMIT 1);"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO(Q)={c∣c∈C∧∀c′∈CCOUNT(C.T[c′])≤COUNT(C.T[c])}P_{O}(Q)=\\{c\\mid c\\in C\\;\\land\\;\\forall c^{\\prime}\\in C\\;COUNT(C.T[c^{\\prime}])\\leq COUNT(C.T[c])\\} \nPE​(Q)=PO​(Q)∪PE​(v​a​l​s)subscript𝑃𝐸𝑄subscript𝑃𝑂𝑄subscript𝑃𝐸𝑣𝑎𝑙𝑠P_{E}(Q)=P_{O}(Q)\\;\\cup\\;P_{E}(vals) \nPC​(Q)={c∣c∈C}∪PC​(v​a​l​s)subscript𝑃𝐶𝑄conditional-set𝑐𝑐𝐶subscript𝑃𝐶𝑣𝑎𝑙𝑠P_{C}(Q)=\\{c\\mid c\\in C\\}\\;\\cup\\;P_{C}(vals)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Operator",
+            "Comparing Values"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Query (lambda DCS)",
+            "argmax(vals, R[λ𝜆\\lambdax.R[C1].C2.x])"
+        ],
+        "category": "performance",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Example",
+            "argmax(London ⊔square-union\\sqcup Beijing, R[λ𝜆\\lambdax.R[Year].City.x])"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Semantics (SQL)",
+            "SELECT DISTINCT C2 FROM T \nWHERE C1 = (\n          SELECT MAX(C1) FROM T \n          WHERE C2 IN (vals));"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Provenance",
+            "PO​(Q)={c2∣c2∈C2∧T​[c2]∈v​a​l​s∧∃c1∈C1.r​e​c​o​r​d​(c1)≡r​e​c​o​r​d​s​(c2)∧∀c2′∈C2.∃c1′∈C1.(r​e​c​o​r​d​(c1′)≡r​e​c​o​r​d​(c2′)→T​[c1′]≤T​[c1])}subscript𝑃𝑂𝑄conditional-setsubscript𝑐2formulae-sequencesubscript𝑐2subscript𝐶2𝑇delimited-[]subscript𝑐2𝑣𝑎𝑙𝑠subscript𝑐1subscript𝐶1𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑐1𝑟𝑒𝑐𝑜𝑟𝑑𝑠subscript𝑐2for-allsubscriptsuperscript𝑐′2subscript𝐶2subscriptsuperscript𝑐′1subscript𝐶1𝑟𝑒𝑐𝑜𝑟𝑑subscriptsuperscript𝑐′1𝑟𝑒𝑐𝑜𝑟𝑑subscriptsuperscript𝑐′2→𝑇delimited-[]subscriptsuperscript𝑐′1𝑇delimited-[]subscript𝑐1P_{O}(Q)=\\{c_{2}\\mid c_{2}\\in C_{2}\\;\\land\\;T[c_{2}]\\in vals\\;\\land\\;\\exists c_{1}\\in C_{1}.\\;record(c_{1})\\equiv records(c_{2})\\;\\land\\;\\forall c^{\\prime}_{2}\\in C_{2}.\\;\\exists c^{\\prime}_{1}\\in C_{1}.\\;(record(c^{\\prime}_{1})\\equiv record(c^{\\prime}_{2})\\rightarrow T[c^{\\prime}_{1}]\\leq T[c_{1}])\\} \nPE​(Q)=PE​(v​a​l​s)∪{c1∣c1∈C1∧∃c2∈C2.r​e​c​o​r​d​(c1)≡r​e​c​o​r​d​(c​2)∧T​[c2]∈v​a​l​s}subscript𝑃𝐸𝑄subscript𝑃𝐸𝑣𝑎𝑙𝑠conditional-setsubscript𝑐1formulae-sequencesubscript𝑐1subscript𝐶1subscript𝑐2subscript𝐶2𝑟𝑒𝑐𝑜𝑟𝑑subscript𝑐1𝑟𝑒𝑐𝑜𝑟𝑑𝑐2𝑇delimited-[]subscript𝑐2𝑣𝑎𝑙𝑠P_{E}(Q)=P_{E}(vals)\\;\\cup\\;\\{c_{1}\\mid c_{1}\\in C_{1}\\;\\land\\;\\exists c_{2}\\in C_{2}.\\;record(c_{1})\\equiv record(c2)\\;\\land\\;T[c_{2}]\\in vals\\} \nPC​(Q)={c∣c∈C1∨c∈C2}subscript𝑃𝐶𝑄conditional-set𝑐𝑐subscript𝐶1𝑐subscript𝐶2P_{C}(Q)=\\{c\\mid c\\in C_{1}\\;\\lor\\;c\\in C_{2}\\}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_10"
+    },
+    {
+        "claim": [
+            "Name",
+            "Sally"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Lyman"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Caprice"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Robinson"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Eleanor"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Clapp"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "USS Lawrence"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "U.S. Navy"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "USS Macdonough"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "U.S. Navy"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Jule"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Yacht"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "J. Arthur"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "lightship LV-72"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Lightvessel"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "U.S Lighthouse Board"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Name"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Position"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Games"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Club"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Erich Burgener"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "GK"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Servette"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Roger Berbig"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "GK"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshoppers"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Charly In-Albon"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "DF"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshopers"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Beat Rietmann"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "DF"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "FC St. Gallen"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Andy Egli"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "DF"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshoppers"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Marcel Koller"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "DF"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshoppers"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Rene Botteron"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "MF"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "FC Nuremburg"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Heinz Hermann"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "MF"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshoppers"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Roger Wehrli"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "MF"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Grasshoppers"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Lucien Favre"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "MF"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Toulouse Servette"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "COUNT(City)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Rank"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Nation"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Gold"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "Silver"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "New Caledonia"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "120"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "107"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Tahiti"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "60"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "42"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Papua New Guinea"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "48"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Fiji"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "33"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "44"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Samoa"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "22"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "17"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Nauru"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "10"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Tonga"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Temple"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Town"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Iwaya-ji"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Kumakogen"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Yakushi Nyorai"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Matsuyama"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Amida Nyorai"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Matsuyama"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Shaka Nyorai"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Matsuyama"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Yakushi Nyorai"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Matsuyama"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Yokomine-ji"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Saijo"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Fudo Myoo"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Imabari"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Jizo Bosatsu"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Imabari"
+        ],
+        "category": "performance",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Ehime Prefecture"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "Year"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Country"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "City"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1896"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "1900"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "France"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Paris"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2004"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Greece"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Athens"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2008"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "China"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Beijing"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2012"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "UK"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "London"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Name",
+            "2016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Type",
+            "Brazil"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "Owner",
+            "Rio de Janeiro"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_11"
+    },
+    {
+        "claim": [
+            "…",
+            "…"
+        ],
+        "category": "general",
+        "table_id": "id_table_11"
+    }
+]

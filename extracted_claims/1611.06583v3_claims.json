@@ -1,0 +1,154 @@
+[
+    {
+        "claim": [
+            "max",
+            "2.002.002.00"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "mean",
+            "1.571.571.57"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "s.d.",
+            "0.620.620.62"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "max",
+            "2.002.002.00"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "mean",
+            "0.610.610.61"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "s.d.",
+            "0.690.690.69"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "max",
+            "4.004.004.00"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "mean",
+            "2.732.732.73"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "s.d.",
+            "1.151.151.15"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "max",
+            "8.008.008.00"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "mean",
+            "4.914.914.91"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "s.d.",
+            "1.871.871.87"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "ρTsubscript𝜌𝑇\\rho_{T}",
+            "0.610.610.61"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "ρTsubscript𝜌𝑇\\rho_{T}",
+            "0.580.580.58"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "ρTsubscript𝜌𝑇\\rho_{T}",
+            "0.210.210.21"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "ρTsubscript𝜌𝑇\\rho_{T}",
+            "0.560.560.56"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "r𝑟r",
+            "0.440.440.44"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "r𝑟r",
+            "0.460.460.46"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "r𝑟r",
+            "0.140.140.14"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    }
+]

@@ -1,0 +1,250 @@
+[
+    {
+        "claim": [
+            "Features",
+            "Avg. Prediction Baseline"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Avg. Rel. Err.",
+            "0.3151"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Features",
+            "Embedding"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Avg. Rel. Err.",
+            "0.2516"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Features",
+            "Cardinality"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Avg. Rel. Err.",
+            "0.2450"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Features",
+            "Location"
+        ],
+        "category": "general",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Avg. Rel. Err.",
+            "0.2400"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Features",
+            "Embedding + Cardinality + Location"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Avg. Rel. Err.",
+            "0.2400"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Method",
+            "Priors (do not replace)"
+        ],
+        "category": "performance",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Avg. Cl. Acc.",
+            "50% %"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Acc.",
+            "79.86%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Method",
+            "Priors (object’s tendency to be replaced)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Avg. Cl. Acc.",
+            "73.13 %"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Acc.",
+            "71.5%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Method",
+            "Anomaly detection (threshold distance)"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Avg. Cl. Acc.",
+            "62.16 %"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Acc.",
+            "58.30%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Method",
+            "Anomaly detection (top-K objects)"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Avg. Cl. Acc.",
+            "63.01 %"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Acc.",
+            "64.31%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Method",
+            "Our model"
+        ],
+        "category": "performance",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Avg. Cl. Acc.",
+            "74.45%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Acc.",
+            "74.74%"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Method",
+            "Priors (top 5 GT replacers)"
+        ],
+        "category": "performance",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Top-5 accuracy",
+            "24.53%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Method",
+            "Anomaly detection (object that “fits” into scene)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Top-5 accuracy",
+            "7.69%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Method",
+            "Our model"
+        ],
+        "category": "performance",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Top-5 accuracy",
+            "29.65%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    }
+]

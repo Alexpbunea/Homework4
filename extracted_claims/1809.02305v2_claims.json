@@ -1,0 +1,858 @@
+[
+    {
+        "claim": [
+            "Dataset",
+            "ATIS-small"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "35"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "127 - 128"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "500"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "893"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS-medium"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "497 - 498"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "500"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "893"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "4,478"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "500"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "893"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "Snips"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "13,084"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "700"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "700"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "MIT Movie Eng"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "8,798"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "977"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "2,443"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "MIT Movie Trivia"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "7,035"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "781"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "1,953"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "MIT Restaurant"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "#Splits",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Train",
+            "6,894"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Val",
+            "766"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Test",
+            "1,521"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "Small"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "Med."
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "Full"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "Baseline (No Augmentation)"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "72.57‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "88.28‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "Encoder-Decoder + Additive*"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "74.79†"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "89.13‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "JLUVA + Additive (Ours)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "74.14‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "89.13‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "JLUVA + Standard Gaussian (Ours)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "70.72‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "86.90‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot Filling (F1)",
+            "JLUVA + Posterior (Ours)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "74.92"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Semantic (Acc.)",
+            "89.27"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "Slot"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "Intent"
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "95.3‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "94.9‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "95.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "95.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "88.2‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "97.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "89.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "97.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "82.2‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "82.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "63.5‡"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "65.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "72.6†"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Full)",
+            "73.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Slot-Gated (Intent)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "JLUVA"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "94.44"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "97.09"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "BiLSTM (Baseline)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.34"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "97.21"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "Deep LSTMa"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.66"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "-"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "Slot-Gated (Full)b,d"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.66"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "96.08"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "Att. Encoder-Decoderc"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.87"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "98.43"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "Att. BiRNNc"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.98"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "98.21"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS+"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "BiLSTM (Baseline)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "95.75"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "97.54"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Dataset",
+            "ATIS+"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Model",
+            "Slot-Gated (Full)b,d"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Slot (F1)",
+            "96.04"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Intent (F1)",
+            "96.75"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    }
+]

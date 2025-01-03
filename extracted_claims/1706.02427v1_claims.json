@@ -1,0 +1,650 @@
+[
+    {
+        "claim": [
+            "WQT dataset",
+            "273,816"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "2,108"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "4.55"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "6.38"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "52"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "9.15"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "28.50"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "1,517"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "754"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "21,113"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "22,033"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WQT dataset",
+            "4.61"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "WTQ dataset",
+            "11.25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Setting",
+            "BM25"
+        ],
+        "category": "performance",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "MAP",
+            "58.23"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "P@1",
+            "47.12"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Feature"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "MAP",
+            "61.02"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "P@1",
+            "47.79"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Setting",
+            "NeuralNet"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "MAP",
+            "61.94"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "P@1",
+            "49.02"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Feature + NeuralNet"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "MAP",
+            "67.18"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "P@1",
+            "54.15"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Setting",
+            "MAP"
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "P@1"
+        ],
+        "category": "performance",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "MAP"
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Header (H)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "22.39"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "9.76"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Cell (Cel)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "28.85"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "14.95"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Caption (Cap)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "57.12"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "56.83"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "H + Cel"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "31.99"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "17.08"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "H + Cel + Cap"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Feature",
+            "61.02"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "47.79"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Setting",
+            "BM25"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "MAP",
+            "51.02"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "P@1",
+            "41.02"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Setting",
+            "CDSSM-Header"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "MAP",
+            "45.92"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "P@1",
+            "31.58"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Feature"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "MAP",
+            "67.70"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "P@1",
+            "56.25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Setting",
+            "NeuralNet"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "MAP",
+            "67.44"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "P@1",
+            "54.95"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Feature + NeuralNet"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "MAP",
+            "72.49"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "P@1",
+            "61.50"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Setting",
+            "MAP"
+        ],
+        "category": "general",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "P@1"
+        ],
+        "category": "performance",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "MAP"
+        ],
+        "category": "general",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Header (H)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "46.36"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "32.52"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Cell (Cel)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "44.33"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "30.97"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Setting",
+            "Caption (Cap)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "33.36"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "24.79"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Setting",
+            "H + Cel"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "60.03"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "47.42"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Setting",
+            "H + Cel + Cap"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Feature",
+            "67.70"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "NeuralNet",
+            "56.25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    }
+]

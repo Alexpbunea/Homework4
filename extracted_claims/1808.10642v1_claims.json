@@ -1,0 +1,1122 @@
+[
+    {
+        "claim": [
+            "EUSES",
+            "340"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Enron",
+            "1,721"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "11%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "4,133"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "92%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Enron",
+            "14,078"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "89%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "4,473"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "100%"
+        ],
+        "category": "performance",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Enron",
+            "15,799"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "%",
+            "100%"
+        ],
+        "category": "performance",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "# Charts"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Enron",
+            "%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "355"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Enron",
+            "25%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "1,090"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Enron",
+            "75%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "1,445"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Enron",
+            "100%"
+        ],
+        "category": "performance",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Rank",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Column"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "515"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "35.6%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Scatter"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "322"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "22.3%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Line"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "258"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "17.9%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Pie"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "139"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "9.6%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Bar"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "125"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "8.7%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Mixed"
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "55"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "3.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Surface"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "15"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "1.0%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Area"
+        ],
+        "category": "general",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "13"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "0.9%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Stock"
+        ],
+        "category": "performance",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "0.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "10"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Radar"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "%",
+            "0.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Rank",
+            "1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Column"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "4,253"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "48.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Line"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "2,815"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "31.9%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Mixed"
+        ],
+        "category": "general",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "866"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "9.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Pie"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "649"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "7.3%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Scatter"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "168"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "1.9%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Area"
+        ],
+        "category": "general",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "67"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "0.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Bar"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "11"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "0.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Rank",
+            "8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Chart Type",
+            "Surface"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "# Charts",
+            "6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "%",
+            "0.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "19"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "0.4%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Enron",
+            "244"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "1.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "4,454"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "99.6%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Enron",
+            "15,555"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "98.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "EUSES",
+            "4,473"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "100.0%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "Enron",
+            "15,799"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "%",
+            "100.0%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_5"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "records"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "fields"
+        ],
+        "category": "general",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "items"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "fields"
+        ],
+        "category": "general",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "3,738"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "13"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "0"
+        ],
+        "category": "general",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "4,073"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "avg. #",
+            "28"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "0"
+        ],
+        "category": "general",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "# calc.",
+            "0"
+        ],
+        "category": "general",
+        "table_id": "id_table_6"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Multiple criteria aggregation"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "2,398"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "60.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Array functions"
+        ],
+        "category": "performance",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "690"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "17.4%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Sumproduct"
+        ],
+        "category": "performance",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "455"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "11.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "User defined functions"
+        ],
+        "category": "general",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "264"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "6.7%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Unnecessary or erroneous"
+        ],
+        "category": "general",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "66"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "1.7%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Repeat block"
+        ],
+        "category": "general",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "47"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "1.2%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "TABLE function"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "45"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "1.1%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "Use case",
+            "Total"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "# Formulas",
+            "3,965"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    },
+    {
+        "claim": [
+            "% of Formulas",
+            "100.0%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_7"
+    }
+]

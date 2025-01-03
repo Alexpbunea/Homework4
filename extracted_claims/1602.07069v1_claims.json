@@ -1,0 +1,2138 @@
+[
+    {
+        "claim": [
+            "Particle in PDG",
+            "Λc+superscriptsubscriptΛ𝑐\\Lambda_{c}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Λc+superscriptsubscriptΛ𝑐\\Lambda_{c}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "12+superscript12\\frac{1}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2286.46±plus-or-minus\\pm0.14"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Λc​(2595)+subscriptΛ𝑐superscript2595\\Lambda_{c}(2595)^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Λc​1+superscriptsubscriptΛ𝑐1\\Lambda_{c1}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "12−superscript12\\frac{1}{2}^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2592.25±plus-or-minus\\pm 0.28"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "2.6±plus-or-minus\\pm0.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Λc​(2625)+subscriptΛ𝑐superscript2625\\Lambda_{c}(2625)^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Λc​1∗+superscriptsubscriptΛ𝑐1absent\\Lambda_{c1}^{*+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32−superscript32\\frac{3}{2}^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2628.11±plus-or-minus\\pm0.19"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "<<0.97"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2455)++subscriptΣ𝑐superscript2455absent\\Sigma_{c}(2455)^{++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc++superscriptsubscriptΣ𝑐absent\\Sigma_{c}^{++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "12+superscript12\\frac{1}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2453.98±plus-or-minus\\pm0.16"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "2.26±plus-or-minus\\pm0.25"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2455)+subscriptΣ𝑐superscript2455\\Sigma_{c}(2455)^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc+superscriptsubscriptΣ𝑐\\Sigma_{c}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "12+superscript12\\frac{1}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2452.9±plus-or-minus\\pm0.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "<<4.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2455)0subscriptΣ𝑐superscript24550\\Sigma_{c}(2455)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc0superscriptsubscriptΣ𝑐0\\Sigma_{c}^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "12+superscript12\\frac{1}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2453.74±plus-or-minus\\pm0.16"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "2.16±plus-or-minus\\pm0.26"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2520)++subscriptΣ𝑐superscript2520absent\\Sigma_{c}(2520)^{++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc∗⁣++superscriptsubscriptΣ𝑐absent\\Sigma_{c}^{*++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32+superscript32\\frac{3}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2517.9±plus-or-minus\\pm0.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "14.9±plus-or-minus\\pm1.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2520)+subscriptΣ𝑐superscript2520\\Sigma_{c}(2520)^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc∗+superscriptsubscriptΣ𝑐absent\\Sigma_{c}^{*+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32+superscript32\\frac{3}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2517.5±plus-or-minus\\pm2.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "<<17"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2520)0subscriptΣ𝑐superscript25200\\Sigma_{c}(2520)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc∗0superscriptsubscriptΣ𝑐absent0\\Sigma_{c}^{*0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32+superscript32\\frac{3}{2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2518.8±plus-or-minus\\pm0.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "14.5±plus-or-minus\\pm1.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2800)++subscriptΣ𝑐superscript2800absent\\Sigma_{c}(2800)^{++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc​2++superscriptsubscriptΣ𝑐2absent\\Sigma_{c2}^{++}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32−​?superscript32?\\frac{3}{2}^{-}?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2801−6+4subscriptsuperscriptabsent46{}^{+4}_{-6}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "75−17+22subscriptsuperscriptabsent2217{}^{+22}_{-17}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2800)+subscriptΣ𝑐superscript2800\\Sigma_{c}(2800)^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc​2+superscriptsubscriptΣ𝑐2\\Sigma_{c2}^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32−​?superscript32?\\frac{3}{2}^{-}?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2792−5+14subscriptsuperscriptabsent145{}^{+14}_{-5}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "62−40+60subscriptsuperscriptabsent6040{}^{+60}_{-40}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "Σc​(2800)0subscriptΣ𝑐superscript28000\\Sigma_{c}(2800)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "Σc​20superscriptsubscriptΣ𝑐20\\Sigma_{c2}^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "32−​?superscript32?\\frac{3}{2}^{-}?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2806−7+5subscriptsuperscriptabsent57{}^{+5}_{-7}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "72−15+22subscriptsuperscriptabsent2215{}^{+22}_{-15}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D0superscript𝐷0D^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D0superscript𝐷0D^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "0−superscript00^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "1864.84±plus-or-minus\\pm0.07"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D±superscript𝐷plus-or-minusD^{\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D±superscript𝐷plus-or-minusD^{\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "0−superscript00^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "1869.61±plus-or-minus\\pm0.10"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D∗​(2007)0superscript𝐷superscript20070D^{*}(2007)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D∗0superscript𝐷absent0D^{*0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "1−superscript11^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2006.96±plus-or-minus\\pm0.10"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "<<2.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D∗​(2010)±superscript𝐷superscript2010plus-or-minusD^{*}(2010)^{\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D∗±superscript𝐷absentplus-or-minusD^{*\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "1−superscript11^{-}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2010.26±plus-or-minus\\pm0.07"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "0.0834±plus-or-minus\\pm 0.0018"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D1​(2420)0subscript𝐷1superscript24200D_{1}(2420)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D10superscriptsubscript𝐷10D_{1}^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "1+superscript11^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2421.4±plus-or-minus\\pm0.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "27.4±plus-or-minus\\pm2.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D2​(2460)0subscript𝐷2superscript24600D_{2}(2460)^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D20superscriptsubscript𝐷20D_{2}^{0}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "2+superscript22^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2462.6±plus-or-minus\\pm0.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "49.0±plus-or-minus\\pm1.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Particle in PDG",
+            "D2​(2460)±subscript𝐷2superscript2460plus-or-minusD_{2}(2460)^{\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Notation",
+            "D2±superscriptsubscript𝐷2plus-or-minusD_{2}^{\\pm}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "JPsuperscript𝐽𝑃J^{P}",
+            "2+superscript22^{+}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mass [MeV]",
+            "2464.3±plus-or-minus\\pm1.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Width [MeV]",
+            "37±plus-or-minus\\pm6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4317.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4318.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "0.773"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4151.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4152.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "0.75"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4459.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4460.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "0.806"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4293.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4294.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "0.78"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a3)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4524.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4527.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "3.28"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4293.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4296.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "3.14"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4708.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4726.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "18.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4293.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4310.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "16.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b2′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4750.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4794.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "43.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4151.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4189.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "37.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b2′′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4750.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4773.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "22.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4293.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4314.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "20.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b3)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4874.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4893.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "19.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4459.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4477.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "17.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b4′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4917.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4962.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "45.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4317.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4356.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "39.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b4′′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4917.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4940.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "23.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4459.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4481.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "21.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c1′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4665.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4687.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "21.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4151.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4171.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "19.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c1′′)"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4665.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4674.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "8.28"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4317.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4325.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "7.83"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c1′′′)"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4665.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4670.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "4.83"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4382.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4387.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "4.62"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c2′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4808.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4830.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "22.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4293.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4313.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "20.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c2′′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4808.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4816.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "8.65"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4459.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4468.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "8.16"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c2′′′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "4808.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "4813.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "5.05"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4524.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4529.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "4.82"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "5013.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "5033.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "19.6"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4599.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4616.9"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "17.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "5049.5"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "5069.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "19.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4635.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4652.9"
+        ],
+        "category": "general",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "17.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d3′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "5092.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "5139.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "46.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4493.0"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4533.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "40.2"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d3′′)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Nsubscript𝑠1𝑁\\sqrt{s_{1N}}",
+            "5092.4"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s1​Csubscript𝑠1𝐶\\sqrt{s_{1C}}",
+            "5116.7"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs1maxsuperscriptsubscriptΔsubscript𝑠1\\Delta_{s_{1}}^{\\max}",
+            "24.3"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Nsubscript𝑠2𝑁\\sqrt{s_{2N}}",
+            "4635.1"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "s2​Csubscript𝑠2𝐶\\sqrt{s_{2C}}",
+            "4656.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Δs2maxsuperscriptsubscriptΔsubscript𝑠2\\Delta_{s_{2}}^{\\max}",
+            "21.8"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "ga​1subscript𝑔𝑎1g_{a1}",
+            "0.035"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​2subscript𝑔𝑎2g_{a2}",
+            "0.020"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​3subscript𝑔𝑎3g_{a3}",
+            "0.025"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​1subscript𝑔𝑏1g_{b1}",
+            "0.024"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​2subscript𝑔𝑏2g_{b2}",
+            "0.018"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​3subscript𝑔𝑏3g_{b3}",
+            "0.023"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​1subscript𝑔𝑎1g_{a1}",
+            "gb​4subscript𝑔𝑏4g_{b4}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​2subscript𝑔𝑎2g_{a2}",
+            "gc​1subscript𝑔𝑐1g_{c1}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​3subscript𝑔𝑎3g_{a3}",
+            "gc​2subscript𝑔𝑐2g_{c2}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​1subscript𝑔𝑏1g_{b1}",
+            "gd​1subscript𝑔𝑑1g_{d1}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​2subscript𝑔𝑏2g_{b2}",
+            "gd​2subscript𝑔𝑑2g_{d2}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​3subscript𝑔𝑏3g_{b3}",
+            "gd​3subscript𝑔𝑑3g_{d3}"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​1subscript𝑔𝑎1g_{a1}",
+            "0.017"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​2subscript𝑔𝑎2g_{a2}",
+            "0.027"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "ga​3subscript𝑔𝑎3g_{a3}",
+            "0.009"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​1subscript𝑔𝑏1g_{b1}",
+            "0.024"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​2subscript𝑔𝑏2g_{b2}",
+            "0.026"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "gb​3subscript𝑔𝑏3g_{b3}",
+            "0.029"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.003"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.015"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(a3)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.011"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.153"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.056"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b3)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.330"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(b4)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.113"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.032"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(c2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.166"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d1)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.016"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d2)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.024"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Diagram #",
+            "(d3)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Cross Section [nb]",
+            "0.056"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_4"
+    }
+]

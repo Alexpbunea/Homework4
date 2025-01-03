@@ -1,0 +1,887 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>[1706.04572] Deep Learning Methods for Efficient Large Scale Video Labeling</title><meta property="og:description" content="We present a solution to “Google Cloud and YouTube-8M Video Understanding Challenge” that ranked 5th place. The proposed model is an ensemble of three model families, two frame level and one video level. The training w…">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deep Learning Methods for Efficient Large Scale Video Labeling">
+<meta name="twitter:image:src" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta name="twitter:image:alt" content="ar5iv logo">
+<meta property="og:title" content="Deep Learning Methods for Efficient Large Scale Video Labeling">
+<meta property="og:site_name" content="ar5iv">
+<meta property="og:image" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ar5iv.labs.arxiv.org/html/1706.04572">
+
+<!--Generated on Sat Mar 16 03:41:26 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script>
+  function detectColorScheme(){
+    var theme="light";
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if(current_theme){
+      if(current_theme == "dark"){
+        theme = "dark";
+      } }
+    else if(!window.matchMedia) { return false; }
+    else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      theme = "dark"; }
+    if (theme=="dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light"); } }
+
+  detectColorScheme();
+
+  function toggleColorScheme(){
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if (current_theme) {
+      if (current_theme == "light") {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+      else {
+        localStorage.setItem("ar5iv_theme", "light"); } }
+    else {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+    detectColorScheme(); }
+</script>
+<link media="all" rel="stylesheet" href="/assets/ar5iv-fonts.0.8.0.min.css"><link media="all" rel="stylesheet" href="/assets/ar5iv.0.8.0.min.css"><link media="all" rel="stylesheet" href="/assets/ar5iv-site.0.2.2.css">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Deep Learning Methods for Efficient Large Scale Video Labeling</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Miha Skalic<span id="footnotex1" class="ltx_note ltx_role_footnotemark"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotemark: </span><span class="ltx_tag ltx_tag_note">1</span></span></span></span> 
+<br class="ltx_break">University Pompeu Fabra, Barcelona
+<br class="ltx_break"><span id="id1.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">miha.skalic@upf.edu</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">
+<br class="ltx_break">Marcin Pekalski<span id="footnotex2" class="ltx_note ltx_role_footnotemark"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotemark: </span><span class="ltx_tag ltx_tag_note">1</span></span></span></span> 
+<br class="ltx_break"><span id="id2.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">mpekalski@gmail.com</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">
+<br class="ltx_break">Xingguo E. Pan<span id="footnotex3" class="ltx_note ltx_role_footnotemark"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup><span class="ltx_note_type">footnotemark: </span><span class="ltx_tag ltx_tag_note">1</span></span></span></span> 
+<br class="ltx_break"><span id="id3.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">panxingguo@gmail.com</span>
+</span></span>
+</div>
+
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p id="id4.id1" class="ltx_p">We present a solution to “Google Cloud and YouTube-8M Video Understanding Challenge” that ranked 5th place. The proposed model is an ensemble of three model families, two frame level and one video level. The training was performed on augmented dataset, with cross validation.</p>
+</div>
+<span id="footnotex4" class="ltx_note ltx_role_footnotetext"><sup class="ltx_note_mark">†</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">†</sup><span class="ltx_note_type">footnotetext: </span>*These authors contributed equally to this work</span></span></span>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p id="S1.p1.1" class="ltx_p">Gathering huge datasets and organizing competitions <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib9" title="" class="ltx_ref">9</a>]</cite> <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib8" title="" class="ltx_ref">8</a>]</cite> has driven forward machine learning model
+development. In fact, some of the key breakthroughs were achieved as part of these competitions <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib7" title="" class="ltx_ref">7</a>]</cite> <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib10" title="" class="ltx_ref">10</a>]</cite>. However, large scale video predicting remains to date a non-trivial problem. To tackle this problem Google Cloud has hosted a Kaggle competition with a dataset consisting of 6.3 million and 740 thousand labeled and unlabeled videos, respectively. The labels vocabulary consisted of 4716 labels. Participants were asked to develop a machine learning model that would predict what labels were assigned to each of the videos from the test dataset.</p>
+</div>
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Video Data and Competition Starter Code</h3>
+
+<div id="S1.SS1.p1" class="ltx_para">
+<p id="S1.SS1.p1.1" class="ltx_p">The organizers provided two datasets; one on video level features and another on frame level features. The frame level consisted of 1024 RGB features and 128 audio features for each frame of the video sampled every second up to 300 frames. Those RGB features were extracted from the last ReLu activation of the hidden layer, just before the classification layer (layer named pool3/_reshape) of the Inception-v3 network. After extraction, these RGB features were dimension reduced by PCA and whitened. The video level features are simply an average of the PCA and whitened frame level features. For more details please refer the original YouTube-8M dataset paper <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>.
+The dataset is available on the project’s website, https://research.google.com/youtube8m/.</p>
+</div>
+<div id="S1.SS1.p2" class="ltx_para">
+<p id="S1.SS1.p2.1" class="ltx_p">In addition to supplying the video data, the dataset authors also provided a starter code base for the competition. The starter code is well structured and provided the whole pipeline from data input, model training to prediction output. It included several base models and proved to be a robust baseline for further creative model work.</p>
+</div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Evaluation</h3>
+
+<div id="S1.SS2.p1" class="ltx_para">
+<p id="S1.SS2.p1.6" class="ltx_p">The Global Average Precision was picked as evaluation metric. It is defined as defined as</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1.3" class="ltx_Math" alttext="GAP=\sum\limits_{i=1}^{N}p(i)\Delta r(i)." display="block"><semantics id="S1.Ex1.m1.3a"><mrow id="S1.Ex1.m1.3.3.1" xref="S1.Ex1.m1.3.3.1.1.cmml"><mrow id="S1.Ex1.m1.3.3.1.1" xref="S1.Ex1.m1.3.3.1.1.cmml"><mrow id="S1.Ex1.m1.3.3.1.1.2" xref="S1.Ex1.m1.3.3.1.1.2.cmml"><mi id="S1.Ex1.m1.3.3.1.1.2.2" xref="S1.Ex1.m1.3.3.1.1.2.2.cmml">G</mi><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.2.1" xref="S1.Ex1.m1.3.3.1.1.2.1.cmml">​</mo><mi id="S1.Ex1.m1.3.3.1.1.2.3" xref="S1.Ex1.m1.3.3.1.1.2.3.cmml">A</mi><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.2.1a" xref="S1.Ex1.m1.3.3.1.1.2.1.cmml">​</mo><mi id="S1.Ex1.m1.3.3.1.1.2.4" xref="S1.Ex1.m1.3.3.1.1.2.4.cmml">P</mi></mrow><mo rspace="0.111em" id="S1.Ex1.m1.3.3.1.1.1" xref="S1.Ex1.m1.3.3.1.1.1.cmml">=</mo><mrow id="S1.Ex1.m1.3.3.1.1.3" xref="S1.Ex1.m1.3.3.1.1.3.cmml"><munderover id="S1.Ex1.m1.3.3.1.1.3.1" xref="S1.Ex1.m1.3.3.1.1.3.1.cmml"><mo movablelimits="false" id="S1.Ex1.m1.3.3.1.1.3.1.2.2" xref="S1.Ex1.m1.3.3.1.1.3.1.2.2.cmml">∑</mo><mrow id="S1.Ex1.m1.3.3.1.1.3.1.2.3" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.cmml"><mi id="S1.Ex1.m1.3.3.1.1.3.1.2.3.2" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.2.cmml">i</mi><mo id="S1.Ex1.m1.3.3.1.1.3.1.2.3.1" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.1.cmml">=</mo><mn id="S1.Ex1.m1.3.3.1.1.3.1.2.3.3" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.3.cmml">1</mn></mrow><mi id="S1.Ex1.m1.3.3.1.1.3.1.3" xref="S1.Ex1.m1.3.3.1.1.3.1.3.cmml">N</mi></munderover><mrow id="S1.Ex1.m1.3.3.1.1.3.2" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml"><mi id="S1.Ex1.m1.3.3.1.1.3.2.2" xref="S1.Ex1.m1.3.3.1.1.3.2.2.cmml">p</mi><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.3.2.1" xref="S1.Ex1.m1.3.3.1.1.3.2.1.cmml">​</mo><mrow id="S1.Ex1.m1.3.3.1.1.3.2.3.2" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml"><mo stretchy="false" id="S1.Ex1.m1.3.3.1.1.3.2.3.2.1" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml">(</mo><mi id="S1.Ex1.m1.1.1" xref="S1.Ex1.m1.1.1.cmml">i</mi><mo stretchy="false" id="S1.Ex1.m1.3.3.1.1.3.2.3.2.2" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml">)</mo></mrow><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.3.2.1a" xref="S1.Ex1.m1.3.3.1.1.3.2.1.cmml">​</mo><mi mathvariant="normal" id="S1.Ex1.m1.3.3.1.1.3.2.4" xref="S1.Ex1.m1.3.3.1.1.3.2.4.cmml">Δ</mi><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.3.2.1b" xref="S1.Ex1.m1.3.3.1.1.3.2.1.cmml">​</mo><mi id="S1.Ex1.m1.3.3.1.1.3.2.5" xref="S1.Ex1.m1.3.3.1.1.3.2.5.cmml">r</mi><mo lspace="0em" rspace="0em" id="S1.Ex1.m1.3.3.1.1.3.2.1c" xref="S1.Ex1.m1.3.3.1.1.3.2.1.cmml">​</mo><mrow id="S1.Ex1.m1.3.3.1.1.3.2.6.2" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml"><mo stretchy="false" id="S1.Ex1.m1.3.3.1.1.3.2.6.2.1" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml">(</mo><mi id="S1.Ex1.m1.2.2" xref="S1.Ex1.m1.2.2.cmml">i</mi><mo stretchy="false" id="S1.Ex1.m1.3.3.1.1.3.2.6.2.2" xref="S1.Ex1.m1.3.3.1.1.3.2.cmml">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" id="S1.Ex1.m1.3.3.1.2" xref="S1.Ex1.m1.3.3.1.1.cmml">.</mo></mrow><annotation-xml encoding="MathML-Content" id="S1.Ex1.m1.3b"><apply id="S1.Ex1.m1.3.3.1.1.cmml" xref="S1.Ex1.m1.3.3.1"><eq id="S1.Ex1.m1.3.3.1.1.1.cmml" xref="S1.Ex1.m1.3.3.1.1.1"></eq><apply id="S1.Ex1.m1.3.3.1.1.2.cmml" xref="S1.Ex1.m1.3.3.1.1.2"><times id="S1.Ex1.m1.3.3.1.1.2.1.cmml" xref="S1.Ex1.m1.3.3.1.1.2.1"></times><ci id="S1.Ex1.m1.3.3.1.1.2.2.cmml" xref="S1.Ex1.m1.3.3.1.1.2.2">𝐺</ci><ci id="S1.Ex1.m1.3.3.1.1.2.3.cmml" xref="S1.Ex1.m1.3.3.1.1.2.3">𝐴</ci><ci id="S1.Ex1.m1.3.3.1.1.2.4.cmml" xref="S1.Ex1.m1.3.3.1.1.2.4">𝑃</ci></apply><apply id="S1.Ex1.m1.3.3.1.1.3.cmml" xref="S1.Ex1.m1.3.3.1.1.3"><apply id="S1.Ex1.m1.3.3.1.1.3.1.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1"><csymbol cd="ambiguous" id="S1.Ex1.m1.3.3.1.1.3.1.1.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1">superscript</csymbol><apply id="S1.Ex1.m1.3.3.1.1.3.1.2.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1"><csymbol cd="ambiguous" id="S1.Ex1.m1.3.3.1.1.3.1.2.1.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1">subscript</csymbol><sum id="S1.Ex1.m1.3.3.1.1.3.1.2.2.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.2.2"></sum><apply id="S1.Ex1.m1.3.3.1.1.3.1.2.3.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3"><eq id="S1.Ex1.m1.3.3.1.1.3.1.2.3.1.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.1"></eq><ci id="S1.Ex1.m1.3.3.1.1.3.1.2.3.2.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.2">𝑖</ci><cn type="integer" id="S1.Ex1.m1.3.3.1.1.3.1.2.3.3.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.2.3.3">1</cn></apply></apply><ci id="S1.Ex1.m1.3.3.1.1.3.1.3.cmml" xref="S1.Ex1.m1.3.3.1.1.3.1.3">𝑁</ci></apply><apply id="S1.Ex1.m1.3.3.1.1.3.2.cmml" xref="S1.Ex1.m1.3.3.1.1.3.2"><times id="S1.Ex1.m1.3.3.1.1.3.2.1.cmml" xref="S1.Ex1.m1.3.3.1.1.3.2.1"></times><ci id="S1.Ex1.m1.3.3.1.1.3.2.2.cmml" xref="S1.Ex1.m1.3.3.1.1.3.2.2">𝑝</ci><ci id="S1.Ex1.m1.1.1.cmml" xref="S1.Ex1.m1.1.1">𝑖</ci><ci id="S1.Ex1.m1.3.3.1.1.3.2.4.cmml" xref="S1.Ex1.m1.3.3.1.1.3.2.4">Δ</ci><ci id="S1.Ex1.m1.3.3.1.1.3.2.5.cmml" xref="S1.Ex1.m1.3.3.1.1.3.2.5">𝑟</ci><ci id="S1.Ex1.m1.2.2.cmml" xref="S1.Ex1.m1.2.2">𝑖</ci></apply></apply></apply></annotation-xml><annotation encoding="application/x-tex" id="S1.Ex1.m1.3c">GAP=\sum\limits_{i=1}^{N}p(i)\Delta r(i).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p id="S1.SS2.p1.5" class="ltx_p">Where <math id="S1.SS2.p1.1.m1.1" class="ltx_Math" alttext="N" display="inline"><semantics id="S1.SS2.p1.1.m1.1a"><mi id="S1.SS2.p1.1.m1.1.1" xref="S1.SS2.p1.1.m1.1.1.cmml">N</mi><annotation-xml encoding="MathML-Content" id="S1.SS2.p1.1.m1.1b"><ci id="S1.SS2.p1.1.m1.1.1.cmml" xref="S1.SS2.p1.1.m1.1.1">𝑁</ci></annotation-xml><annotation encoding="application/x-tex" id="S1.SS2.p1.1.m1.1c">N</annotation></semantics></math> is the number of final predictions (if there are <math id="S1.SS2.p1.2.m2.1" class="ltx_Math" alttext="20" display="inline"><semantics id="S1.SS2.p1.2.m2.1a"><mn id="S1.SS2.p1.2.m2.1.1" xref="S1.SS2.p1.2.m2.1.1.cmml">20</mn><annotation-xml encoding="MathML-Content" id="S1.SS2.p1.2.m2.1b"><cn type="integer" id="S1.SS2.p1.2.m2.1.1.cmml" xref="S1.SS2.p1.2.m2.1.1">20</cn></annotation-xml><annotation encoding="application/x-tex" id="S1.SS2.p1.2.m2.1c">20</annotation></semantics></math> predictions for each video, then <math id="S1.SS2.p1.3.m3.1" class="ltx_math_unparsed" alttext="N=20*\mathbin{\#}Videos" display="inline"><semantics id="S1.SS2.p1.3.m3.1a"><mrow id="S1.SS2.p1.3.m3.1b"><mi id="S1.SS2.p1.3.m3.1.1">N</mi><mo id="S1.SS2.p1.3.m3.1.2">=</mo><mn id="S1.SS2.p1.3.m3.1.3">20</mn><mo lspace="0.222em" rspace="0em" id="S1.SS2.p1.3.m3.1.4">∗</mo><mo lspace="0em" rspace="0.222em" id="S1.SS2.p1.3.m3.1.5">#</mo><mi id="S1.SS2.p1.3.m3.1.6">V</mi><mi id="S1.SS2.p1.3.m3.1.7">i</mi><mi id="S1.SS2.p1.3.m3.1.8">d</mi><mi id="S1.SS2.p1.3.m3.1.9">e</mi><mi id="S1.SS2.p1.3.m3.1.10">o</mi><mi id="S1.SS2.p1.3.m3.1.11">s</mi></mrow><annotation encoding="application/x-tex" id="S1.SS2.p1.3.m3.1c">N=20*\mathbin{\#}Videos</annotation></semantics></math>), <math id="S1.SS2.p1.4.m4.1" class="ltx_Math" alttext="p(i)" display="inline"><semantics id="S1.SS2.p1.4.m4.1a"><mrow id="S1.SS2.p1.4.m4.1.2" xref="S1.SS2.p1.4.m4.1.2.cmml"><mi id="S1.SS2.p1.4.m4.1.2.2" xref="S1.SS2.p1.4.m4.1.2.2.cmml">p</mi><mo lspace="0em" rspace="0em" id="S1.SS2.p1.4.m4.1.2.1" xref="S1.SS2.p1.4.m4.1.2.1.cmml">​</mo><mrow id="S1.SS2.p1.4.m4.1.2.3.2" xref="S1.SS2.p1.4.m4.1.2.cmml"><mo stretchy="false" id="S1.SS2.p1.4.m4.1.2.3.2.1" xref="S1.SS2.p1.4.m4.1.2.cmml">(</mo><mi id="S1.SS2.p1.4.m4.1.1" xref="S1.SS2.p1.4.m4.1.1.cmml">i</mi><mo stretchy="false" id="S1.SS2.p1.4.m4.1.2.3.2.2" xref="S1.SS2.p1.4.m4.1.2.cmml">)</mo></mrow></mrow><annotation-xml encoding="MathML-Content" id="S1.SS2.p1.4.m4.1b"><apply id="S1.SS2.p1.4.m4.1.2.cmml" xref="S1.SS2.p1.4.m4.1.2"><times id="S1.SS2.p1.4.m4.1.2.1.cmml" xref="S1.SS2.p1.4.m4.1.2.1"></times><ci id="S1.SS2.p1.4.m4.1.2.2.cmml" xref="S1.SS2.p1.4.m4.1.2.2">𝑝</ci><ci id="S1.SS2.p1.4.m4.1.1.cmml" xref="S1.SS2.p1.4.m4.1.1">𝑖</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S1.SS2.p1.4.m4.1c">p(i)</annotation></semantics></math> is the precision score, and <math id="S1.SS2.p1.5.m5.1" class="ltx_Math" alttext="r(i)" display="inline"><semantics id="S1.SS2.p1.5.m5.1a"><mrow id="S1.SS2.p1.5.m5.1.2" xref="S1.SS2.p1.5.m5.1.2.cmml"><mi id="S1.SS2.p1.5.m5.1.2.2" xref="S1.SS2.p1.5.m5.1.2.2.cmml">r</mi><mo lspace="0em" rspace="0em" id="S1.SS2.p1.5.m5.1.2.1" xref="S1.SS2.p1.5.m5.1.2.1.cmml">​</mo><mrow id="S1.SS2.p1.5.m5.1.2.3.2" xref="S1.SS2.p1.5.m5.1.2.cmml"><mo stretchy="false" id="S1.SS2.p1.5.m5.1.2.3.2.1" xref="S1.SS2.p1.5.m5.1.2.cmml">(</mo><mi id="S1.SS2.p1.5.m5.1.1" xref="S1.SS2.p1.5.m5.1.1.cmml">i</mi><mo stretchy="false" id="S1.SS2.p1.5.m5.1.2.3.2.2" xref="S1.SS2.p1.5.m5.1.2.cmml">)</mo></mrow></mrow><annotation-xml encoding="MathML-Content" id="S1.SS2.p1.5.m5.1b"><apply id="S1.SS2.p1.5.m5.1.2.cmml" xref="S1.SS2.p1.5.m5.1.2"><times id="S1.SS2.p1.5.m5.1.2.1.cmml" xref="S1.SS2.p1.5.m5.1.2.1"></times><ci id="S1.SS2.p1.5.m5.1.2.2.cmml" xref="S1.SS2.p1.5.m5.1.2.2">𝑟</ci><ci id="S1.SS2.p1.5.m5.1.1.cmml" xref="S1.SS2.p1.5.m5.1.1">𝑖</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S1.SS2.p1.5.m5.1c">r(i)</annotation></semantics></math> is the recall score.</p>
+</div>
+<div id="S1.SS2.p2" class="ltx_para">
+<p id="S1.SS2.p2.1" class="ltx_p">In the following three sections we describe key elements of our work. First we describe data augmentation, followed by descriptions of used models and their assembly. Finally, we describe model training techniques that we tested and used. Our final solution includes both frame level and video level models. Hence, the further description with cover both cases, but not everything is applicable for all models.</p>
+</div>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Data</h2>
+
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>Video Level Feature Extraction</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p id="S2.SS1.p1.2" class="ltx_p">The provided video level data consists of <math id="S2.SS1.p1.1.m1.1" class="ltx_Math" alttext="mean\_rgb" display="inline"><semantics id="S2.SS1.p1.1.m1.1a"><mrow id="S2.SS1.p1.1.m1.1.1" xref="S2.SS1.p1.1.m1.1.1.cmml"><mi id="S2.SS1.p1.1.m1.1.1.2" xref="S2.SS1.p1.1.m1.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.3" xref="S2.SS1.p1.1.m1.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1a" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.4" xref="S2.SS1.p1.1.m1.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1b" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.5" xref="S2.SS1.p1.1.m1.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1c" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p1.1.m1.1.1.6" xref="S2.SS1.p1.1.m1.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1d" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.7" xref="S2.SS1.p1.1.m1.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1e" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.8" xref="S2.SS1.p1.1.m1.1.1.8.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.1.m1.1.1.1f" xref="S2.SS1.p1.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.1.m1.1.1.9" xref="S2.SS1.p1.1.m1.1.1.9.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p1.1.m1.1b"><apply id="S2.SS1.p1.1.m1.1.1.cmml" xref="S2.SS1.p1.1.m1.1.1"><times id="S2.SS1.p1.1.m1.1.1.1.cmml" xref="S2.SS1.p1.1.m1.1.1.1"></times><ci id="S2.SS1.p1.1.m1.1.1.2.cmml" xref="S2.SS1.p1.1.m1.1.1.2">𝑚</ci><ci id="S2.SS1.p1.1.m1.1.1.3.cmml" xref="S2.SS1.p1.1.m1.1.1.3">𝑒</ci><ci id="S2.SS1.p1.1.m1.1.1.4.cmml" xref="S2.SS1.p1.1.m1.1.1.4">𝑎</ci><ci id="S2.SS1.p1.1.m1.1.1.5.cmml" xref="S2.SS1.p1.1.m1.1.1.5">𝑛</ci><ci id="S2.SS1.p1.1.m1.1.1.6.cmml" xref="S2.SS1.p1.1.m1.1.1.6">_</ci><ci id="S2.SS1.p1.1.m1.1.1.7.cmml" xref="S2.SS1.p1.1.m1.1.1.7">𝑟</ci><ci id="S2.SS1.p1.1.m1.1.1.8.cmml" xref="S2.SS1.p1.1.m1.1.1.8">𝑔</ci><ci id="S2.SS1.p1.1.m1.1.1.9.cmml" xref="S2.SS1.p1.1.m1.1.1.9">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p1.1.m1.1c">mean\_rgb</annotation></semantics></math> and <math id="S2.SS1.p1.2.m2.1" class="ltx_Math" alttext="mean\_audio" display="inline"><semantics id="S2.SS1.p1.2.m2.1a"><mrow id="S2.SS1.p1.2.m2.1.1" xref="S2.SS1.p1.2.m2.1.1.cmml"><mi id="S2.SS1.p1.2.m2.1.1.2" xref="S2.SS1.p1.2.m2.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.3" xref="S2.SS1.p1.2.m2.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1a" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.4" xref="S2.SS1.p1.2.m2.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1b" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.5" xref="S2.SS1.p1.2.m2.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1c" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p1.2.m2.1.1.6" xref="S2.SS1.p1.2.m2.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1d" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.7" xref="S2.SS1.p1.2.m2.1.1.7.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1e" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.8" xref="S2.SS1.p1.2.m2.1.1.8.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1f" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.9" xref="S2.SS1.p1.2.m2.1.1.9.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1g" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.10" xref="S2.SS1.p1.2.m2.1.1.10.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p1.2.m2.1.1.1h" xref="S2.SS1.p1.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p1.2.m2.1.1.11" xref="S2.SS1.p1.2.m2.1.1.11.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p1.2.m2.1b"><apply id="S2.SS1.p1.2.m2.1.1.cmml" xref="S2.SS1.p1.2.m2.1.1"><times id="S2.SS1.p1.2.m2.1.1.1.cmml" xref="S2.SS1.p1.2.m2.1.1.1"></times><ci id="S2.SS1.p1.2.m2.1.1.2.cmml" xref="S2.SS1.p1.2.m2.1.1.2">𝑚</ci><ci id="S2.SS1.p1.2.m2.1.1.3.cmml" xref="S2.SS1.p1.2.m2.1.1.3">𝑒</ci><ci id="S2.SS1.p1.2.m2.1.1.4.cmml" xref="S2.SS1.p1.2.m2.1.1.4">𝑎</ci><ci id="S2.SS1.p1.2.m2.1.1.5.cmml" xref="S2.SS1.p1.2.m2.1.1.5">𝑛</ci><ci id="S2.SS1.p1.2.m2.1.1.6.cmml" xref="S2.SS1.p1.2.m2.1.1.6">_</ci><ci id="S2.SS1.p1.2.m2.1.1.7.cmml" xref="S2.SS1.p1.2.m2.1.1.7">𝑎</ci><ci id="S2.SS1.p1.2.m2.1.1.8.cmml" xref="S2.SS1.p1.2.m2.1.1.8">𝑢</ci><ci id="S2.SS1.p1.2.m2.1.1.9.cmml" xref="S2.SS1.p1.2.m2.1.1.9">𝑑</ci><ci id="S2.SS1.p1.2.m2.1.1.10.cmml" xref="S2.SS1.p1.2.m2.1.1.10">𝑖</ci><ci id="S2.SS1.p1.2.m2.1.1.11.cmml" xref="S2.SS1.p1.2.m2.1.1.11">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p1.2.m2.1c">mean\_audio</annotation></semantics></math>. Google Research team reported better model performance by adding second moments and top 5 ordinal statistics of each feature dimension <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>.</p>
+</div>
+<div id="S2.SS1.p2" class="ltx_para">
+<p id="S2.SS1.p2.15" class="ltx_p">Our feature engineering efforts started with similar extensions:
+we first generated first three moments of <math id="S2.SS1.p2.1.m1.1" class="ltx_Math" alttext="rgb" display="inline"><semantics id="S2.SS1.p2.1.m1.1a"><mrow id="S2.SS1.p2.1.m1.1.1" xref="S2.SS1.p2.1.m1.1.1.cmml"><mi id="S2.SS1.p2.1.m1.1.1.2" xref="S2.SS1.p2.1.m1.1.1.2.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.1.m1.1.1.1" xref="S2.SS1.p2.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.1.m1.1.1.3" xref="S2.SS1.p2.1.m1.1.1.3.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.1.m1.1.1.1a" xref="S2.SS1.p2.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.1.m1.1.1.4" xref="S2.SS1.p2.1.m1.1.1.4.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.1.m1.1b"><apply id="S2.SS1.p2.1.m1.1.1.cmml" xref="S2.SS1.p2.1.m1.1.1"><times id="S2.SS1.p2.1.m1.1.1.1.cmml" xref="S2.SS1.p2.1.m1.1.1.1"></times><ci id="S2.SS1.p2.1.m1.1.1.2.cmml" xref="S2.SS1.p2.1.m1.1.1.2">𝑟</ci><ci id="S2.SS1.p2.1.m1.1.1.3.cmml" xref="S2.SS1.p2.1.m1.1.1.3">𝑔</ci><ci id="S2.SS1.p2.1.m1.1.1.4.cmml" xref="S2.SS1.p2.1.m1.1.1.4">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.1.m1.1c">rgb</annotation></semantics></math> and <math id="S2.SS1.p2.2.m2.1" class="ltx_Math" alttext="audio" display="inline"><semantics id="S2.SS1.p2.2.m2.1a"><mrow id="S2.SS1.p2.2.m2.1.1" xref="S2.SS1.p2.2.m2.1.1.cmml"><mi id="S2.SS1.p2.2.m2.1.1.2" xref="S2.SS1.p2.2.m2.1.1.2.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.2.m2.1.1.1" xref="S2.SS1.p2.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.2.m2.1.1.3" xref="S2.SS1.p2.2.m2.1.1.3.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.2.m2.1.1.1a" xref="S2.SS1.p2.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.2.m2.1.1.4" xref="S2.SS1.p2.2.m2.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.2.m2.1.1.1b" xref="S2.SS1.p2.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.2.m2.1.1.5" xref="S2.SS1.p2.2.m2.1.1.5.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.2.m2.1.1.1c" xref="S2.SS1.p2.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.2.m2.1.1.6" xref="S2.SS1.p2.2.m2.1.1.6.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.2.m2.1b"><apply id="S2.SS1.p2.2.m2.1.1.cmml" xref="S2.SS1.p2.2.m2.1.1"><times id="S2.SS1.p2.2.m2.1.1.1.cmml" xref="S2.SS1.p2.2.m2.1.1.1"></times><ci id="S2.SS1.p2.2.m2.1.1.2.cmml" xref="S2.SS1.p2.2.m2.1.1.2">𝑎</ci><ci id="S2.SS1.p2.2.m2.1.1.3.cmml" xref="S2.SS1.p2.2.m2.1.1.3">𝑢</ci><ci id="S2.SS1.p2.2.m2.1.1.4.cmml" xref="S2.SS1.p2.2.m2.1.1.4">𝑑</ci><ci id="S2.SS1.p2.2.m2.1.1.5.cmml" xref="S2.SS1.p2.2.m2.1.1.5">𝑖</ci><ci id="S2.SS1.p2.2.m2.1.1.6.cmml" xref="S2.SS1.p2.2.m2.1.1.6">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.2.m2.1c">audio</annotation></semantics></math> features from the frame level data. We named them <math id="S2.SS1.p2.3.m3.1" class="ltx_Math" alttext="mean\_rgb" display="inline"><semantics id="S2.SS1.p2.3.m3.1a"><mrow id="S2.SS1.p2.3.m3.1.1" xref="S2.SS1.p2.3.m3.1.1.cmml"><mi id="S2.SS1.p2.3.m3.1.1.2" xref="S2.SS1.p2.3.m3.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.3" xref="S2.SS1.p2.3.m3.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1a" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.4" xref="S2.SS1.p2.3.m3.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1b" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.5" xref="S2.SS1.p2.3.m3.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1c" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.3.m3.1.1.6" xref="S2.SS1.p2.3.m3.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1d" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.7" xref="S2.SS1.p2.3.m3.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1e" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.8" xref="S2.SS1.p2.3.m3.1.1.8.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.3.m3.1.1.1f" xref="S2.SS1.p2.3.m3.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.3.m3.1.1.9" xref="S2.SS1.p2.3.m3.1.1.9.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.3.m3.1b"><apply id="S2.SS1.p2.3.m3.1.1.cmml" xref="S2.SS1.p2.3.m3.1.1"><times id="S2.SS1.p2.3.m3.1.1.1.cmml" xref="S2.SS1.p2.3.m3.1.1.1"></times><ci id="S2.SS1.p2.3.m3.1.1.2.cmml" xref="S2.SS1.p2.3.m3.1.1.2">𝑚</ci><ci id="S2.SS1.p2.3.m3.1.1.3.cmml" xref="S2.SS1.p2.3.m3.1.1.3">𝑒</ci><ci id="S2.SS1.p2.3.m3.1.1.4.cmml" xref="S2.SS1.p2.3.m3.1.1.4">𝑎</ci><ci id="S2.SS1.p2.3.m3.1.1.5.cmml" xref="S2.SS1.p2.3.m3.1.1.5">𝑛</ci><ci id="S2.SS1.p2.3.m3.1.1.6.cmml" xref="S2.SS1.p2.3.m3.1.1.6">_</ci><ci id="S2.SS1.p2.3.m3.1.1.7.cmml" xref="S2.SS1.p2.3.m3.1.1.7">𝑟</ci><ci id="S2.SS1.p2.3.m3.1.1.8.cmml" xref="S2.SS1.p2.3.m3.1.1.8">𝑔</ci><ci id="S2.SS1.p2.3.m3.1.1.9.cmml" xref="S2.SS1.p2.3.m3.1.1.9">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.3.m3.1c">mean\_rgb</annotation></semantics></math>, <math id="S2.SS1.p2.4.m4.1" class="ltx_Math" alttext="mean\_audio" display="inline"><semantics id="S2.SS1.p2.4.m4.1a"><mrow id="S2.SS1.p2.4.m4.1.1" xref="S2.SS1.p2.4.m4.1.1.cmml"><mi id="S2.SS1.p2.4.m4.1.1.2" xref="S2.SS1.p2.4.m4.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.3" xref="S2.SS1.p2.4.m4.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1a" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.4" xref="S2.SS1.p2.4.m4.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1b" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.5" xref="S2.SS1.p2.4.m4.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1c" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.4.m4.1.1.6" xref="S2.SS1.p2.4.m4.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1d" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.7" xref="S2.SS1.p2.4.m4.1.1.7.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1e" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.8" xref="S2.SS1.p2.4.m4.1.1.8.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1f" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.9" xref="S2.SS1.p2.4.m4.1.1.9.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1g" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.10" xref="S2.SS1.p2.4.m4.1.1.10.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.4.m4.1.1.1h" xref="S2.SS1.p2.4.m4.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.4.m4.1.1.11" xref="S2.SS1.p2.4.m4.1.1.11.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.4.m4.1b"><apply id="S2.SS1.p2.4.m4.1.1.cmml" xref="S2.SS1.p2.4.m4.1.1"><times id="S2.SS1.p2.4.m4.1.1.1.cmml" xref="S2.SS1.p2.4.m4.1.1.1"></times><ci id="S2.SS1.p2.4.m4.1.1.2.cmml" xref="S2.SS1.p2.4.m4.1.1.2">𝑚</ci><ci id="S2.SS1.p2.4.m4.1.1.3.cmml" xref="S2.SS1.p2.4.m4.1.1.3">𝑒</ci><ci id="S2.SS1.p2.4.m4.1.1.4.cmml" xref="S2.SS1.p2.4.m4.1.1.4">𝑎</ci><ci id="S2.SS1.p2.4.m4.1.1.5.cmml" xref="S2.SS1.p2.4.m4.1.1.5">𝑛</ci><ci id="S2.SS1.p2.4.m4.1.1.6.cmml" xref="S2.SS1.p2.4.m4.1.1.6">_</ci><ci id="S2.SS1.p2.4.m4.1.1.7.cmml" xref="S2.SS1.p2.4.m4.1.1.7">𝑎</ci><ci id="S2.SS1.p2.4.m4.1.1.8.cmml" xref="S2.SS1.p2.4.m4.1.1.8">𝑢</ci><ci id="S2.SS1.p2.4.m4.1.1.9.cmml" xref="S2.SS1.p2.4.m4.1.1.9">𝑑</ci><ci id="S2.SS1.p2.4.m4.1.1.10.cmml" xref="S2.SS1.p2.4.m4.1.1.10">𝑖</ci><ci id="S2.SS1.p2.4.m4.1.1.11.cmml" xref="S2.SS1.p2.4.m4.1.1.11">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.4.m4.1c">mean\_audio</annotation></semantics></math>, <math id="S2.SS1.p2.5.m5.1" class="ltx_Math" alttext="std\_rgb" display="inline"><semantics id="S2.SS1.p2.5.m5.1a"><mrow id="S2.SS1.p2.5.m5.1.1" xref="S2.SS1.p2.5.m5.1.1.cmml"><mi id="S2.SS1.p2.5.m5.1.1.2" xref="S2.SS1.p2.5.m5.1.1.2.cmml">s</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.5.m5.1.1.3" xref="S2.SS1.p2.5.m5.1.1.3.cmml">t</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1a" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.5.m5.1.1.4" xref="S2.SS1.p2.5.m5.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1b" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.5.m5.1.1.5" xref="S2.SS1.p2.5.m5.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1c" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.5.m5.1.1.6" xref="S2.SS1.p2.5.m5.1.1.6.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1d" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.5.m5.1.1.7" xref="S2.SS1.p2.5.m5.1.1.7.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.5.m5.1.1.1e" xref="S2.SS1.p2.5.m5.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.5.m5.1.1.8" xref="S2.SS1.p2.5.m5.1.1.8.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.5.m5.1b"><apply id="S2.SS1.p2.5.m5.1.1.cmml" xref="S2.SS1.p2.5.m5.1.1"><times id="S2.SS1.p2.5.m5.1.1.1.cmml" xref="S2.SS1.p2.5.m5.1.1.1"></times><ci id="S2.SS1.p2.5.m5.1.1.2.cmml" xref="S2.SS1.p2.5.m5.1.1.2">𝑠</ci><ci id="S2.SS1.p2.5.m5.1.1.3.cmml" xref="S2.SS1.p2.5.m5.1.1.3">𝑡</ci><ci id="S2.SS1.p2.5.m5.1.1.4.cmml" xref="S2.SS1.p2.5.m5.1.1.4">𝑑</ci><ci id="S2.SS1.p2.5.m5.1.1.5.cmml" xref="S2.SS1.p2.5.m5.1.1.5">_</ci><ci id="S2.SS1.p2.5.m5.1.1.6.cmml" xref="S2.SS1.p2.5.m5.1.1.6">𝑟</ci><ci id="S2.SS1.p2.5.m5.1.1.7.cmml" xref="S2.SS1.p2.5.m5.1.1.7">𝑔</ci><ci id="S2.SS1.p2.5.m5.1.1.8.cmml" xref="S2.SS1.p2.5.m5.1.1.8">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.5.m5.1c">std\_rgb</annotation></semantics></math>, <math id="S2.SS1.p2.6.m6.1" class="ltx_Math" alttext="std\_audio" display="inline"><semantics id="S2.SS1.p2.6.m6.1a"><mrow id="S2.SS1.p2.6.m6.1.1" xref="S2.SS1.p2.6.m6.1.1.cmml"><mi id="S2.SS1.p2.6.m6.1.1.2" xref="S2.SS1.p2.6.m6.1.1.2.cmml">s</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.3" xref="S2.SS1.p2.6.m6.1.1.3.cmml">t</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1a" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.4" xref="S2.SS1.p2.6.m6.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1b" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.6.m6.1.1.5" xref="S2.SS1.p2.6.m6.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1c" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.6" xref="S2.SS1.p2.6.m6.1.1.6.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1d" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.7" xref="S2.SS1.p2.6.m6.1.1.7.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1e" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.8" xref="S2.SS1.p2.6.m6.1.1.8.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1f" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.9" xref="S2.SS1.p2.6.m6.1.1.9.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.6.m6.1.1.1g" xref="S2.SS1.p2.6.m6.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.6.m6.1.1.10" xref="S2.SS1.p2.6.m6.1.1.10.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.6.m6.1b"><apply id="S2.SS1.p2.6.m6.1.1.cmml" xref="S2.SS1.p2.6.m6.1.1"><times id="S2.SS1.p2.6.m6.1.1.1.cmml" xref="S2.SS1.p2.6.m6.1.1.1"></times><ci id="S2.SS1.p2.6.m6.1.1.2.cmml" xref="S2.SS1.p2.6.m6.1.1.2">𝑠</ci><ci id="S2.SS1.p2.6.m6.1.1.3.cmml" xref="S2.SS1.p2.6.m6.1.1.3">𝑡</ci><ci id="S2.SS1.p2.6.m6.1.1.4.cmml" xref="S2.SS1.p2.6.m6.1.1.4">𝑑</ci><ci id="S2.SS1.p2.6.m6.1.1.5.cmml" xref="S2.SS1.p2.6.m6.1.1.5">_</ci><ci id="S2.SS1.p2.6.m6.1.1.6.cmml" xref="S2.SS1.p2.6.m6.1.1.6">𝑎</ci><ci id="S2.SS1.p2.6.m6.1.1.7.cmml" xref="S2.SS1.p2.6.m6.1.1.7">𝑢</ci><ci id="S2.SS1.p2.6.m6.1.1.8.cmml" xref="S2.SS1.p2.6.m6.1.1.8">𝑑</ci><ci id="S2.SS1.p2.6.m6.1.1.9.cmml" xref="S2.SS1.p2.6.m6.1.1.9">𝑖</ci><ci id="S2.SS1.p2.6.m6.1.1.10.cmml" xref="S2.SS1.p2.6.m6.1.1.10">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.6.m6.1c">std\_audio</annotation></semantics></math>, <math id="S2.SS1.p2.7.m7.1" class="ltx_Math" alttext="x3\_rgb" display="inline"><semantics id="S2.SS1.p2.7.m7.1a"><mrow id="S2.SS1.p2.7.m7.1.1" xref="S2.SS1.p2.7.m7.1.1.cmml"><mi id="S2.SS1.p2.7.m7.1.1.2" xref="S2.SS1.p2.7.m7.1.1.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.7.m7.1.1.1" xref="S2.SS1.p2.7.m7.1.1.1.cmml">​</mo><mn id="S2.SS1.p2.7.m7.1.1.3" xref="S2.SS1.p2.7.m7.1.1.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S2.SS1.p2.7.m7.1.1.1a" xref="S2.SS1.p2.7.m7.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.7.m7.1.1.4" xref="S2.SS1.p2.7.m7.1.1.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.7.m7.1.1.1b" xref="S2.SS1.p2.7.m7.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.7.m7.1.1.5" xref="S2.SS1.p2.7.m7.1.1.5.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.7.m7.1.1.1c" xref="S2.SS1.p2.7.m7.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.7.m7.1.1.6" xref="S2.SS1.p2.7.m7.1.1.6.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.7.m7.1.1.1d" xref="S2.SS1.p2.7.m7.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.7.m7.1.1.7" xref="S2.SS1.p2.7.m7.1.1.7.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.7.m7.1b"><apply id="S2.SS1.p2.7.m7.1.1.cmml" xref="S2.SS1.p2.7.m7.1.1"><times id="S2.SS1.p2.7.m7.1.1.1.cmml" xref="S2.SS1.p2.7.m7.1.1.1"></times><ci id="S2.SS1.p2.7.m7.1.1.2.cmml" xref="S2.SS1.p2.7.m7.1.1.2">𝑥</ci><cn type="integer" id="S2.SS1.p2.7.m7.1.1.3.cmml" xref="S2.SS1.p2.7.m7.1.1.3">3</cn><ci id="S2.SS1.p2.7.m7.1.1.4.cmml" xref="S2.SS1.p2.7.m7.1.1.4">_</ci><ci id="S2.SS1.p2.7.m7.1.1.5.cmml" xref="S2.SS1.p2.7.m7.1.1.5">𝑟</ci><ci id="S2.SS1.p2.7.m7.1.1.6.cmml" xref="S2.SS1.p2.7.m7.1.1.6">𝑔</ci><ci id="S2.SS1.p2.7.m7.1.1.7.cmml" xref="S2.SS1.p2.7.m7.1.1.7">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.7.m7.1c">x3\_rgb</annotation></semantics></math> and <math id="S2.SS1.p2.8.m8.1" class="ltx_Math" alttext="x3\_audio" display="inline"><semantics id="S2.SS1.p2.8.m8.1a"><mrow id="S2.SS1.p2.8.m8.1.1" xref="S2.SS1.p2.8.m8.1.1.cmml"><mi id="S2.SS1.p2.8.m8.1.1.2" xref="S2.SS1.p2.8.m8.1.1.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mn id="S2.SS1.p2.8.m8.1.1.3" xref="S2.SS1.p2.8.m8.1.1.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1a" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.8.m8.1.1.4" xref="S2.SS1.p2.8.m8.1.1.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1b" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.8.m8.1.1.5" xref="S2.SS1.p2.8.m8.1.1.5.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1c" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.8.m8.1.1.6" xref="S2.SS1.p2.8.m8.1.1.6.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1d" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.8.m8.1.1.7" xref="S2.SS1.p2.8.m8.1.1.7.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1e" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.8.m8.1.1.8" xref="S2.SS1.p2.8.m8.1.1.8.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.8.m8.1.1.1f" xref="S2.SS1.p2.8.m8.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.8.m8.1.1.9" xref="S2.SS1.p2.8.m8.1.1.9.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.8.m8.1b"><apply id="S2.SS1.p2.8.m8.1.1.cmml" xref="S2.SS1.p2.8.m8.1.1"><times id="S2.SS1.p2.8.m8.1.1.1.cmml" xref="S2.SS1.p2.8.m8.1.1.1"></times><ci id="S2.SS1.p2.8.m8.1.1.2.cmml" xref="S2.SS1.p2.8.m8.1.1.2">𝑥</ci><cn type="integer" id="S2.SS1.p2.8.m8.1.1.3.cmml" xref="S2.SS1.p2.8.m8.1.1.3">3</cn><ci id="S2.SS1.p2.8.m8.1.1.4.cmml" xref="S2.SS1.p2.8.m8.1.1.4">_</ci><ci id="S2.SS1.p2.8.m8.1.1.5.cmml" xref="S2.SS1.p2.8.m8.1.1.5">𝑎</ci><ci id="S2.SS1.p2.8.m8.1.1.6.cmml" xref="S2.SS1.p2.8.m8.1.1.6">𝑢</ci><ci id="S2.SS1.p2.8.m8.1.1.7.cmml" xref="S2.SS1.p2.8.m8.1.1.7">𝑑</ci><ci id="S2.SS1.p2.8.m8.1.1.8.cmml" xref="S2.SS1.p2.8.m8.1.1.8">𝑖</ci><ci id="S2.SS1.p2.8.m8.1.1.9.cmml" xref="S2.SS1.p2.8.m8.1.1.9">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.8.m8.1c">x3\_audio</annotation></semantics></math>. Than we also used the number of frames of each video, <math id="S2.SS1.p2.9.m9.1" class="ltx_Math" alttext="num\_frames" display="inline"><semantics id="S2.SS1.p2.9.m9.1a"><mrow id="S2.SS1.p2.9.m9.1.1" xref="S2.SS1.p2.9.m9.1.1.cmml"><mi id="S2.SS1.p2.9.m9.1.1.2" xref="S2.SS1.p2.9.m9.1.1.2.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.3" xref="S2.SS1.p2.9.m9.1.1.3.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1a" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.4" xref="S2.SS1.p2.9.m9.1.1.4.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1b" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.9.m9.1.1.5" xref="S2.SS1.p2.9.m9.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1c" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.6" xref="S2.SS1.p2.9.m9.1.1.6.cmml">f</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1d" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.7" xref="S2.SS1.p2.9.m9.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1e" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.8" xref="S2.SS1.p2.9.m9.1.1.8.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1f" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.9" xref="S2.SS1.p2.9.m9.1.1.9.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1g" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.10" xref="S2.SS1.p2.9.m9.1.1.10.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.9.m9.1.1.1h" xref="S2.SS1.p2.9.m9.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.9.m9.1.1.11" xref="S2.SS1.p2.9.m9.1.1.11.cmml">s</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.9.m9.1b"><apply id="S2.SS1.p2.9.m9.1.1.cmml" xref="S2.SS1.p2.9.m9.1.1"><times id="S2.SS1.p2.9.m9.1.1.1.cmml" xref="S2.SS1.p2.9.m9.1.1.1"></times><ci id="S2.SS1.p2.9.m9.1.1.2.cmml" xref="S2.SS1.p2.9.m9.1.1.2">𝑛</ci><ci id="S2.SS1.p2.9.m9.1.1.3.cmml" xref="S2.SS1.p2.9.m9.1.1.3">𝑢</ci><ci id="S2.SS1.p2.9.m9.1.1.4.cmml" xref="S2.SS1.p2.9.m9.1.1.4">𝑚</ci><ci id="S2.SS1.p2.9.m9.1.1.5.cmml" xref="S2.SS1.p2.9.m9.1.1.5">_</ci><ci id="S2.SS1.p2.9.m9.1.1.6.cmml" xref="S2.SS1.p2.9.m9.1.1.6">𝑓</ci><ci id="S2.SS1.p2.9.m9.1.1.7.cmml" xref="S2.SS1.p2.9.m9.1.1.7">𝑟</ci><ci id="S2.SS1.p2.9.m9.1.1.8.cmml" xref="S2.SS1.p2.9.m9.1.1.8">𝑎</ci><ci id="S2.SS1.p2.9.m9.1.1.9.cmml" xref="S2.SS1.p2.9.m9.1.1.9">𝑚</ci><ci id="S2.SS1.p2.9.m9.1.1.10.cmml" xref="S2.SS1.p2.9.m9.1.1.10">𝑒</ci><ci id="S2.SS1.p2.9.m9.1.1.11.cmml" xref="S2.SS1.p2.9.m9.1.1.11">𝑠</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.9.m9.1c">num\_frames</annotation></semantics></math>, and the second moments of <math id="S2.SS1.p2.10.m10.1" class="ltx_Math" alttext="rgb" display="inline"><semantics id="S2.SS1.p2.10.m10.1a"><mrow id="S2.SS1.p2.10.m10.1.1" xref="S2.SS1.p2.10.m10.1.1.cmml"><mi id="S2.SS1.p2.10.m10.1.1.2" xref="S2.SS1.p2.10.m10.1.1.2.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.10.m10.1.1.1" xref="S2.SS1.p2.10.m10.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.10.m10.1.1.3" xref="S2.SS1.p2.10.m10.1.1.3.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.10.m10.1.1.1a" xref="S2.SS1.p2.10.m10.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.10.m10.1.1.4" xref="S2.SS1.p2.10.m10.1.1.4.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.10.m10.1b"><apply id="S2.SS1.p2.10.m10.1.1.cmml" xref="S2.SS1.p2.10.m10.1.1"><times id="S2.SS1.p2.10.m10.1.1.1.cmml" xref="S2.SS1.p2.10.m10.1.1.1"></times><ci id="S2.SS1.p2.10.m10.1.1.2.cmml" xref="S2.SS1.p2.10.m10.1.1.2">𝑟</ci><ci id="S2.SS1.p2.10.m10.1.1.3.cmml" xref="S2.SS1.p2.10.m10.1.1.3">𝑔</ci><ci id="S2.SS1.p2.10.m10.1.1.4.cmml" xref="S2.SS1.p2.10.m10.1.1.4">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.10.m10.1c">rgb</annotation></semantics></math> and <math id="S2.SS1.p2.11.m11.1" class="ltx_Math" alttext="audio" display="inline"><semantics id="S2.SS1.p2.11.m11.1a"><mrow id="S2.SS1.p2.11.m11.1.1" xref="S2.SS1.p2.11.m11.1.1.cmml"><mi id="S2.SS1.p2.11.m11.1.1.2" xref="S2.SS1.p2.11.m11.1.1.2.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.11.m11.1.1.1" xref="S2.SS1.p2.11.m11.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.11.m11.1.1.3" xref="S2.SS1.p2.11.m11.1.1.3.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.11.m11.1.1.1a" xref="S2.SS1.p2.11.m11.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.11.m11.1.1.4" xref="S2.SS1.p2.11.m11.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.11.m11.1.1.1b" xref="S2.SS1.p2.11.m11.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.11.m11.1.1.5" xref="S2.SS1.p2.11.m11.1.1.5.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.11.m11.1.1.1c" xref="S2.SS1.p2.11.m11.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.11.m11.1.1.6" xref="S2.SS1.p2.11.m11.1.1.6.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.11.m11.1b"><apply id="S2.SS1.p2.11.m11.1.1.cmml" xref="S2.SS1.p2.11.m11.1.1"><times id="S2.SS1.p2.11.m11.1.1.1.cmml" xref="S2.SS1.p2.11.m11.1.1.1"></times><ci id="S2.SS1.p2.11.m11.1.1.2.cmml" xref="S2.SS1.p2.11.m11.1.1.2">𝑎</ci><ci id="S2.SS1.p2.11.m11.1.1.3.cmml" xref="S2.SS1.p2.11.m11.1.1.3">𝑢</ci><ci id="S2.SS1.p2.11.m11.1.1.4.cmml" xref="S2.SS1.p2.11.m11.1.1.4">𝑑</ci><ci id="S2.SS1.p2.11.m11.1.1.5.cmml" xref="S2.SS1.p2.11.m11.1.1.5">𝑖</ci><ci id="S2.SS1.p2.11.m11.1.1.6.cmml" xref="S2.SS1.p2.11.m11.1.1.6">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.11.m11.1c">audio</annotation></semantics></math> of the entire frame level video data. All these features were used in some combination in our video level models, and all of them contributed to the model performance. Having noticed high correlation between [<math id="S2.SS1.p2.12.m12.1" class="ltx_Math" alttext="mean\_rgb" display="inline"><semantics id="S2.SS1.p2.12.m12.1a"><mrow id="S2.SS1.p2.12.m12.1.1" xref="S2.SS1.p2.12.m12.1.1.cmml"><mi id="S2.SS1.p2.12.m12.1.1.2" xref="S2.SS1.p2.12.m12.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.3" xref="S2.SS1.p2.12.m12.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1a" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.4" xref="S2.SS1.p2.12.m12.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1b" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.5" xref="S2.SS1.p2.12.m12.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1c" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.12.m12.1.1.6" xref="S2.SS1.p2.12.m12.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1d" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.7" xref="S2.SS1.p2.12.m12.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1e" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.8" xref="S2.SS1.p2.12.m12.1.1.8.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.12.m12.1.1.1f" xref="S2.SS1.p2.12.m12.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.12.m12.1.1.9" xref="S2.SS1.p2.12.m12.1.1.9.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.12.m12.1b"><apply id="S2.SS1.p2.12.m12.1.1.cmml" xref="S2.SS1.p2.12.m12.1.1"><times id="S2.SS1.p2.12.m12.1.1.1.cmml" xref="S2.SS1.p2.12.m12.1.1.1"></times><ci id="S2.SS1.p2.12.m12.1.1.2.cmml" xref="S2.SS1.p2.12.m12.1.1.2">𝑚</ci><ci id="S2.SS1.p2.12.m12.1.1.3.cmml" xref="S2.SS1.p2.12.m12.1.1.3">𝑒</ci><ci id="S2.SS1.p2.12.m12.1.1.4.cmml" xref="S2.SS1.p2.12.m12.1.1.4">𝑎</ci><ci id="S2.SS1.p2.12.m12.1.1.5.cmml" xref="S2.SS1.p2.12.m12.1.1.5">𝑛</ci><ci id="S2.SS1.p2.12.m12.1.1.6.cmml" xref="S2.SS1.p2.12.m12.1.1.6">_</ci><ci id="S2.SS1.p2.12.m12.1.1.7.cmml" xref="S2.SS1.p2.12.m12.1.1.7">𝑟</ci><ci id="S2.SS1.p2.12.m12.1.1.8.cmml" xref="S2.SS1.p2.12.m12.1.1.8">𝑔</ci><ci id="S2.SS1.p2.12.m12.1.1.9.cmml" xref="S2.SS1.p2.12.m12.1.1.9">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.12.m12.1c">mean\_rgb</annotation></semantics></math>, <math id="S2.SS1.p2.13.m13.1" class="ltx_Math" alttext="mean\_audio" display="inline"><semantics id="S2.SS1.p2.13.m13.1a"><mrow id="S2.SS1.p2.13.m13.1.1" xref="S2.SS1.p2.13.m13.1.1.cmml"><mi id="S2.SS1.p2.13.m13.1.1.2" xref="S2.SS1.p2.13.m13.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.3" xref="S2.SS1.p2.13.m13.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1a" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.4" xref="S2.SS1.p2.13.m13.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1b" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.5" xref="S2.SS1.p2.13.m13.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1c" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.13.m13.1.1.6" xref="S2.SS1.p2.13.m13.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1d" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.7" xref="S2.SS1.p2.13.m13.1.1.7.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1e" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.8" xref="S2.SS1.p2.13.m13.1.1.8.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1f" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.9" xref="S2.SS1.p2.13.m13.1.1.9.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1g" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.10" xref="S2.SS1.p2.13.m13.1.1.10.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.13.m13.1.1.1h" xref="S2.SS1.p2.13.m13.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.13.m13.1.1.11" xref="S2.SS1.p2.13.m13.1.1.11.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.13.m13.1b"><apply id="S2.SS1.p2.13.m13.1.1.cmml" xref="S2.SS1.p2.13.m13.1.1"><times id="S2.SS1.p2.13.m13.1.1.1.cmml" xref="S2.SS1.p2.13.m13.1.1.1"></times><ci id="S2.SS1.p2.13.m13.1.1.2.cmml" xref="S2.SS1.p2.13.m13.1.1.2">𝑚</ci><ci id="S2.SS1.p2.13.m13.1.1.3.cmml" xref="S2.SS1.p2.13.m13.1.1.3">𝑒</ci><ci id="S2.SS1.p2.13.m13.1.1.4.cmml" xref="S2.SS1.p2.13.m13.1.1.4">𝑎</ci><ci id="S2.SS1.p2.13.m13.1.1.5.cmml" xref="S2.SS1.p2.13.m13.1.1.5">𝑛</ci><ci id="S2.SS1.p2.13.m13.1.1.6.cmml" xref="S2.SS1.p2.13.m13.1.1.6">_</ci><ci id="S2.SS1.p2.13.m13.1.1.7.cmml" xref="S2.SS1.p2.13.m13.1.1.7">𝑎</ci><ci id="S2.SS1.p2.13.m13.1.1.8.cmml" xref="S2.SS1.p2.13.m13.1.1.8">𝑢</ci><ci id="S2.SS1.p2.13.m13.1.1.9.cmml" xref="S2.SS1.p2.13.m13.1.1.9">𝑑</ci><ci id="S2.SS1.p2.13.m13.1.1.10.cmml" xref="S2.SS1.p2.13.m13.1.1.10">𝑖</ci><ci id="S2.SS1.p2.13.m13.1.1.11.cmml" xref="S2.SS1.p2.13.m13.1.1.11">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.13.m13.1c">mean\_audio</annotation></semantics></math>] and [<math id="S2.SS1.p2.14.m14.1" class="ltx_Math" alttext="x3\_rgb" display="inline"><semantics id="S2.SS1.p2.14.m14.1a"><mrow id="S2.SS1.p2.14.m14.1.1" xref="S2.SS1.p2.14.m14.1.1.cmml"><mi id="S2.SS1.p2.14.m14.1.1.2" xref="S2.SS1.p2.14.m14.1.1.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.14.m14.1.1.1" xref="S2.SS1.p2.14.m14.1.1.1.cmml">​</mo><mn id="S2.SS1.p2.14.m14.1.1.3" xref="S2.SS1.p2.14.m14.1.1.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S2.SS1.p2.14.m14.1.1.1a" xref="S2.SS1.p2.14.m14.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.14.m14.1.1.4" xref="S2.SS1.p2.14.m14.1.1.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.14.m14.1.1.1b" xref="S2.SS1.p2.14.m14.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.14.m14.1.1.5" xref="S2.SS1.p2.14.m14.1.1.5.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.14.m14.1.1.1c" xref="S2.SS1.p2.14.m14.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.14.m14.1.1.6" xref="S2.SS1.p2.14.m14.1.1.6.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.14.m14.1.1.1d" xref="S2.SS1.p2.14.m14.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.14.m14.1.1.7" xref="S2.SS1.p2.14.m14.1.1.7.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.14.m14.1b"><apply id="S2.SS1.p2.14.m14.1.1.cmml" xref="S2.SS1.p2.14.m14.1.1"><times id="S2.SS1.p2.14.m14.1.1.1.cmml" xref="S2.SS1.p2.14.m14.1.1.1"></times><ci id="S2.SS1.p2.14.m14.1.1.2.cmml" xref="S2.SS1.p2.14.m14.1.1.2">𝑥</ci><cn type="integer" id="S2.SS1.p2.14.m14.1.1.3.cmml" xref="S2.SS1.p2.14.m14.1.1.3">3</cn><ci id="S2.SS1.p2.14.m14.1.1.4.cmml" xref="S2.SS1.p2.14.m14.1.1.4">_</ci><ci id="S2.SS1.p2.14.m14.1.1.5.cmml" xref="S2.SS1.p2.14.m14.1.1.5">𝑟</ci><ci id="S2.SS1.p2.14.m14.1.1.6.cmml" xref="S2.SS1.p2.14.m14.1.1.6">𝑔</ci><ci id="S2.SS1.p2.14.m14.1.1.7.cmml" xref="S2.SS1.p2.14.m14.1.1.7">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.14.m14.1c">x3\_rgb</annotation></semantics></math>, <math id="S2.SS1.p2.15.m15.1" class="ltx_Math" alttext="x3\_audio" display="inline"><semantics id="S2.SS1.p2.15.m15.1a"><mrow id="S2.SS1.p2.15.m15.1.1" xref="S2.SS1.p2.15.m15.1.1.cmml"><mi id="S2.SS1.p2.15.m15.1.1.2" xref="S2.SS1.p2.15.m15.1.1.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mn id="S2.SS1.p2.15.m15.1.1.3" xref="S2.SS1.p2.15.m15.1.1.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1a" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p2.15.m15.1.1.4" xref="S2.SS1.p2.15.m15.1.1.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1b" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.15.m15.1.1.5" xref="S2.SS1.p2.15.m15.1.1.5.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1c" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.15.m15.1.1.6" xref="S2.SS1.p2.15.m15.1.1.6.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1d" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.15.m15.1.1.7" xref="S2.SS1.p2.15.m15.1.1.7.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1e" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.15.m15.1.1.8" xref="S2.SS1.p2.15.m15.1.1.8.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p2.15.m15.1.1.1f" xref="S2.SS1.p2.15.m15.1.1.1.cmml">​</mo><mi id="S2.SS1.p2.15.m15.1.1.9" xref="S2.SS1.p2.15.m15.1.1.9.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p2.15.m15.1b"><apply id="S2.SS1.p2.15.m15.1.1.cmml" xref="S2.SS1.p2.15.m15.1.1"><times id="S2.SS1.p2.15.m15.1.1.1.cmml" xref="S2.SS1.p2.15.m15.1.1.1"></times><ci id="S2.SS1.p2.15.m15.1.1.2.cmml" xref="S2.SS1.p2.15.m15.1.1.2">𝑥</ci><cn type="integer" id="S2.SS1.p2.15.m15.1.1.3.cmml" xref="S2.SS1.p2.15.m15.1.1.3">3</cn><ci id="S2.SS1.p2.15.m15.1.1.4.cmml" xref="S2.SS1.p2.15.m15.1.1.4">_</ci><ci id="S2.SS1.p2.15.m15.1.1.5.cmml" xref="S2.SS1.p2.15.m15.1.1.5">𝑎</ci><ci id="S2.SS1.p2.15.m15.1.1.6.cmml" xref="S2.SS1.p2.15.m15.1.1.6">𝑢</ci><ci id="S2.SS1.p2.15.m15.1.1.7.cmml" xref="S2.SS1.p2.15.m15.1.1.7">𝑑</ci><ci id="S2.SS1.p2.15.m15.1.1.8.cmml" xref="S2.SS1.p2.15.m15.1.1.8">𝑖</ci><ci id="S2.SS1.p2.15.m15.1.1.9.cmml" xref="S2.SS1.p2.15.m15.1.1.9">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p2.15.m15.1c">x3\_audio</annotation></semantics></math>], for a given model we will only include one of the two groups.</p>
+</div>
+<div id="S2.SS1.p3" class="ltx_para">
+<p id="S2.SS1.p3.2" class="ltx_p">Trying to capture some non-linearity we also introduced some basic transformations of <math id="S2.SS1.p3.1.m1.1" class="ltx_Math" alttext="mean\_rgb" display="inline"><semantics id="S2.SS1.p3.1.m1.1a"><mrow id="S2.SS1.p3.1.m1.1.1" xref="S2.SS1.p3.1.m1.1.1.cmml"><mi id="S2.SS1.p3.1.m1.1.1.2" xref="S2.SS1.p3.1.m1.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.3" xref="S2.SS1.p3.1.m1.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1a" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.4" xref="S2.SS1.p3.1.m1.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1b" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.5" xref="S2.SS1.p3.1.m1.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1c" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p3.1.m1.1.1.6" xref="S2.SS1.p3.1.m1.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1d" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.7" xref="S2.SS1.p3.1.m1.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1e" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.8" xref="S2.SS1.p3.1.m1.1.1.8.cmml">g</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.1.m1.1.1.1f" xref="S2.SS1.p3.1.m1.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.1.m1.1.1.9" xref="S2.SS1.p3.1.m1.1.1.9.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p3.1.m1.1b"><apply id="S2.SS1.p3.1.m1.1.1.cmml" xref="S2.SS1.p3.1.m1.1.1"><times id="S2.SS1.p3.1.m1.1.1.1.cmml" xref="S2.SS1.p3.1.m1.1.1.1"></times><ci id="S2.SS1.p3.1.m1.1.1.2.cmml" xref="S2.SS1.p3.1.m1.1.1.2">𝑚</ci><ci id="S2.SS1.p3.1.m1.1.1.3.cmml" xref="S2.SS1.p3.1.m1.1.1.3">𝑒</ci><ci id="S2.SS1.p3.1.m1.1.1.4.cmml" xref="S2.SS1.p3.1.m1.1.1.4">𝑎</ci><ci id="S2.SS1.p3.1.m1.1.1.5.cmml" xref="S2.SS1.p3.1.m1.1.1.5">𝑛</ci><ci id="S2.SS1.p3.1.m1.1.1.6.cmml" xref="S2.SS1.p3.1.m1.1.1.6">_</ci><ci id="S2.SS1.p3.1.m1.1.1.7.cmml" xref="S2.SS1.p3.1.m1.1.1.7">𝑟</ci><ci id="S2.SS1.p3.1.m1.1.1.8.cmml" xref="S2.SS1.p3.1.m1.1.1.8">𝑔</ci><ci id="S2.SS1.p3.1.m1.1.1.9.cmml" xref="S2.SS1.p3.1.m1.1.1.9">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p3.1.m1.1c">mean\_rgb</annotation></semantics></math> and <math id="S2.SS1.p3.2.m2.1" class="ltx_Math" alttext="mean\_audio" display="inline"><semantics id="S2.SS1.p3.2.m2.1a"><mrow id="S2.SS1.p3.2.m2.1.1" xref="S2.SS1.p3.2.m2.1.1.cmml"><mi id="S2.SS1.p3.2.m2.1.1.2" xref="S2.SS1.p3.2.m2.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.3" xref="S2.SS1.p3.2.m2.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1a" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.4" xref="S2.SS1.p3.2.m2.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1b" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.5" xref="S2.SS1.p3.2.m2.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1c" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S2.SS1.p3.2.m2.1.1.6" xref="S2.SS1.p3.2.m2.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1d" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.7" xref="S2.SS1.p3.2.m2.1.1.7.cmml">a</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1e" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.8" xref="S2.SS1.p3.2.m2.1.1.8.cmml">u</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1f" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.9" xref="S2.SS1.p3.2.m2.1.1.9.cmml">d</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1g" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.10" xref="S2.SS1.p3.2.m2.1.1.10.cmml">i</mi><mo lspace="0em" rspace="0em" id="S2.SS1.p3.2.m2.1.1.1h" xref="S2.SS1.p3.2.m2.1.1.1.cmml">​</mo><mi id="S2.SS1.p3.2.m2.1.1.11" xref="S2.SS1.p3.2.m2.1.1.11.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S2.SS1.p3.2.m2.1b"><apply id="S2.SS1.p3.2.m2.1.1.cmml" xref="S2.SS1.p3.2.m2.1.1"><times id="S2.SS1.p3.2.m2.1.1.1.cmml" xref="S2.SS1.p3.2.m2.1.1.1"></times><ci id="S2.SS1.p3.2.m2.1.1.2.cmml" xref="S2.SS1.p3.2.m2.1.1.2">𝑚</ci><ci id="S2.SS1.p3.2.m2.1.1.3.cmml" xref="S2.SS1.p3.2.m2.1.1.3">𝑒</ci><ci id="S2.SS1.p3.2.m2.1.1.4.cmml" xref="S2.SS1.p3.2.m2.1.1.4">𝑎</ci><ci id="S2.SS1.p3.2.m2.1.1.5.cmml" xref="S2.SS1.p3.2.m2.1.1.5">𝑛</ci><ci id="S2.SS1.p3.2.m2.1.1.6.cmml" xref="S2.SS1.p3.2.m2.1.1.6">_</ci><ci id="S2.SS1.p3.2.m2.1.1.7.cmml" xref="S2.SS1.p3.2.m2.1.1.7">𝑎</ci><ci id="S2.SS1.p3.2.m2.1.1.8.cmml" xref="S2.SS1.p3.2.m2.1.1.8">𝑢</ci><ci id="S2.SS1.p3.2.m2.1.1.9.cmml" xref="S2.SS1.p3.2.m2.1.1.9">𝑑</ci><ci id="S2.SS1.p3.2.m2.1.1.10.cmml" xref="S2.SS1.p3.2.m2.1.1.10">𝑖</ci><ci id="S2.SS1.p3.2.m2.1.1.11.cmml" xref="S2.SS1.p3.2.m2.1.1.11">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S2.SS1.p3.2.m2.1c">mean\_audio</annotation></semantics></math>, those included taking log, inverse, and square root of the input. Due to the lack of time and computing power, we did not experimented with these nonlinear features. Google’s research paper mentioned added value from top-5 features. We experimented with them in the early stage but did not extract much value, as a result we did not use them in our final models.</p>
+</div>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Training Data Augmentation</h3>
+
+<div id="S2.SS2.p1" class="ltx_para">
+<p id="S2.SS2.p1.1" class="ltx_p">Getting more training data is one of the most effective ways to improve model performance. We took two approaches to achieve this goal. First, we decided to integrate validation set with the training data set. There are 4.9 million videos in the training set and 1.4 million in the validation set. The integrated training data is 29% larger. When training a model, we split the data in the same fashion as a five fold cross-validation, and trained one set of model variables on each of the 80% fold. This allowed us to monitor on-line evaluation GAP and also to ensemble the predictions from the five folds. As reported in the next section, we saw material improvement of the model performance from this fold setup.</p>
+</div>
+<div id="S2.SS2.p2" class="ltx_para">
+<p id="S2.SS2.p2.1" class="ltx_p">The second approach we took to augment the training data is by splitting the videos. Our rationale is that, since a person watching a 5 minute video should be able to tell its topic after seeing either of the halves, the model should be able to do the same. By this approach, each of the frame level video yielded three sets of video level data: one from the entire video, one from the first half, and one from the second half. Therefore in total we had about 19 video examples to use in training. It is worth mentioning that the three data sets from the same video are correlated at a high level. Still the added value of the augmented data was clearly visible. Naturally one would think of splitting the video into even more parts. We investigated dividing them into 3 parts, but we did not observe additional performance gain over 2 parts.</p>
+</div>
+<div id="S2.SS2.p3" class="ltx_para">
+<p id="S2.SS2.p3.1" class="ltx_p">When going through the video data we noticed that about 0.1% of the frame level data had only one frame. One of our team member reported this to competition organizers. We believe there will be a new version released for these videos after the competition has finished.</p>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Models</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p id="S3.p1.1" class="ltx_p">The final model is a weighted ensemble of ensembles of Mixture of Neural-Network Experts (MoNN), Long Short-Term Memory (LSTM) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib4" title="" class="ltx_ref">4</a>]</cite> and Gated Recurrent Units (GRU) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>. In this section we will describe what hides behind those abbreviations and provide some more details of which of the mentioned techniques we used. In the last subsection we will briefly write about what we have tried that did not work as well as expected.</p>
+</div>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>MoNN</h3>
+
+<div id="S3.SS1.p1" class="ltx_para">
+<p id="S3.SS1.p1.4" class="ltx_p">Our major video level model is called MoNN, Mixture of Neural-Network Experts. It is a Mixture of Experts (MoE) model with inter-connected multi-hidden layer neural networks. The MoE model, first introduced in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib5" title="" class="ltx_ref">5</a>]</cite>, consists of two parts gating and experts. The former ends with a softmax layer and the latter with sigmoid. Then the final predictions are a sum of products of last layers from gating and experts. In our extension to the model we tried adding more layers for both gating and expert parts. Our best preforming model is called MoNN3Lw. It had 3 hidden layers in the expert part of the network (3L), and the layers are relatively wide (denoted by ”w” in the name). Their sizes were <math id="S3.SS1.p1.1.m1.1" class="ltx_Math" alttext="2305*8" display="inline"><semantics id="S3.SS1.p1.1.m1.1a"><mrow id="S3.SS1.p1.1.m1.1.1" xref="S3.SS1.p1.1.m1.1.1.cmml"><mn id="S3.SS1.p1.1.m1.1.1.2" xref="S3.SS1.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.SS1.p1.1.m1.1.1.1" xref="S3.SS1.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.SS1.p1.1.m1.1.1.3" xref="S3.SS1.p1.1.m1.1.1.3.cmml">8</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p1.1.m1.1b"><apply id="S3.SS1.p1.1.m1.1.1.cmml" xref="S3.SS1.p1.1.m1.1.1"><times id="S3.SS1.p1.1.m1.1.1.1.cmml" xref="S3.SS1.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.SS1.p1.1.m1.1.1.2.cmml" xref="S3.SS1.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.SS1.p1.1.m1.1.1.3.cmml" xref="S3.SS1.p1.1.m1.1.1.3">8</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p1.1.m1.1c">2305*8</annotation></semantics></math>, <math id="S3.SS1.p1.2.m2.1" class="ltx_Math" alttext="2035" display="inline"><semantics id="S3.SS1.p1.2.m2.1a"><mn id="S3.SS1.p1.2.m2.1.1" xref="S3.SS1.p1.2.m2.1.1.cmml">2035</mn><annotation-xml encoding="MathML-Content" id="S3.SS1.p1.2.m2.1b"><cn type="integer" id="S3.SS1.p1.2.m2.1.1.cmml" xref="S3.SS1.p1.2.m2.1.1">2035</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p1.2.m2.1c">2035</annotation></semantics></math>, and <math id="S3.SS1.p1.3.m3.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.SS1.p1.3.m3.1a"><mrow id="S3.SS1.p1.3.m3.1.1" xref="S3.SS1.p1.3.m3.1.1.cmml"><mn id="S3.SS1.p1.3.m3.1.1.2" xref="S3.SS1.p1.3.m3.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.SS1.p1.3.m3.1.1.1" xref="S3.SS1.p1.3.m3.1.1.1.cmml">∗</mo><mn id="S3.SS1.p1.3.m3.1.1.3" xref="S3.SS1.p1.3.m3.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p1.3.m3.1b"><apply id="S3.SS1.p1.3.m3.1.1.cmml" xref="S3.SS1.p1.3.m3.1.1"><times id="S3.SS1.p1.3.m3.1.1.1.cmml" xref="S3.SS1.p1.3.m3.1.1.1"></times><cn type="integer" id="S3.SS1.p1.3.m3.1.1.2.cmml" xref="S3.SS1.p1.3.m3.1.1.2">2305</cn><cn type="integer" id="S3.SS1.p1.3.m3.1.1.3.cmml" xref="S3.SS1.p1.3.m3.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p1.3.m3.1c">2305*3</annotation></semantics></math> neurons. Gate activation were left as they were set in the sample code with first layer of <math id="S3.SS1.p1.4.m4.1" class="ltx_Math" alttext="4716\times({\rm num\ of\ experts}+1)" display="inline"><semantics id="S3.SS1.p1.4.m4.1a"><mrow id="S3.SS1.p1.4.m4.1.1" xref="S3.SS1.p1.4.m4.1.1.cmml"><mn id="S3.SS1.p1.4.m4.1.1.3" xref="S3.SS1.p1.4.m4.1.1.3.cmml">4716</mn><mo lspace="0.222em" rspace="0.222em" id="S3.SS1.p1.4.m4.1.1.2" xref="S3.SS1.p1.4.m4.1.1.2.cmml">×</mo><mrow id="S3.SS1.p1.4.m4.1.1.1.1" xref="S3.SS1.p1.4.m4.1.1.1.1.1.cmml"><mo stretchy="false" id="S3.SS1.p1.4.m4.1.1.1.1.2" xref="S3.SS1.p1.4.m4.1.1.1.1.1.cmml">(</mo><mrow id="S3.SS1.p1.4.m4.1.1.1.1.1" xref="S3.SS1.p1.4.m4.1.1.1.1.1.cmml"><mrow id="S3.SS1.p1.4.m4.1.1.1.1.1.2" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.cmml"><mi id="S3.SS1.p1.4.m4.1.1.1.1.1.2.2" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.2.cmml">num</mi><mo lspace="0.500em" rspace="0em" id="S3.SS1.p1.4.m4.1.1.1.1.1.2.1" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.1.cmml">​</mo><mi id="S3.SS1.p1.4.m4.1.1.1.1.1.2.3" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.3.cmml">of</mi><mo lspace="0.500em" rspace="0em" id="S3.SS1.p1.4.m4.1.1.1.1.1.2.1a" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.1.cmml">​</mo><mi id="S3.SS1.p1.4.m4.1.1.1.1.1.2.4" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.4.cmml">experts</mi></mrow><mo id="S3.SS1.p1.4.m4.1.1.1.1.1.1" xref="S3.SS1.p1.4.m4.1.1.1.1.1.1.cmml">+</mo><mn id="S3.SS1.p1.4.m4.1.1.1.1.1.3" xref="S3.SS1.p1.4.m4.1.1.1.1.1.3.cmml">1</mn></mrow><mo stretchy="false" id="S3.SS1.p1.4.m4.1.1.1.1.3" xref="S3.SS1.p1.4.m4.1.1.1.1.1.cmml">)</mo></mrow></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p1.4.m4.1b"><apply id="S3.SS1.p1.4.m4.1.1.cmml" xref="S3.SS1.p1.4.m4.1.1"><times id="S3.SS1.p1.4.m4.1.1.2.cmml" xref="S3.SS1.p1.4.m4.1.1.2"></times><cn type="integer" id="S3.SS1.p1.4.m4.1.1.3.cmml" xref="S3.SS1.p1.4.m4.1.1.3">4716</cn><apply id="S3.SS1.p1.4.m4.1.1.1.1.1.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1"><plus id="S3.SS1.p1.4.m4.1.1.1.1.1.1.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.1"></plus><apply id="S3.SS1.p1.4.m4.1.1.1.1.1.2.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2"><times id="S3.SS1.p1.4.m4.1.1.1.1.1.2.1.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.1"></times><ci id="S3.SS1.p1.4.m4.1.1.1.1.1.2.2.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.2">num</ci><ci id="S3.SS1.p1.4.m4.1.1.1.1.1.2.3.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.3">of</ci><ci id="S3.SS1.p1.4.m4.1.1.1.1.1.2.4.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.2.4">experts</ci></apply><cn type="integer" id="S3.SS1.p1.4.m4.1.1.1.1.1.3.cmml" xref="S3.SS1.p1.4.m4.1.1.1.1.1.3">1</cn></apply></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p1.4.m4.1c">4716\times({\rm num\ of\ experts}+1)</annotation></semantics></math>. Our submitted predictions were mostly run with three experts, a balance between model size and the GPU memory constraints. We also calculated the exponentially weighted moving average (EMA) for the model variables (weights and biases) with a half-life set to 3000 or a smaller number of steps. In the prediction stage, we can choose to use the either the EMA or the snapshot version of the model.</p>
+</div>
+<div id="S3.SS1.p2" class="ltx_para">
+<p id="S3.SS1.p2.1" class="ltx_p">For each model training session, the augmented training data were then split into folds like in a classical cross validation approach. For a model defined as above we run 5 folds, saving checkpoints every 6 K steps up till 72 K steps (about 5 epochs). Then we picked one fold and for each of last 3 to 5 checkpoints and made predictions. We calculated predictions with either the EMA model variables or the snapshot version of variables. We found that the EMA model consistently scored higher, so we stayed with EMA most of the time.</p>
+</div>
+<div id="S3.SS1.p3" class="ltx_para">
+<p id="S3.SS1.p3.1" class="ltx_p">One example of our MoNN3Lw ensemble is shown in Table. <a href="#S3.T1" title="Table 1 ‣ 3.1 MoNN ‣ 3 Models ‣ Deep Learning Methods for Efficient Large Scale Video Labeling" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>. This model was trained on a Nvidia GeForce GTX 1080Ti GPU. It took around 10 hours to run one fold, and making predictions for all 5 checkpoints. The typical single fold and single checkpoint prediction scored GAP 0.822. Ensemble of 4 checkpoints from the same fold scored 0.824. Ensemble of 5 folds each with 4 checkpoints scored 0.831. In total we saw a GAP gain close to 0.01 from a single prediction to model ensemble.</p>
+</div>
+<figure id="S3.T1" class="ltx_table">
+<table id="S3.T1.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S3.T1.1.1.1" class="ltx_tr">
+<th id="S3.T1.1.1.1.1" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_l ltx_border_r ltx_border_t">Used in prediction</th>
+<th id="S3.T1.1.1.1.2" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Public LB</th>
+<th id="S3.T1.1.1.1.3" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Private LB</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S3.T1.1.2.1" class="ltx_tr">
+<th id="S3.T1.1.2.1.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r ltx_border_tt">ckpt 36050</th>
+<td id="S3.T1.1.2.1.2" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.82126</td>
+<td id="S3.T1.1.2.1.3" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.82135</td>
+</tr>
+<tr id="S3.T1.1.3.2" class="ltx_tr">
+<th id="S3.T1.1.3.2.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r">ckpt 48050</th>
+<td id="S3.T1.1.3.2.2" class="ltx_td ltx_align_center ltx_border_r">0.82297</td>
+<td id="S3.T1.1.3.2.3" class="ltx_td ltx_align_center ltx_border_r">0.82294</td>
+</tr>
+<tr id="S3.T1.1.4.3" class="ltx_tr">
+<th id="S3.T1.1.4.3.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r">ckpt 54050</th>
+<td id="S3.T1.1.4.3.2" class="ltx_td ltx_align_center ltx_border_r">0.82274</td>
+<td id="S3.T1.1.4.3.3" class="ltx_td ltx_align_center ltx_border_r">0.82265</td>
+</tr>
+<tr id="S3.T1.1.5.4" class="ltx_tr">
+<th id="S3.T1.1.5.4.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r">ckpt 60050</th>
+<td id="S3.T1.1.5.4.2" class="ltx_td ltx_align_center ltx_border_r">0.82216</td>
+<td id="S3.T1.1.5.4.3" class="ltx_td ltx_align_center ltx_border_r">0.82209</td>
+</tr>
+<tr id="S3.T1.1.6.5" class="ltx_tr">
+<th id="S3.T1.1.6.5.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r">ckpt 66050</th>
+<td id="S3.T1.1.6.5.2" class="ltx_td ltx_align_center ltx_border_r">0.82034</td>
+<td id="S3.T1.1.6.5.3" class="ltx_td ltx_align_center ltx_border_r">0.82016</td>
+</tr>
+<tr id="S3.T1.1.7.6" class="ltx_tr">
+<th id="S3.T1.1.7.6.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_l ltx_border_r ltx_border_t">
+<span id="S3.T1.1.7.6.1.1" class="ltx_inline-block">
+<span id="S3.T1.1.7.6.1.1.1" class="ltx_p">ensemble one fold</span>
+<span id="S3.T1.1.7.6.1.1.2" class="ltx_p">ckpts
+36k48k54k60k</span>
+</span>
+</th>
+<td id="S3.T1.1.7.6.2" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0.82411</td>
+<td id="S3.T1.1.7.6.3" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0.82408</td>
+</tr>
+<tr id="S3.T1.1.8.7" class="ltx_tr">
+<th id="S3.T1.1.8.7.1" class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_b ltx_border_l ltx_border_r">
+<span id="S3.T1.1.8.7.1.1" class="ltx_inline-block">
+<span id="S3.T1.1.8.7.1.1.1" class="ltx_p">new ensemble 5 folds</span>
+<span id="S3.T1.1.8.7.1.1.2" class="ltx_p">ckpts 36k48k54k60k</span>
+</span>
+</th>
+<td id="S3.T1.1.8.7.2" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">0.83093</td>
+<td id="S3.T1.1.8.7.3" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">0.83087</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 1: </span>3 layer MoNN model with EMA, leaderboard scores.</figcaption>
+</figure>
+<div id="S3.SS1.p4" class="ltx_para">
+<p id="S3.SS1.p4.1" class="ltx_p">We experimented further with EMA parameter, and found that it gives slightly better results when it is shorter than 3k steps. We have included that in another model that instead of means took into account third powers of each dimension. We hoped that it will be slightly less correlated to the model based on means than just yer another fold of model based on means.</p>
+</div>
+<div id="S3.SS1.p5" class="ltx_para">
+<p id="S3.SS1.p5.7" class="ltx_p">Beside the two models mentioned above we did similar exercise for a couple more models. The final ensemble for MoNN type models consisted of the models listed below, where <math id="S3.SS1.p5.1.m1.1" class="ltx_Math" alttext="w" display="inline"><semantics id="S3.SS1.p5.1.m1.1a"><mi id="S3.SS1.p5.1.m1.1.1" xref="S3.SS1.p5.1.m1.1.1.cmml">w</mi><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.1.m1.1b"><ci id="S3.SS1.p5.1.m1.1.1.cmml" xref="S3.SS1.p5.1.m1.1.1">𝑤</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.1.m1.1c">w</annotation></semantics></math> in model’s name stands for wide, <math id="S3.SS1.p5.2.m2.1" class="ltx_Math" alttext="n" display="inline"><semantics id="S3.SS1.p5.2.m2.1a"><mi id="S3.SS1.p5.2.m2.1.1" xref="S3.SS1.p5.2.m2.1.1.cmml">n</mi><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.2.m2.1b"><ci id="S3.SS1.p5.2.m2.1.1.cmml" xref="S3.SS1.p5.2.m2.1.1">𝑛</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.2.m2.1c">n</annotation></semantics></math> for narrow, ”means” represents <math id="S3.SS1.p5.3.m3.2" class="ltx_Math" alttext="[mean\_rgb,mean\_audio]" display="inline"><semantics id="S3.SS1.p5.3.m3.2a"><mrow id="S3.SS1.p5.3.m3.2.2.2" xref="S3.SS1.p5.3.m3.2.2.3.cmml"><mo stretchy="false" id="S3.SS1.p5.3.m3.2.2.2.3" xref="S3.SS1.p5.3.m3.2.2.3.cmml">[</mo><mrow id="S3.SS1.p5.3.m3.1.1.1.1" xref="S3.SS1.p5.3.m3.1.1.1.1.cmml"><mi id="S3.SS1.p5.3.m3.1.1.1.1.2" xref="S3.SS1.p5.3.m3.1.1.1.1.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.3" xref="S3.SS1.p5.3.m3.1.1.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1a" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.4" xref="S3.SS1.p5.3.m3.1.1.1.1.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1b" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.5" xref="S3.SS1.p5.3.m3.1.1.1.1.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1c" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.3.m3.1.1.1.1.6" xref="S3.SS1.p5.3.m3.1.1.1.1.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1d" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.7" xref="S3.SS1.p5.3.m3.1.1.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1e" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.8" xref="S3.SS1.p5.3.m3.1.1.1.1.8.cmml">g</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.1.1.1.1.1f" xref="S3.SS1.p5.3.m3.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.1.1.1.1.9" xref="S3.SS1.p5.3.m3.1.1.1.1.9.cmml">b</mi></mrow><mo id="S3.SS1.p5.3.m3.2.2.2.4" xref="S3.SS1.p5.3.m3.2.2.3.cmml">,</mo><mrow id="S3.SS1.p5.3.m3.2.2.2.2" xref="S3.SS1.p5.3.m3.2.2.2.2.cmml"><mi id="S3.SS1.p5.3.m3.2.2.2.2.2" xref="S3.SS1.p5.3.m3.2.2.2.2.2.cmml">m</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.3" xref="S3.SS1.p5.3.m3.2.2.2.2.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1a" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.4" xref="S3.SS1.p5.3.m3.2.2.2.2.4.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1b" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.5" xref="S3.SS1.p5.3.m3.2.2.2.2.5.cmml">n</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1c" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.3.m3.2.2.2.2.6" xref="S3.SS1.p5.3.m3.2.2.2.2.6.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1d" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.7" xref="S3.SS1.p5.3.m3.2.2.2.2.7.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1e" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.8" xref="S3.SS1.p5.3.m3.2.2.2.2.8.cmml">u</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1f" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.9" xref="S3.SS1.p5.3.m3.2.2.2.2.9.cmml">d</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1g" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.10" xref="S3.SS1.p5.3.m3.2.2.2.2.10.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.3.m3.2.2.2.2.1h" xref="S3.SS1.p5.3.m3.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.3.m3.2.2.2.2.11" xref="S3.SS1.p5.3.m3.2.2.2.2.11.cmml">o</mi></mrow><mo stretchy="false" id="S3.SS1.p5.3.m3.2.2.2.5" xref="S3.SS1.p5.3.m3.2.2.3.cmml">]</mo></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.3.m3.2b"><interval closure="closed" id="S3.SS1.p5.3.m3.2.2.3.cmml" xref="S3.SS1.p5.3.m3.2.2.2"><apply id="S3.SS1.p5.3.m3.1.1.1.1.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1"><times id="S3.SS1.p5.3.m3.1.1.1.1.1.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.1"></times><ci id="S3.SS1.p5.3.m3.1.1.1.1.2.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.2">𝑚</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.3.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.3">𝑒</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.4.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.4">𝑎</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.5.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.5">𝑛</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.6.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.6">_</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.7.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.7">𝑟</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.8.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.8">𝑔</ci><ci id="S3.SS1.p5.3.m3.1.1.1.1.9.cmml" xref="S3.SS1.p5.3.m3.1.1.1.1.9">𝑏</ci></apply><apply id="S3.SS1.p5.3.m3.2.2.2.2.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2"><times id="S3.SS1.p5.3.m3.2.2.2.2.1.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.1"></times><ci id="S3.SS1.p5.3.m3.2.2.2.2.2.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.2">𝑚</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.3.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.3">𝑒</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.4.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.4">𝑎</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.5.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.5">𝑛</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.6.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.6">_</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.7.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.7">𝑎</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.8.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.8">𝑢</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.9.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.9">𝑑</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.10.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.10">𝑖</ci><ci id="S3.SS1.p5.3.m3.2.2.2.2.11.cmml" xref="S3.SS1.p5.3.m3.2.2.2.2.11">𝑜</ci></apply></interval></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.3.m3.2c">[mean\_rgb,mean\_audio]</annotation></semantics></math>, and ”third powers” represents <math id="S3.SS1.p5.4.m4.2" class="ltx_Math" alttext="[x3\_rgb,x3\_audio]" display="inline"><semantics id="S3.SS1.p5.4.m4.2a"><mrow id="S3.SS1.p5.4.m4.2.2.2" xref="S3.SS1.p5.4.m4.2.2.3.cmml"><mo stretchy="false" id="S3.SS1.p5.4.m4.2.2.2.3" xref="S3.SS1.p5.4.m4.2.2.3.cmml">[</mo><mrow id="S3.SS1.p5.4.m4.1.1.1.1" xref="S3.SS1.p5.4.m4.1.1.1.1.cmml"><mi id="S3.SS1.p5.4.m4.1.1.1.1.2" xref="S3.SS1.p5.4.m4.1.1.1.1.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.1.1.1.1.1" xref="S3.SS1.p5.4.m4.1.1.1.1.1.cmml">​</mo><mn id="S3.SS1.p5.4.m4.1.1.1.1.3" xref="S3.SS1.p5.4.m4.1.1.1.1.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.1.1.1.1.1a" xref="S3.SS1.p5.4.m4.1.1.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.4.m4.1.1.1.1.4" xref="S3.SS1.p5.4.m4.1.1.1.1.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.1.1.1.1.1b" xref="S3.SS1.p5.4.m4.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.1.1.1.1.5" xref="S3.SS1.p5.4.m4.1.1.1.1.5.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.1.1.1.1.1c" xref="S3.SS1.p5.4.m4.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.1.1.1.1.6" xref="S3.SS1.p5.4.m4.1.1.1.1.6.cmml">g</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.1.1.1.1.1d" xref="S3.SS1.p5.4.m4.1.1.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.1.1.1.1.7" xref="S3.SS1.p5.4.m4.1.1.1.1.7.cmml">b</mi></mrow><mo id="S3.SS1.p5.4.m4.2.2.2.4" xref="S3.SS1.p5.4.m4.2.2.3.cmml">,</mo><mrow id="S3.SS1.p5.4.m4.2.2.2.2" xref="S3.SS1.p5.4.m4.2.2.2.2.cmml"><mi id="S3.SS1.p5.4.m4.2.2.2.2.2" xref="S3.SS1.p5.4.m4.2.2.2.2.2.cmml">x</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mn id="S3.SS1.p5.4.m4.2.2.2.2.3" xref="S3.SS1.p5.4.m4.2.2.2.2.3.cmml">3</mn><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1a" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.4.m4.2.2.2.2.4" xref="S3.SS1.p5.4.m4.2.2.2.2.4.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1b" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.2.2.2.2.5" xref="S3.SS1.p5.4.m4.2.2.2.2.5.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1c" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.2.2.2.2.6" xref="S3.SS1.p5.4.m4.2.2.2.2.6.cmml">u</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1d" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.2.2.2.2.7" xref="S3.SS1.p5.4.m4.2.2.2.2.7.cmml">d</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1e" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.2.2.2.2.8" xref="S3.SS1.p5.4.m4.2.2.2.2.8.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.4.m4.2.2.2.2.1f" xref="S3.SS1.p5.4.m4.2.2.2.2.1.cmml">​</mo><mi id="S3.SS1.p5.4.m4.2.2.2.2.9" xref="S3.SS1.p5.4.m4.2.2.2.2.9.cmml">o</mi></mrow><mo stretchy="false" id="S3.SS1.p5.4.m4.2.2.2.5" xref="S3.SS1.p5.4.m4.2.2.3.cmml">]</mo></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.4.m4.2b"><interval closure="closed" id="S3.SS1.p5.4.m4.2.2.3.cmml" xref="S3.SS1.p5.4.m4.2.2.2"><apply id="S3.SS1.p5.4.m4.1.1.1.1.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1"><times id="S3.SS1.p5.4.m4.1.1.1.1.1.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.1"></times><ci id="S3.SS1.p5.4.m4.1.1.1.1.2.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.2">𝑥</ci><cn type="integer" id="S3.SS1.p5.4.m4.1.1.1.1.3.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.3">3</cn><ci id="S3.SS1.p5.4.m4.1.1.1.1.4.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.4">_</ci><ci id="S3.SS1.p5.4.m4.1.1.1.1.5.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.5">𝑟</ci><ci id="S3.SS1.p5.4.m4.1.1.1.1.6.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.6">𝑔</ci><ci id="S3.SS1.p5.4.m4.1.1.1.1.7.cmml" xref="S3.SS1.p5.4.m4.1.1.1.1.7">𝑏</ci></apply><apply id="S3.SS1.p5.4.m4.2.2.2.2.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2"><times id="S3.SS1.p5.4.m4.2.2.2.2.1.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.1"></times><ci id="S3.SS1.p5.4.m4.2.2.2.2.2.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.2">𝑥</ci><cn type="integer" id="S3.SS1.p5.4.m4.2.2.2.2.3.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.3">3</cn><ci id="S3.SS1.p5.4.m4.2.2.2.2.4.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.4">_</ci><ci id="S3.SS1.p5.4.m4.2.2.2.2.5.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.5">𝑎</ci><ci id="S3.SS1.p5.4.m4.2.2.2.2.6.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.6">𝑢</ci><ci id="S3.SS1.p5.4.m4.2.2.2.2.7.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.7">𝑑</ci><ci id="S3.SS1.p5.4.m4.2.2.2.2.8.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.8">𝑖</ci><ci id="S3.SS1.p5.4.m4.2.2.2.2.9.cmml" xref="S3.SS1.p5.4.m4.2.2.2.2.9">𝑜</ci></apply></interval></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.4.m4.2c">[x3\_rgb,x3\_audio]</annotation></semantics></math>. <math id="S3.SS1.p5.5.m5.1" class="ltx_Math" alttext="std\_rgb" display="inline"><semantics id="S3.SS1.p5.5.m5.1a"><mrow id="S3.SS1.p5.5.m5.1.1" xref="S3.SS1.p5.5.m5.1.1.cmml"><mi id="S3.SS1.p5.5.m5.1.1.2" xref="S3.SS1.p5.5.m5.1.1.2.cmml">s</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.5.m5.1.1.3" xref="S3.SS1.p5.5.m5.1.1.3.cmml">t</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1a" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.5.m5.1.1.4" xref="S3.SS1.p5.5.m5.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1b" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.5.m5.1.1.5" xref="S3.SS1.p5.5.m5.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1c" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.5.m5.1.1.6" xref="S3.SS1.p5.5.m5.1.1.6.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1d" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.5.m5.1.1.7" xref="S3.SS1.p5.5.m5.1.1.7.cmml">g</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.5.m5.1.1.1e" xref="S3.SS1.p5.5.m5.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.5.m5.1.1.8" xref="S3.SS1.p5.5.m5.1.1.8.cmml">b</mi></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.5.m5.1b"><apply id="S3.SS1.p5.5.m5.1.1.cmml" xref="S3.SS1.p5.5.m5.1.1"><times id="S3.SS1.p5.5.m5.1.1.1.cmml" xref="S3.SS1.p5.5.m5.1.1.1"></times><ci id="S3.SS1.p5.5.m5.1.1.2.cmml" xref="S3.SS1.p5.5.m5.1.1.2">𝑠</ci><ci id="S3.SS1.p5.5.m5.1.1.3.cmml" xref="S3.SS1.p5.5.m5.1.1.3">𝑡</ci><ci id="S3.SS1.p5.5.m5.1.1.4.cmml" xref="S3.SS1.p5.5.m5.1.1.4">𝑑</ci><ci id="S3.SS1.p5.5.m5.1.1.5.cmml" xref="S3.SS1.p5.5.m5.1.1.5">_</ci><ci id="S3.SS1.p5.5.m5.1.1.6.cmml" xref="S3.SS1.p5.5.m5.1.1.6">𝑟</ci><ci id="S3.SS1.p5.5.m5.1.1.7.cmml" xref="S3.SS1.p5.5.m5.1.1.7">𝑔</ci><ci id="S3.SS1.p5.5.m5.1.1.8.cmml" xref="S3.SS1.p5.5.m5.1.1.8">𝑏</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.5.m5.1c">std\_rgb</annotation></semantics></math>, <math id="S3.SS1.p5.6.m6.1" class="ltx_Math" alttext="std\_audio" display="inline"><semantics id="S3.SS1.p5.6.m6.1a"><mrow id="S3.SS1.p5.6.m6.1.1" xref="S3.SS1.p5.6.m6.1.1.cmml"><mi id="S3.SS1.p5.6.m6.1.1.2" xref="S3.SS1.p5.6.m6.1.1.2.cmml">s</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.3" xref="S3.SS1.p5.6.m6.1.1.3.cmml">t</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1a" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.4" xref="S3.SS1.p5.6.m6.1.1.4.cmml">d</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1b" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.6.m6.1.1.5" xref="S3.SS1.p5.6.m6.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1c" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.6" xref="S3.SS1.p5.6.m6.1.1.6.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1d" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.7" xref="S3.SS1.p5.6.m6.1.1.7.cmml">u</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1e" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.8" xref="S3.SS1.p5.6.m6.1.1.8.cmml">d</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1f" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.9" xref="S3.SS1.p5.6.m6.1.1.9.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.6.m6.1.1.1g" xref="S3.SS1.p5.6.m6.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.6.m6.1.1.10" xref="S3.SS1.p5.6.m6.1.1.10.cmml">o</mi></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.6.m6.1b"><apply id="S3.SS1.p5.6.m6.1.1.cmml" xref="S3.SS1.p5.6.m6.1.1"><times id="S3.SS1.p5.6.m6.1.1.1.cmml" xref="S3.SS1.p5.6.m6.1.1.1"></times><ci id="S3.SS1.p5.6.m6.1.1.2.cmml" xref="S3.SS1.p5.6.m6.1.1.2">𝑠</ci><ci id="S3.SS1.p5.6.m6.1.1.3.cmml" xref="S3.SS1.p5.6.m6.1.1.3">𝑡</ci><ci id="S3.SS1.p5.6.m6.1.1.4.cmml" xref="S3.SS1.p5.6.m6.1.1.4">𝑑</ci><ci id="S3.SS1.p5.6.m6.1.1.5.cmml" xref="S3.SS1.p5.6.m6.1.1.5">_</ci><ci id="S3.SS1.p5.6.m6.1.1.6.cmml" xref="S3.SS1.p5.6.m6.1.1.6">𝑎</ci><ci id="S3.SS1.p5.6.m6.1.1.7.cmml" xref="S3.SS1.p5.6.m6.1.1.7">𝑢</ci><ci id="S3.SS1.p5.6.m6.1.1.8.cmml" xref="S3.SS1.p5.6.m6.1.1.8">𝑑</ci><ci id="S3.SS1.p5.6.m6.1.1.9.cmml" xref="S3.SS1.p5.6.m6.1.1.9">𝑖</ci><ci id="S3.SS1.p5.6.m6.1.1.10.cmml" xref="S3.SS1.p5.6.m6.1.1.10">𝑜</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.6.m6.1c">std\_audio</annotation></semantics></math> and <math id="S3.SS1.p5.7.m7.1" class="ltx_Math" alttext="num\_frames" display="inline"><semantics id="S3.SS1.p5.7.m7.1a"><mrow id="S3.SS1.p5.7.m7.1.1" xref="S3.SS1.p5.7.m7.1.1.cmml"><mi id="S3.SS1.p5.7.m7.1.1.2" xref="S3.SS1.p5.7.m7.1.1.2.cmml">n</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.3" xref="S3.SS1.p5.7.m7.1.1.3.cmml">u</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1a" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.4" xref="S3.SS1.p5.7.m7.1.1.4.cmml">m</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1b" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi mathvariant="normal" id="S3.SS1.p5.7.m7.1.1.5" xref="S3.SS1.p5.7.m7.1.1.5.cmml">_</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1c" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.6" xref="S3.SS1.p5.7.m7.1.1.6.cmml">f</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1d" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.7" xref="S3.SS1.p5.7.m7.1.1.7.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1e" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.8" xref="S3.SS1.p5.7.m7.1.1.8.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1f" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.9" xref="S3.SS1.p5.7.m7.1.1.9.cmml">m</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1g" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.10" xref="S3.SS1.p5.7.m7.1.1.10.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.SS1.p5.7.m7.1.1.1h" xref="S3.SS1.p5.7.m7.1.1.1.cmml">​</mo><mi id="S3.SS1.p5.7.m7.1.1.11" xref="S3.SS1.p5.7.m7.1.1.11.cmml">s</mi></mrow><annotation-xml encoding="MathML-Content" id="S3.SS1.p5.7.m7.1b"><apply id="S3.SS1.p5.7.m7.1.1.cmml" xref="S3.SS1.p5.7.m7.1.1"><times id="S3.SS1.p5.7.m7.1.1.1.cmml" xref="S3.SS1.p5.7.m7.1.1.1"></times><ci id="S3.SS1.p5.7.m7.1.1.2.cmml" xref="S3.SS1.p5.7.m7.1.1.2">𝑛</ci><ci id="S3.SS1.p5.7.m7.1.1.3.cmml" xref="S3.SS1.p5.7.m7.1.1.3">𝑢</ci><ci id="S3.SS1.p5.7.m7.1.1.4.cmml" xref="S3.SS1.p5.7.m7.1.1.4">𝑚</ci><ci id="S3.SS1.p5.7.m7.1.1.5.cmml" xref="S3.SS1.p5.7.m7.1.1.5">_</ci><ci id="S3.SS1.p5.7.m7.1.1.6.cmml" xref="S3.SS1.p5.7.m7.1.1.6">𝑓</ci><ci id="S3.SS1.p5.7.m7.1.1.7.cmml" xref="S3.SS1.p5.7.m7.1.1.7">𝑟</ci><ci id="S3.SS1.p5.7.m7.1.1.8.cmml" xref="S3.SS1.p5.7.m7.1.1.8">𝑎</ci><ci id="S3.SS1.p5.7.m7.1.1.9.cmml" xref="S3.SS1.p5.7.m7.1.1.9">𝑚</ci><ci id="S3.SS1.p5.7.m7.1.1.10.cmml" xref="S3.SS1.p5.7.m7.1.1.10">𝑒</ci><ci id="S3.SS1.p5.7.m7.1.1.11.cmml" xref="S3.SS1.p5.7.m7.1.1.11">𝑠</ci></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS1.p5.7.m7.1c">num\_frames</annotation></semantics></math> are always included in the training.</p>
+</div>
+<div id="S3.SS1.p6" class="ltx_para">
+<ol id="S3.I1" class="ltx_enumerate">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S3.I1.i1.p1" class="ltx_para">
+<p id="S3.I1.i1.p1.3" class="ltx_p">MoNN3Lw, based on means, with 3 layers 
+<br class="ltx_break"><math id="S3.I1.i1.p1.1.m1.1" class="ltx_Math" alttext="2305*8" display="inline"><semantics id="S3.I1.i1.p1.1.m1.1a"><mrow id="S3.I1.i1.p1.1.m1.1.1" xref="S3.I1.i1.p1.1.m1.1.1.cmml"><mn id="S3.I1.i1.p1.1.m1.1.1.2" xref="S3.I1.i1.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i1.p1.1.m1.1.1.1" xref="S3.I1.i1.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i1.p1.1.m1.1.1.3" xref="S3.I1.i1.p1.1.m1.1.1.3.cmml">8</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i1.p1.1.m1.1b"><apply id="S3.I1.i1.p1.1.m1.1.1.cmml" xref="S3.I1.i1.p1.1.m1.1.1"><times id="S3.I1.i1.p1.1.m1.1.1.1.cmml" xref="S3.I1.i1.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i1.p1.1.m1.1.1.2.cmml" xref="S3.I1.i1.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i1.p1.1.m1.1.1.3.cmml" xref="S3.I1.i1.p1.1.m1.1.1.3">8</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i1.p1.1.m1.1c">2305*8</annotation></semantics></math>, <math id="S3.I1.i1.p1.2.m2.1" class="ltx_Math" alttext="2035" display="inline"><semantics id="S3.I1.i1.p1.2.m2.1a"><mn id="S3.I1.i1.p1.2.m2.1.1" xref="S3.I1.i1.p1.2.m2.1.1.cmml">2035</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i1.p1.2.m2.1b"><cn type="integer" id="S3.I1.i1.p1.2.m2.1.1.cmml" xref="S3.I1.i1.p1.2.m2.1.1">2035</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i1.p1.2.m2.1c">2035</annotation></semantics></math>, and <math id="S3.I1.i1.p1.3.m3.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i1.p1.3.m3.1a"><mrow id="S3.I1.i1.p1.3.m3.1.1" xref="S3.I1.i1.p1.3.m3.1.1.cmml"><mn id="S3.I1.i1.p1.3.m3.1.1.2" xref="S3.I1.i1.p1.3.m3.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i1.p1.3.m3.1.1.1" xref="S3.I1.i1.p1.3.m3.1.1.1.cmml">∗</mo><mn id="S3.I1.i1.p1.3.m3.1.1.3" xref="S3.I1.i1.p1.3.m3.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i1.p1.3.m3.1b"><apply id="S3.I1.i1.p1.3.m3.1.1.cmml" xref="S3.I1.i1.p1.3.m3.1.1"><times id="S3.I1.i1.p1.3.m3.1.1.1.cmml" xref="S3.I1.i1.p1.3.m3.1.1.1"></times><cn type="integer" id="S3.I1.i1.p1.3.m3.1.1.2.cmml" xref="S3.I1.i1.p1.3.m3.1.1.2">2305</cn><cn type="integer" id="S3.I1.i1.p1.3.m3.1.1.3.cmml" xref="S3.I1.i1.p1.3.m3.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i1.p1.3.m3.1c">2305*3</annotation></semantics></math>, no EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S3.I1.i2.p1" class="ltx_para">
+<p id="S3.I1.i2.p1.3" class="ltx_p">MoNN3Lw, based on means, with 3 layers 
+<br class="ltx_break"><math id="S3.I1.i2.p1.1.m1.1" class="ltx_Math" alttext="2305*8" display="inline"><semantics id="S3.I1.i2.p1.1.m1.1a"><mrow id="S3.I1.i2.p1.1.m1.1.1" xref="S3.I1.i2.p1.1.m1.1.1.cmml"><mn id="S3.I1.i2.p1.1.m1.1.1.2" xref="S3.I1.i2.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i2.p1.1.m1.1.1.1" xref="S3.I1.i2.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i2.p1.1.m1.1.1.3" xref="S3.I1.i2.p1.1.m1.1.1.3.cmml">8</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i2.p1.1.m1.1b"><apply id="S3.I1.i2.p1.1.m1.1.1.cmml" xref="S3.I1.i2.p1.1.m1.1.1"><times id="S3.I1.i2.p1.1.m1.1.1.1.cmml" xref="S3.I1.i2.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i2.p1.1.m1.1.1.2.cmml" xref="S3.I1.i2.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i2.p1.1.m1.1.1.3.cmml" xref="S3.I1.i2.p1.1.m1.1.1.3">8</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i2.p1.1.m1.1c">2305*8</annotation></semantics></math>, <math id="S3.I1.i2.p1.2.m2.1" class="ltx_Math" alttext="2035" display="inline"><semantics id="S3.I1.i2.p1.2.m2.1a"><mn id="S3.I1.i2.p1.2.m2.1.1" xref="S3.I1.i2.p1.2.m2.1.1.cmml">2035</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i2.p1.2.m2.1b"><cn type="integer" id="S3.I1.i2.p1.2.m2.1.1.cmml" xref="S3.I1.i2.p1.2.m2.1.1">2035</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i2.p1.2.m2.1c">2035</annotation></semantics></math>, and <math id="S3.I1.i2.p1.3.m3.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i2.p1.3.m3.1a"><mrow id="S3.I1.i2.p1.3.m3.1.1" xref="S3.I1.i2.p1.3.m3.1.1.cmml"><mn id="S3.I1.i2.p1.3.m3.1.1.2" xref="S3.I1.i2.p1.3.m3.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i2.p1.3.m3.1.1.1" xref="S3.I1.i2.p1.3.m3.1.1.1.cmml">∗</mo><mn id="S3.I1.i2.p1.3.m3.1.1.3" xref="S3.I1.i2.p1.3.m3.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i2.p1.3.m3.1b"><apply id="S3.I1.i2.p1.3.m3.1.1.cmml" xref="S3.I1.i2.p1.3.m3.1.1"><times id="S3.I1.i2.p1.3.m3.1.1.1.cmml" xref="S3.I1.i2.p1.3.m3.1.1.1"></times><cn type="integer" id="S3.I1.i2.p1.3.m3.1.1.2.cmml" xref="S3.I1.i2.p1.3.m3.1.1.2">2305</cn><cn type="integer" id="S3.I1.i2.p1.3.m3.1.1.3.cmml" xref="S3.I1.i2.p1.3.m3.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i2.p1.3.m3.1c">2305*3</annotation></semantics></math>, with EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S3.I1.i3.p1" class="ltx_para">
+<p id="S3.I1.i3.p1.3" class="ltx_p">MoNN3Lw, based on third powers, with 3 layers 
+<br class="ltx_break"><math id="S3.I1.i3.p1.1.m1.1" class="ltx_Math" alttext="2305*8" display="inline"><semantics id="S3.I1.i3.p1.1.m1.1a"><mrow id="S3.I1.i3.p1.1.m1.1.1" xref="S3.I1.i3.p1.1.m1.1.1.cmml"><mn id="S3.I1.i3.p1.1.m1.1.1.2" xref="S3.I1.i3.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i3.p1.1.m1.1.1.1" xref="S3.I1.i3.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i3.p1.1.m1.1.1.3" xref="S3.I1.i3.p1.1.m1.1.1.3.cmml">8</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i3.p1.1.m1.1b"><apply id="S3.I1.i3.p1.1.m1.1.1.cmml" xref="S3.I1.i3.p1.1.m1.1.1"><times id="S3.I1.i3.p1.1.m1.1.1.1.cmml" xref="S3.I1.i3.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i3.p1.1.m1.1.1.2.cmml" xref="S3.I1.i3.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i3.p1.1.m1.1.1.3.cmml" xref="S3.I1.i3.p1.1.m1.1.1.3">8</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i3.p1.1.m1.1c">2305*8</annotation></semantics></math>, <math id="S3.I1.i3.p1.2.m2.1" class="ltx_Math" alttext="2035" display="inline"><semantics id="S3.I1.i3.p1.2.m2.1a"><mn id="S3.I1.i3.p1.2.m2.1.1" xref="S3.I1.i3.p1.2.m2.1.1.cmml">2035</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i3.p1.2.m2.1b"><cn type="integer" id="S3.I1.i3.p1.2.m2.1.1.cmml" xref="S3.I1.i3.p1.2.m2.1.1">2035</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i3.p1.2.m2.1c">2035</annotation></semantics></math>, and <math id="S3.I1.i3.p1.3.m3.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i3.p1.3.m3.1a"><mrow id="S3.I1.i3.p1.3.m3.1.1" xref="S3.I1.i3.p1.3.m3.1.1.cmml"><mn id="S3.I1.i3.p1.3.m3.1.1.2" xref="S3.I1.i3.p1.3.m3.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i3.p1.3.m3.1.1.1" xref="S3.I1.i3.p1.3.m3.1.1.1.cmml">∗</mo><mn id="S3.I1.i3.p1.3.m3.1.1.3" xref="S3.I1.i3.p1.3.m3.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i3.p1.3.m3.1b"><apply id="S3.I1.i3.p1.3.m3.1.1.cmml" xref="S3.I1.i3.p1.3.m3.1.1"><times id="S3.I1.i3.p1.3.m3.1.1.1.cmml" xref="S3.I1.i3.p1.3.m3.1.1.1"></times><cn type="integer" id="S3.I1.i3.p1.3.m3.1.1.2.cmml" xref="S3.I1.i3.p1.3.m3.1.1.2">2305</cn><cn type="integer" id="S3.I1.i3.p1.3.m3.1.1.3.cmml" xref="S3.I1.i3.p1.3.m3.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i3.p1.3.m3.1c">2305*3</annotation></semantics></math>, with EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S3.I1.i4.p1" class="ltx_para">
+<p id="S3.I1.i4.p1.2" class="ltx_p">MoNN2Lw, based on means, with 2 layers 
+<br class="ltx_break"><math id="S3.I1.i4.p1.1.m1.1" class="ltx_Math" alttext="2305*6" display="inline"><semantics id="S3.I1.i4.p1.1.m1.1a"><mrow id="S3.I1.i4.p1.1.m1.1.1" xref="S3.I1.i4.p1.1.m1.1.1.cmml"><mn id="S3.I1.i4.p1.1.m1.1.1.2" xref="S3.I1.i4.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i4.p1.1.m1.1.1.1" xref="S3.I1.i4.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i4.p1.1.m1.1.1.3" xref="S3.I1.i4.p1.1.m1.1.1.3.cmml">6</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i4.p1.1.m1.1b"><apply id="S3.I1.i4.p1.1.m1.1.1.cmml" xref="S3.I1.i4.p1.1.m1.1.1"><times id="S3.I1.i4.p1.1.m1.1.1.1.cmml" xref="S3.I1.i4.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i4.p1.1.m1.1.1.2.cmml" xref="S3.I1.i4.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i4.p1.1.m1.1.1.3.cmml" xref="S3.I1.i4.p1.1.m1.1.1.3">6</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i4.p1.1.m1.1c">2305*6</annotation></semantics></math> and <math id="S3.I1.i4.p1.2.m2.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i4.p1.2.m2.1a"><mrow id="S3.I1.i4.p1.2.m2.1.1" xref="S3.I1.i4.p1.2.m2.1.1.cmml"><mn id="S3.I1.i4.p1.2.m2.1.1.2" xref="S3.I1.i4.p1.2.m2.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i4.p1.2.m2.1.1.1" xref="S3.I1.i4.p1.2.m2.1.1.1.cmml">∗</mo><mn id="S3.I1.i4.p1.2.m2.1.1.3" xref="S3.I1.i4.p1.2.m2.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i4.p1.2.m2.1b"><apply id="S3.I1.i4.p1.2.m2.1.1.cmml" xref="S3.I1.i4.p1.2.m2.1.1"><times id="S3.I1.i4.p1.2.m2.1.1.1.cmml" xref="S3.I1.i4.p1.2.m2.1.1.1"></times><cn type="integer" id="S3.I1.i4.p1.2.m2.1.1.2.cmml" xref="S3.I1.i4.p1.2.m2.1.1.2">2305</cn><cn type="integer" id="S3.I1.i4.p1.2.m2.1.1.3.cmml" xref="S3.I1.i4.p1.2.m2.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i4.p1.2.m2.1c">2305*3</annotation></semantics></math>, no EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S3.I1.i5.p1" class="ltx_para">
+<p id="S3.I1.i5.p1.2" class="ltx_p">MoNN2Lw, based on means, with 2 layers 
+<br class="ltx_break"><math id="S3.I1.i5.p1.1.m1.1" class="ltx_Math" alttext="2305*6" display="inline"><semantics id="S3.I1.i5.p1.1.m1.1a"><mrow id="S3.I1.i5.p1.1.m1.1.1" xref="S3.I1.i5.p1.1.m1.1.1.cmml"><mn id="S3.I1.i5.p1.1.m1.1.1.2" xref="S3.I1.i5.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i5.p1.1.m1.1.1.1" xref="S3.I1.i5.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i5.p1.1.m1.1.1.3" xref="S3.I1.i5.p1.1.m1.1.1.3.cmml">6</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i5.p1.1.m1.1b"><apply id="S3.I1.i5.p1.1.m1.1.1.cmml" xref="S3.I1.i5.p1.1.m1.1.1"><times id="S3.I1.i5.p1.1.m1.1.1.1.cmml" xref="S3.I1.i5.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i5.p1.1.m1.1.1.2.cmml" xref="S3.I1.i5.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i5.p1.1.m1.1.1.3.cmml" xref="S3.I1.i5.p1.1.m1.1.1.3">6</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i5.p1.1.m1.1c">2305*6</annotation></semantics></math> and <math id="S3.I1.i5.p1.2.m2.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i5.p1.2.m2.1a"><mrow id="S3.I1.i5.p1.2.m2.1.1" xref="S3.I1.i5.p1.2.m2.1.1.cmml"><mn id="S3.I1.i5.p1.2.m2.1.1.2" xref="S3.I1.i5.p1.2.m2.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i5.p1.2.m2.1.1.1" xref="S3.I1.i5.p1.2.m2.1.1.1.cmml">∗</mo><mn id="S3.I1.i5.p1.2.m2.1.1.3" xref="S3.I1.i5.p1.2.m2.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i5.p1.2.m2.1b"><apply id="S3.I1.i5.p1.2.m2.1.1.cmml" xref="S3.I1.i5.p1.2.m2.1.1"><times id="S3.I1.i5.p1.2.m2.1.1.1.cmml" xref="S3.I1.i5.p1.2.m2.1.1.1"></times><cn type="integer" id="S3.I1.i5.p1.2.m2.1.1.2.cmml" xref="S3.I1.i5.p1.2.m2.1.1.2">2305</cn><cn type="integer" id="S3.I1.i5.p1.2.m2.1.1.3.cmml" xref="S3.I1.i5.p1.2.m2.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i5.p1.2.m2.1c">2305*3</annotation></semantics></math>, with EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S3.I1.i6.p1" class="ltx_para">
+<p id="S3.I1.i6.p1.2" class="ltx_p">MoNN2Lw, based on third powers, with 2 layers 
+<br class="ltx_break"><math id="S3.I1.i6.p1.1.m1.1" class="ltx_Math" alttext="2305*6" display="inline"><semantics id="S3.I1.i6.p1.1.m1.1a"><mrow id="S3.I1.i6.p1.1.m1.1.1" xref="S3.I1.i6.p1.1.m1.1.1.cmml"><mn id="S3.I1.i6.p1.1.m1.1.1.2" xref="S3.I1.i6.p1.1.m1.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i6.p1.1.m1.1.1.1" xref="S3.I1.i6.p1.1.m1.1.1.1.cmml">∗</mo><mn id="S3.I1.i6.p1.1.m1.1.1.3" xref="S3.I1.i6.p1.1.m1.1.1.3.cmml">6</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i6.p1.1.m1.1b"><apply id="S3.I1.i6.p1.1.m1.1.1.cmml" xref="S3.I1.i6.p1.1.m1.1.1"><times id="S3.I1.i6.p1.1.m1.1.1.1.cmml" xref="S3.I1.i6.p1.1.m1.1.1.1"></times><cn type="integer" id="S3.I1.i6.p1.1.m1.1.1.2.cmml" xref="S3.I1.i6.p1.1.m1.1.1.2">2305</cn><cn type="integer" id="S3.I1.i6.p1.1.m1.1.1.3.cmml" xref="S3.I1.i6.p1.1.m1.1.1.3">6</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i6.p1.1.m1.1c">2305*6</annotation></semantics></math> and <math id="S3.I1.i6.p1.2.m2.1" class="ltx_Math" alttext="2305*3" display="inline"><semantics id="S3.I1.i6.p1.2.m2.1a"><mrow id="S3.I1.i6.p1.2.m2.1.1" xref="S3.I1.i6.p1.2.m2.1.1.cmml"><mn id="S3.I1.i6.p1.2.m2.1.1.2" xref="S3.I1.i6.p1.2.m2.1.1.2.cmml">2305</mn><mo lspace="0.222em" rspace="0.222em" id="S3.I1.i6.p1.2.m2.1.1.1" xref="S3.I1.i6.p1.2.m2.1.1.1.cmml">∗</mo><mn id="S3.I1.i6.p1.2.m2.1.1.3" xref="S3.I1.i6.p1.2.m2.1.1.3.cmml">3</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.I1.i6.p1.2.m2.1b"><apply id="S3.I1.i6.p1.2.m2.1.1.cmml" xref="S3.I1.i6.p1.2.m2.1.1"><times id="S3.I1.i6.p1.2.m2.1.1.1.cmml" xref="S3.I1.i6.p1.2.m2.1.1.1"></times><cn type="integer" id="S3.I1.i6.p1.2.m2.1.1.2.cmml" xref="S3.I1.i6.p1.2.m2.1.1.2">2305</cn><cn type="integer" id="S3.I1.i6.p1.2.m2.1.1.3.cmml" xref="S3.I1.i6.p1.2.m2.1.1.3">3</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i6.p1.2.m2.1c">2305*3</annotation></semantics></math>, with EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S3.I1.i7.p1" class="ltx_para">
+<p id="S3.I1.i7.p1.3" class="ltx_p">MoNN3L, based on means, with 3 layers 
+<br class="ltx_break"><math id="S3.I1.i7.p1.1.m1.1" class="ltx_Math" alttext="4096" display="inline"><semantics id="S3.I1.i7.p1.1.m1.1a"><mn id="S3.I1.i7.p1.1.m1.1.1" xref="S3.I1.i7.p1.1.m1.1.1.cmml">4096</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i7.p1.1.m1.1b"><cn type="integer" id="S3.I1.i7.p1.1.m1.1.1.cmml" xref="S3.I1.i7.p1.1.m1.1.1">4096</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i7.p1.1.m1.1c">4096</annotation></semantics></math>, <math id="S3.I1.i7.p1.2.m2.1" class="ltx_Math" alttext="4096" display="inline"><semantics id="S3.I1.i7.p1.2.m2.1a"><mn id="S3.I1.i7.p1.2.m2.1.1" xref="S3.I1.i7.p1.2.m2.1.1.cmml">4096</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i7.p1.2.m2.1b"><cn type="integer" id="S3.I1.i7.p1.2.m2.1.1.cmml" xref="S3.I1.i7.p1.2.m2.1.1">4096</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i7.p1.2.m2.1c">4096</annotation></semantics></math>, and <math id="S3.I1.i7.p1.3.m3.1" class="ltx_Math" alttext="4096" display="inline"><semantics id="S3.I1.i7.p1.3.m3.1a"><mn id="S3.I1.i7.p1.3.m3.1.1" xref="S3.I1.i7.p1.3.m3.1.1.cmml">4096</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i7.p1.3.m3.1b"><cn type="integer" id="S3.I1.i7.p1.3.m3.1.1.cmml" xref="S3.I1.i7.p1.3.m3.1.1">4096</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i7.p1.3.m3.1c">4096</annotation></semantics></math>, no EMA;</p>
+</div>
+</li>
+<li id="S3.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S3.I1.i8.p1" class="ltx_para">
+<p id="S3.I1.i8.p1.4" class="ltx_p">MoNN4Ln, based on means, with 4 layers 
+<br class="ltx_break"><math id="S3.I1.i8.p1.1.m1.1" class="ltx_Math" alttext="2048" display="inline"><semantics id="S3.I1.i8.p1.1.m1.1a"><mn id="S3.I1.i8.p1.1.m1.1.1" xref="S3.I1.i8.p1.1.m1.1.1.cmml">2048</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i8.p1.1.m1.1b"><cn type="integer" id="S3.I1.i8.p1.1.m1.1.1.cmml" xref="S3.I1.i8.p1.1.m1.1.1">2048</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i8.p1.1.m1.1c">2048</annotation></semantics></math>, <math id="S3.I1.i8.p1.2.m2.1" class="ltx_Math" alttext="2048" display="inline"><semantics id="S3.I1.i8.p1.2.m2.1a"><mn id="S3.I1.i8.p1.2.m2.1.1" xref="S3.I1.i8.p1.2.m2.1.1.cmml">2048</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i8.p1.2.m2.1b"><cn type="integer" id="S3.I1.i8.p1.2.m2.1.1.cmml" xref="S3.I1.i8.p1.2.m2.1.1">2048</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i8.p1.2.m2.1c">2048</annotation></semantics></math>, <math id="S3.I1.i8.p1.3.m3.1" class="ltx_Math" alttext="2048" display="inline"><semantics id="S3.I1.i8.p1.3.m3.1a"><mn id="S3.I1.i8.p1.3.m3.1.1" xref="S3.I1.i8.p1.3.m3.1.1.cmml">2048</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i8.p1.3.m3.1b"><cn type="integer" id="S3.I1.i8.p1.3.m3.1.1.cmml" xref="S3.I1.i8.p1.3.m3.1.1">2048</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i8.p1.3.m3.1c">2048</annotation></semantics></math>, and <math id="S3.I1.i8.p1.4.m4.1" class="ltx_Math" alttext="2048" display="inline"><semantics id="S3.I1.i8.p1.4.m4.1a"><mn id="S3.I1.i8.p1.4.m4.1.1" xref="S3.I1.i8.p1.4.m4.1.1.cmml">2048</mn><annotation-xml encoding="MathML-Content" id="S3.I1.i8.p1.4.m4.1b"><cn type="integer" id="S3.I1.i8.p1.4.m4.1.1.cmml" xref="S3.I1.i8.p1.4.m4.1.1">2048</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.I1.i8.p1.4.m4.1c">2048</annotation></semantics></math>, no EMA;</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S3.SS1.p7" class="ltx_para">
+<p id="S3.SS1.p7.1" class="ltx_p">To summarize, we made many models of MoNN class that are a mix of different features and slightly different structures (2L, 3L, 4L, narrow and wide, with or without EMA). We found that equal weights ensemble worked well for this class of models.</p>
+</div>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>LSTM</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<p id="S3.SS2.p1.1" class="ltx_p">In contrast to video level models, frame level models turned out to be more time expensive to train. 6 epochs of LSTM model training took approximately 3 days to train on Nvidia GTX 1080ti GPU. Consequently we prioritized exploitation of good models over exploration of new ones. In our final submission we used two types of recurrent neural networks: LSTMs and GRUs.</p>
+</div>
+<div id="S3.SS2.p2" class="ltx_para">
+<p id="S3.SS2.p2.1" class="ltx_p">For both types of recurrent networks we used dynamic (varied length) versions of Recurrent Neural Networks (RNNs) with maximum length of 300 frames. We propagated the input through 2 layer network. The first layer was a bidirectional RNN, a network consisting of two models running in the opposite direction. Outputs of the two models at each step were then concatenated before being feed to the second single direction layer. Memory of the last state was used as input to a MoE network with two experts. Schematic representation of the networks presented in Fig. <a href="#S3.F1" title="Figure 1 ‣ 3.2 LSTM ‣ 3 Models ‣ Deep Learning Methods for Efficient Large Scale Video Labeling" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>. In case of LSTMs we used 600 and 1200 unit cells for bidirectional and single direction RNNs, respectively. Models were trained with an initial learning rate of 0.00025 and batch size of <math id="S3.SS2.p2.1.m1.1" class="ltx_Math" alttext="256" display="inline"><semantics id="S3.SS2.p2.1.m1.1a"><mn id="S3.SS2.p2.1.m1.1.1" xref="S3.SS2.p2.1.m1.1.1.cmml">256</mn><annotation-xml encoding="MathML-Content" id="S3.SS2.p2.1.m1.1b"><cn type="integer" id="S3.SS2.p2.1.m1.1.1.cmml" xref="S3.SS2.p2.1.m1.1.1">256</cn></annotation-xml><annotation encoding="application/x-tex" id="S3.SS2.p2.1.m1.1c">256</annotation></semantics></math>. We used the default starter code values for all other hyperparameters. In total we trained 3 models from scratch. We trained on all the available data. We were able to boost the GAP score by:</p>
+<ol id="S3.I2" class="ltx_enumerate">
+<li id="S3.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S3.I2.i1.p1" class="ltx_para">
+<p id="S3.I2.i1.p1.1" class="ltx_p">Assembling predictions of 3 checkpoints.</p>
+</div>
+</li>
+<li id="S3.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S3.I2.i2.p1" class="ltx_para">
+<p id="S3.I2.i2.p1.1" class="ltx_p">Adding models that were trained using different initialization.</p>
+</div>
+</li>
+<li id="S3.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S3.I2.i3.p1" class="ltx_para">
+<p id="S3.I2.i3.p1.1" class="ltx_p">Continue training the model while keeping EMA values of the model weights and using the EMA model variables for prediction.</p>
+</div>
+</li>
+</ol>
+<p id="S3.SS2.p2.2" class="ltx_p">All three techniques helped improve our GAP score (Table <a href="#S3.T2" title="Table 2 ‣ 3.2 LSTM ‣ 3 Models ‣ Deep Learning Methods for Efficient Large Scale Video Labeling" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>).
+Our final submission consisted of model predictions after training for approximately 115, 125 and 135 thousand batches. Additional training with EMA of the weights was done for 3000 batches with a half life of 3000 steps.</p>
+</div>
+<figure id="S3.F1" class="ltx_figure">
+<p id="S3.F1.1.1" class="ltx_p ltx_align_center"><span id="S3.F1.1.1.1" class="ltx_text ltx_framed ltx_framed_rectangle" style="border-color: #000000;"><img src="/html/1706.04572/assets/x1.png" id="S3.F1.1.1.1.g1" class="ltx_graphics ltx_img_square" width="415" height="383" alt="Refer to caption"></span></p>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>LSTM architecture.</figcaption>
+</figure>
+<figure id="S3.T2" class="ltx_table">
+<table id="S3.T2.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S3.T2.1.1.1" class="ltx_tr">
+<th id="S3.T2.1.1.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_l ltx_border_r ltx_border_t">Model</th>
+<th id="S3.T2.1.1.1.2" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Public LB</th>
+<th id="S3.T2.1.1.1.3" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Private LB</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S3.T2.1.2.1" class="ltx_tr">
+<th id="S3.T2.1.2.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r ltx_border_tt">1 model, 1 checkpoint</th>
+<td id="S3.T2.1.2.1.2" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.81547</td>
+<td id="S3.T2.1.2.1.3" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.81592</td>
+</tr>
+<tr id="S3.T2.1.3.2" class="ltx_tr">
+<th id="S3.T2.1.3.2.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">1 model, 3 checkpoints</th>
+<td id="S3.T2.1.3.2.2" class="ltx_td ltx_align_center ltx_border_r">0.82244</td>
+<td id="S3.T2.1.3.2.3" class="ltx_td ltx_align_center ltx_border_r">0.82276</td>
+</tr>
+<tr id="S3.T2.1.4.3" class="ltx_tr">
+<th id="S3.T2.1.4.3.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">2 models 3 checkpoints</th>
+<td id="S3.T2.1.4.3.2" class="ltx_td ltx_align_center ltx_border_r">0.83085</td>
+<td id="S3.T2.1.4.3.3" class="ltx_td ltx_align_center ltx_border_r">0.83100</td>
+</tr>
+<tr id="S3.T2.1.5.4" class="ltx_tr">
+<th id="S3.T2.1.5.4.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">1 model, 1 checkpoint, EMA</th>
+<td id="S3.T2.1.5.4.2" class="ltx_td ltx_align_center ltx_border_r">0.81978</td>
+<td id="S3.T2.1.5.4.3" class="ltx_td ltx_align_center ltx_border_r">0.82012</td>
+</tr>
+<tr id="S3.T2.1.6.5" class="ltx_tr">
+<th id="S3.T2.1.6.5.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">2 models 3 checkpoints, EMA</th>
+<td id="S3.T2.1.6.5.2" class="ltx_td ltx_align_center ltx_border_r">0.83183</td>
+<td id="S3.T2.1.6.5.3" class="ltx_td ltx_align_center ltx_border_r">0.83183</td>
+</tr>
+<tr id="S3.T2.1.7.6" class="ltx_tr">
+<th id="S3.T2.1.7.6.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
+<span id="S3.T2.1.7.6.1.1" class="ltx_inline-block">
+<span id="S3.T2.1.7.6.1.1.1" class="ltx_p">final ensemble</span>
+<span id="S3.T2.1.7.6.1.1.2" class="ltx_p">3 model, 3 checkpoints, EMA</span>
+</span>
+</th>
+<td id="S3.T2.1.7.6.2" class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0.83482</td>
+<td id="S3.T2.1.7.6.3" class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0.83489</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 2: </span>LSTM predictions, leaderboard scores. A small score variation is present between the models and within model checkpoints.</figcaption>
+</figure>
+</section>
+<section id="S3.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.3 </span>GRU</h3>
+
+<div id="S3.SS3.p1" class="ltx_para">
+<p id="S3.SS3.p1.1" class="ltx_p">For the GRU models we used similar architecture as for the LSTM. The only exception was that we used 1250 (second layer) and 625 (first layer forward and backward) unit cells. Training time of about 3 days for 6 epocs was comparable to LSTM training time. Unlike LSTMs, we trained GRUs using bootstrap aggregating. We used 80% of the data for training and leaving out the remaining 20%. We did this for 5 folds, in each fold leaving out different set of samples. Final evaluation was done on 5 checkpoints after training for approximately 82, 94, 96, 98 and 100 thousand batches.</p>
+</div>
+</section>
+<section id="S3.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.4 </span>Other Frame Level Models</h3>
+
+<div id="S3.SS4.p1" class="ltx_para">
+<p id="S3.SS4.p1.1" class="ltx_p">In addition to the presented LSTMs and GRUs we also trained several other frame level models. Although we did not use these models in the final ensemble we hypothesize that they might be useful if properly optimized and assembled. We made these models available as part of our code.</p>
+</div>
+<div id="S3.SS4.p2" class="ltx_para">
+<p id="S3.SS4.p2.1" class="ltx_p">We tried to increase the width of LSTM models by feeding every second frame into a different 2 layer LSTM network. Last memory states were then summed up before being feed into the MoE classifier. A 5 fold bootstrap aggregating submission with 3 checkpoints yielded private and public GAP score of 0.82734 and 0.82744, respectively. This model gave better GAP score then the starter code LSTM network, but lower score than previously described bidirectional model.</p>
+</div>
+<div id="S3.SS4.p3" class="ltx_para">
+<p id="S3.SS4.p3.1" class="ltx_p">Next, we tried coupling LSTM aggregation with regularized MoNN classifier instead of MoE classifier. When training a model with a single hidden layer we observed that the training was substantially slower. A 7 checkpoint prediction (evenly spaced checkpoints in range 160k-210k; 128 samples batch size) achieved private leaderboard GAP score of 0.81523, which is significantly lower than bidirectional 3 checkpoints model.</p>
+</div>
+<div id="S3.SS4.p4" class="ltx_para">
+<p id="S3.SS4.p4.1" class="ltx_p">When testing DBoF models we saw that making the pooled layer wider helps improving the GAP score. We made a 5 fold bootstrap aggregating DBoF ensemble with average pooling and 11 thousand units layer before the pooling operation. A 5 folds and 6 checkpoint ensemble yielded private leaderboard score of 0.82144. Unfortunately, when using these predictions together with RNNs and MoNNs we did not see improvement of the score.</p>
+</div>
+<div id="S3.SS4.p5" class="ltx_para">
+<p id="S3.SS4.p5.1" class="ltx_p">We also tried training a single hybrid DBoF/GRU network. In this network we concatenated the aggregated values before feeding them into final 2 expert MoE classifier. However, we were not able to fully train this network before the competition ended. We observed the network kept good properties from both networks. the training GAP score quickly increased (as observed in default DBoF networks) and it did not plateaued after several thousand batches (as observed in RNN networks).</p>
+</div>
+<div id="S3.SS4.p6" class="ltx_para">
+<p id="S3.SS4.p6.1" class="ltx_p">Finally, we explored usage of 1D convolution as an alternative frame aggregating method. In our initial experiment where we combined convolutions with different filter lengths, strides, frame skipping and polling methods our training GAP score plateaued at <math id="S3.SS4.p6.1.m1.1" class="ltx_Math" alttext="\sim 0.72" display="inline"><semantics id="S3.SS4.p6.1.m1.1a"><mrow id="S3.SS4.p6.1.m1.1.1" xref="S3.SS4.p6.1.m1.1.1.cmml"><mi id="S3.SS4.p6.1.m1.1.1.2" xref="S3.SS4.p6.1.m1.1.1.2.cmml"></mi><mo id="S3.SS4.p6.1.m1.1.1.1" xref="S3.SS4.p6.1.m1.1.1.1.cmml">∼</mo><mn id="S3.SS4.p6.1.m1.1.1.3" xref="S3.SS4.p6.1.m1.1.1.3.cmml">0.72</mn></mrow><annotation-xml encoding="MathML-Content" id="S3.SS4.p6.1.m1.1b"><apply id="S3.SS4.p6.1.m1.1.1.cmml" xref="S3.SS4.p6.1.m1.1.1"><csymbol cd="latexml" id="S3.SS4.p6.1.m1.1.1.1.cmml" xref="S3.SS4.p6.1.m1.1.1.1">similar-to</csymbol><csymbol cd="latexml" id="S3.SS4.p6.1.m1.1.1.2.cmml" xref="S3.SS4.p6.1.m1.1.1.2">absent</csymbol><cn type="float" id="S3.SS4.p6.1.m1.1.1.3.cmml" xref="S3.SS4.p6.1.m1.1.1.3">0.72</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS4.p6.1.m1.1c">\sim 0.72</annotation></semantics></math>. We believe that increasing the model capacity would improve the score.</p>
+</div>
+<figure id="S3.T3" class="ltx_table">
+<table id="S3.T3.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S3.T3.1.1.1" class="ltx_tr">
+<th id="S3.T3.1.1.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_l ltx_border_r ltx_border_t">Model</th>
+<th id="S3.T3.1.1.1.2" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Private LB</th>
+<th id="S3.T3.1.1.1.3" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Public LB</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S3.T3.1.2.1" class="ltx_tr">
+<th id="S3.T3.1.2.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r ltx_border_tt">1 fold, 1 checkpoint</th>
+<td id="S3.T3.1.2.1.2" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.81200</td>
+<td id="S3.T3.1.2.1.3" class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0.81197</td>
+</tr>
+<tr id="S3.T3.1.3.2" class="ltx_tr">
+<th id="S3.T3.1.3.2.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">1 fold, 3 checkpoints</th>
+<td id="S3.T3.1.3.2.2" class="ltx_td ltx_align_center ltx_border_r">0.81759</td>
+<td id="S3.T3.1.3.2.3" class="ltx_td ltx_align_center ltx_border_r">0.81766</td>
+</tr>
+<tr id="S3.T3.1.4.3" class="ltx_tr">
+<th id="S3.T3.1.4.3.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">5 folds, 1 checkpoint</th>
+<td id="S3.T3.1.4.3.2" class="ltx_td ltx_align_center ltx_border_r">0.83143</td>
+<td id="S3.T3.1.4.3.3" class="ltx_td ltx_align_center ltx_border_r">0.83156</td>
+</tr>
+<tr id="S3.T3.1.5.4" class="ltx_tr">
+<th id="S3.T3.1.5.4.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">5 folds, 3 checkpoints</th>
+<td id="S3.T3.1.5.4.2" class="ltx_td ltx_align_center ltx_border_r">0.83306</td>
+<td id="S3.T3.1.5.4.3" class="ltx_td ltx_align_center ltx_border_r">0.83322</td>
+</tr>
+<tr id="S3.T3.1.6.5" class="ltx_tr">
+<th id="S3.T3.1.6.5.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
+<span id="S3.T3.1.6.5.1.1" class="ltx_inline-block">
+<span id="S3.T3.1.6.5.1.1.1" class="ltx_p">final ensemble</span>
+<span id="S3.T3.1.6.5.1.1.2" class="ltx_p">5 folds, 5 checkpoints</span>
+</span>
+</th>
+<td id="S3.T3.1.6.5.2" class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0.83349</td>
+<td id="S3.T3.1.6.5.3" class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0.83362</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 3: </span>GRU predictions, leaderboard scores.</figcaption>
+</figure>
+</section>
+<section id="S3.SS5" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.5 </span>Model Ensemble</h3>
+
+<div id="S3.SS5.p1" class="ltx_para">
+<p id="S3.SS5.p1.1" class="ltx_p">For each of our major models, except for LSTM model, we trained them on five data folds. For each fold, we again picked about five checkpoints that are about half an epoch apart in the fully trained regime. We then calculated the equal weighted average probability of the 25 predictions. For the video level model MoNNs, the ensemble prediction GAP is generally 0.01 higher than the single fold and single checkpoint prediction GAP. For the frame level models, the gain is even higher at 0.02.</p>
+</div>
+<div id="S3.SS5.p2" class="ltx_para">
+<p id="S3.SS5.p2.4" class="ltx_p">As expected, ensembles from model predictions with low correlation tend to enjoy higher added value. For effective model ensemble, we created a measure of prediction correlation. For one video, we viewed a prediction as a 4716-dimension vector. Following the standard approach in vector analysis, we define the correlation between two predictions as:</p>
+<table id="S3.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex2.m1.3" class="ltx_Math" alttext="\rho=\frac{{\mathbf{p}_{1}}\cdot{\mathbf{p}_{2}}}{|{\mathbf{p}_{1}}|\;|{\mathbf{p}_{2}}|}\ ," display="block"><semantics id="S3.Ex2.m1.3a"><mrow id="S3.Ex2.m1.3.3.1" xref="S3.Ex2.m1.3.3.1.1.cmml"><mrow id="S3.Ex2.m1.3.3.1.1" xref="S3.Ex2.m1.3.3.1.1.cmml"><mi id="S3.Ex2.m1.3.3.1.1.2" xref="S3.Ex2.m1.3.3.1.1.2.cmml">ρ</mi><mo id="S3.Ex2.m1.3.3.1.1.1" xref="S3.Ex2.m1.3.3.1.1.1.cmml">=</mo><mfrac id="S3.Ex2.m1.2.2" xref="S3.Ex2.m1.2.2.cmml"><mrow id="S3.Ex2.m1.2.2.4" xref="S3.Ex2.m1.2.2.4.cmml"><msub id="S3.Ex2.m1.2.2.4.2" xref="S3.Ex2.m1.2.2.4.2.cmml"><mi id="S3.Ex2.m1.2.2.4.2.2" xref="S3.Ex2.m1.2.2.4.2.2.cmml">𝐩</mi><mn id="S3.Ex2.m1.2.2.4.2.3" xref="S3.Ex2.m1.2.2.4.2.3.cmml">1</mn></msub><mo lspace="0.222em" rspace="0.222em" id="S3.Ex2.m1.2.2.4.1" xref="S3.Ex2.m1.2.2.4.1.cmml">⋅</mo><msub id="S3.Ex2.m1.2.2.4.3" xref="S3.Ex2.m1.2.2.4.3.cmml"><mi id="S3.Ex2.m1.2.2.4.3.2" xref="S3.Ex2.m1.2.2.4.3.2.cmml">𝐩</mi><mn id="S3.Ex2.m1.2.2.4.3.3" xref="S3.Ex2.m1.2.2.4.3.3.cmml">2</mn></msub></mrow><mrow id="S3.Ex2.m1.2.2.2" xref="S3.Ex2.m1.2.2.2.cmml"><mrow id="S3.Ex2.m1.1.1.1.1.1" xref="S3.Ex2.m1.1.1.1.1.2.cmml"><mo stretchy="false" id="S3.Ex2.m1.1.1.1.1.1.2" xref="S3.Ex2.m1.1.1.1.1.2.1.cmml">|</mo><msub id="S3.Ex2.m1.1.1.1.1.1.1" xref="S3.Ex2.m1.1.1.1.1.1.1.cmml"><mi id="S3.Ex2.m1.1.1.1.1.1.1.2" xref="S3.Ex2.m1.1.1.1.1.1.1.2.cmml">𝐩</mi><mn id="S3.Ex2.m1.1.1.1.1.1.1.3" xref="S3.Ex2.m1.1.1.1.1.1.1.3.cmml">1</mn></msub><mo stretchy="false" id="S3.Ex2.m1.1.1.1.1.1.3" xref="S3.Ex2.m1.1.1.1.1.2.1.cmml">|</mo></mrow><mo lspace="0.280em" rspace="0em" id="S3.Ex2.m1.2.2.2.3" xref="S3.Ex2.m1.2.2.2.3.cmml">​</mo><mrow id="S3.Ex2.m1.2.2.2.2.1" xref="S3.Ex2.m1.2.2.2.2.2.cmml"><mo stretchy="false" id="S3.Ex2.m1.2.2.2.2.1.2" xref="S3.Ex2.m1.2.2.2.2.2.1.cmml">|</mo><msub id="S3.Ex2.m1.2.2.2.2.1.1" xref="S3.Ex2.m1.2.2.2.2.1.1.cmml"><mi id="S3.Ex2.m1.2.2.2.2.1.1.2" xref="S3.Ex2.m1.2.2.2.2.1.1.2.cmml">𝐩</mi><mn id="S3.Ex2.m1.2.2.2.2.1.1.3" xref="S3.Ex2.m1.2.2.2.2.1.1.3.cmml">2</mn></msub><mo stretchy="false" id="S3.Ex2.m1.2.2.2.2.1.3" xref="S3.Ex2.m1.2.2.2.2.2.1.cmml">|</mo></mrow></mrow></mfrac></mrow><mo lspace="0.500em" id="S3.Ex2.m1.3.3.1.2" xref="S3.Ex2.m1.3.3.1.1.cmml">,</mo></mrow><annotation-xml encoding="MathML-Content" id="S3.Ex2.m1.3b"><apply id="S3.Ex2.m1.3.3.1.1.cmml" xref="S3.Ex2.m1.3.3.1"><eq id="S3.Ex2.m1.3.3.1.1.1.cmml" xref="S3.Ex2.m1.3.3.1.1.1"></eq><ci id="S3.Ex2.m1.3.3.1.1.2.cmml" xref="S3.Ex2.m1.3.3.1.1.2">𝜌</ci><apply id="S3.Ex2.m1.2.2.cmml" xref="S3.Ex2.m1.2.2"><divide id="S3.Ex2.m1.2.2.3.cmml" xref="S3.Ex2.m1.2.2"></divide><apply id="S3.Ex2.m1.2.2.4.cmml" xref="S3.Ex2.m1.2.2.4"><ci id="S3.Ex2.m1.2.2.4.1.cmml" xref="S3.Ex2.m1.2.2.4.1">⋅</ci><apply id="S3.Ex2.m1.2.2.4.2.cmml" xref="S3.Ex2.m1.2.2.4.2"><csymbol cd="ambiguous" id="S3.Ex2.m1.2.2.4.2.1.cmml" xref="S3.Ex2.m1.2.2.4.2">subscript</csymbol><ci id="S3.Ex2.m1.2.2.4.2.2.cmml" xref="S3.Ex2.m1.2.2.4.2.2">𝐩</ci><cn type="integer" id="S3.Ex2.m1.2.2.4.2.3.cmml" xref="S3.Ex2.m1.2.2.4.2.3">1</cn></apply><apply id="S3.Ex2.m1.2.2.4.3.cmml" xref="S3.Ex2.m1.2.2.4.3"><csymbol cd="ambiguous" id="S3.Ex2.m1.2.2.4.3.1.cmml" xref="S3.Ex2.m1.2.2.4.3">subscript</csymbol><ci id="S3.Ex2.m1.2.2.4.3.2.cmml" xref="S3.Ex2.m1.2.2.4.3.2">𝐩</ci><cn type="integer" id="S3.Ex2.m1.2.2.4.3.3.cmml" xref="S3.Ex2.m1.2.2.4.3.3">2</cn></apply></apply><apply id="S3.Ex2.m1.2.2.2.cmml" xref="S3.Ex2.m1.2.2.2"><times id="S3.Ex2.m1.2.2.2.3.cmml" xref="S3.Ex2.m1.2.2.2.3"></times><apply id="S3.Ex2.m1.1.1.1.1.2.cmml" xref="S3.Ex2.m1.1.1.1.1.1"><abs id="S3.Ex2.m1.1.1.1.1.2.1.cmml" xref="S3.Ex2.m1.1.1.1.1.1.2"></abs><apply id="S3.Ex2.m1.1.1.1.1.1.1.cmml" xref="S3.Ex2.m1.1.1.1.1.1.1"><csymbol cd="ambiguous" id="S3.Ex2.m1.1.1.1.1.1.1.1.cmml" xref="S3.Ex2.m1.1.1.1.1.1.1">subscript</csymbol><ci id="S3.Ex2.m1.1.1.1.1.1.1.2.cmml" xref="S3.Ex2.m1.1.1.1.1.1.1.2">𝐩</ci><cn type="integer" id="S3.Ex2.m1.1.1.1.1.1.1.3.cmml" xref="S3.Ex2.m1.1.1.1.1.1.1.3">1</cn></apply></apply><apply id="S3.Ex2.m1.2.2.2.2.2.cmml" xref="S3.Ex2.m1.2.2.2.2.1"><abs id="S3.Ex2.m1.2.2.2.2.2.1.cmml" xref="S3.Ex2.m1.2.2.2.2.1.2"></abs><apply id="S3.Ex2.m1.2.2.2.2.1.1.cmml" xref="S3.Ex2.m1.2.2.2.2.1.1"><csymbol cd="ambiguous" id="S3.Ex2.m1.2.2.2.2.1.1.1.cmml" xref="S3.Ex2.m1.2.2.2.2.1.1">subscript</csymbol><ci id="S3.Ex2.m1.2.2.2.2.1.1.2.cmml" xref="S3.Ex2.m1.2.2.2.2.1.1.2">𝐩</ci><cn type="integer" id="S3.Ex2.m1.2.2.2.2.1.1.3.cmml" xref="S3.Ex2.m1.2.2.2.2.1.1.3">2</cn></apply></apply></apply></apply></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.Ex2.m1.3c">\rho=\frac{{\mathbf{p}_{1}}\cdot{\mathbf{p}_{2}}}{|{\mathbf{p}_{1}}|\;|{\mathbf{p}_{2}}|}\ ,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p id="S3.SS5.p2.3" class="ltx_p">where <math id="S3.SS5.p2.1.m1.1" class="ltx_Math" alttext="{\mathbf{p}_{1}}" display="inline"><semantics id="S3.SS5.p2.1.m1.1a"><msub id="S3.SS5.p2.1.m1.1.1" xref="S3.SS5.p2.1.m1.1.1.cmml"><mi id="S3.SS5.p2.1.m1.1.1.2" xref="S3.SS5.p2.1.m1.1.1.2.cmml">𝐩</mi><mn id="S3.SS5.p2.1.m1.1.1.3" xref="S3.SS5.p2.1.m1.1.1.3.cmml">1</mn></msub><annotation-xml encoding="MathML-Content" id="S3.SS5.p2.1.m1.1b"><apply id="S3.SS5.p2.1.m1.1.1.cmml" xref="S3.SS5.p2.1.m1.1.1"><csymbol cd="ambiguous" id="S3.SS5.p2.1.m1.1.1.1.cmml" xref="S3.SS5.p2.1.m1.1.1">subscript</csymbol><ci id="S3.SS5.p2.1.m1.1.1.2.cmml" xref="S3.SS5.p2.1.m1.1.1.2">𝐩</ci><cn type="integer" id="S3.SS5.p2.1.m1.1.1.3.cmml" xref="S3.SS5.p2.1.m1.1.1.3">1</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS5.p2.1.m1.1c">{\mathbf{p}_{1}}</annotation></semantics></math> and <math id="S3.SS5.p2.2.m2.1" class="ltx_Math" alttext="{\mathbf{p}_{2}}" display="inline"><semantics id="S3.SS5.p2.2.m2.1a"><msub id="S3.SS5.p2.2.m2.1.1" xref="S3.SS5.p2.2.m2.1.1.cmml"><mi id="S3.SS5.p2.2.m2.1.1.2" xref="S3.SS5.p2.2.m2.1.1.2.cmml">𝐩</mi><mn id="S3.SS5.p2.2.m2.1.1.3" xref="S3.SS5.p2.2.m2.1.1.3.cmml">2</mn></msub><annotation-xml encoding="MathML-Content" id="S3.SS5.p2.2.m2.1b"><apply id="S3.SS5.p2.2.m2.1.1.cmml" xref="S3.SS5.p2.2.m2.1.1"><csymbol cd="ambiguous" id="S3.SS5.p2.2.m2.1.1.1.cmml" xref="S3.SS5.p2.2.m2.1.1">subscript</csymbol><ci id="S3.SS5.p2.2.m2.1.1.2.cmml" xref="S3.SS5.p2.2.m2.1.1.2">𝐩</ci><cn type="integer" id="S3.SS5.p2.2.m2.1.1.3.cmml" xref="S3.SS5.p2.2.m2.1.1.3">2</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS5.p2.2.m2.1c">{\mathbf{p}_{2}}</annotation></semantics></math> are two predictions and each is a <math id="S3.SS5.p2.3.m3.1" class="ltx_Math" alttext="R^{4716}" display="inline"><semantics id="S3.SS5.p2.3.m3.1a"><msup id="S3.SS5.p2.3.m3.1.1" xref="S3.SS5.p2.3.m3.1.1.cmml"><mi id="S3.SS5.p2.3.m3.1.1.2" xref="S3.SS5.p2.3.m3.1.1.2.cmml">R</mi><mn id="S3.SS5.p2.3.m3.1.1.3" xref="S3.SS5.p2.3.m3.1.1.3.cmml">4716</mn></msup><annotation-xml encoding="MathML-Content" id="S3.SS5.p2.3.m3.1b"><apply id="S3.SS5.p2.3.m3.1.1.cmml" xref="S3.SS5.p2.3.m3.1.1"><csymbol cd="ambiguous" id="S3.SS5.p2.3.m3.1.1.1.cmml" xref="S3.SS5.p2.3.m3.1.1">superscript</csymbol><ci id="S3.SS5.p2.3.m3.1.1.2.cmml" xref="S3.SS5.p2.3.m3.1.1.2">𝑅</ci><cn type="integer" id="S3.SS5.p2.3.m3.1.1.3.cmml" xref="S3.SS5.p2.3.m3.1.1.3">4716</cn></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.SS5.p2.3.m3.1c">R^{4716}</annotation></semantics></math> vector of probabilities. In practice, we only kept the first 20 to 120 dimensions when we calculated correlations or merged predictions. We believe the measure is robust and reflected the relations among the models well.</p>
+</div>
+<div id="S3.SS5.p3" class="ltx_para">
+<p id="S3.SS5.p3.1" class="ltx_p">We considered and experimented with several ensemble approaches including Kelly strategy <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib6" title="" class="ltx_ref">6</a>]</cite> or mean-variance type optimization. In the end due to tight computing resources we took practical approach and discretionarily determined the weights of component models based on both the single model GAP and the correlation matrix.</p>
+</div>
+<div id="S3.SS5.p4" class="ltx_para">
+<p id="S3.SS5.p4.1" class="ltx_p">Our final prediction is a weight summation of the three model families: MoNNs, LSTMs, and GRUs. The inidivual components’ scores and their correlation matrix are shown in Table. <a href="#S3.T4" title="Table 4 ‣ 3.5 Model Ensemble ‣ 3 Models ‣ Deep Learning Methods for Efficient Large Scale Video Labeling" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a> and Table. <a href="#S3.T5" title="Table 5 ‣ 3.5 Model Ensemble ‣ 3 Models ‣ Deep Learning Methods for Efficient Large Scale Video Labeling" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>. And the weights were 0.40, 0.36, and 0.24 for MoNNs, LSTMs, and GRUs, respectively. Our best score was 0.84185 on Private Leaderboard and 0.84192 on Public Leaderboard. The ensemble gained 0.007 from the best individual component model.</p>
+</div>
+<figure id="S3.T4" class="ltx_table">
+<table id="S3.T4.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S3.T4.1.1.1" class="ltx_tr">
+<th id="S3.T4.1.1.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_l ltx_border_r ltx_border_t">Model</th>
+<th id="S3.T4.1.1.1.2" class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_r ltx_border_t">Private LB</th>
+<th id="S3.T4.1.1.1.3" class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_r ltx_border_t">Public LB</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S3.T4.1.2.1" class="ltx_tr">
+<th id="S3.T4.1.2.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r ltx_border_tt">MoNNs</th>
+<td id="S3.T4.1.2.1.2" class="ltx_td ltx_align_right ltx_border_r ltx_border_tt">0.83496</td>
+<td id="S3.T4.1.2.1.3" class="ltx_td ltx_align_right ltx_border_r ltx_border_tt">0.83484</td>
+</tr>
+<tr id="S3.T4.1.3.2" class="ltx_tr">
+<th id="S3.T4.1.3.2.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_r">LSTMs</th>
+<td id="S3.T4.1.3.2.2" class="ltx_td ltx_align_right ltx_border_r">0.83482</td>
+<td id="S3.T4.1.3.2.3" class="ltx_td ltx_align_right ltx_border_r">0.83489</td>
+</tr>
+<tr id="S3.T4.1.4.3" class="ltx_tr">
+<th id="S3.T4.1.4.3.1" class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l ltx_border_r">GRUs</th>
+<td id="S3.T4.1.4.3.2" class="ltx_td ltx_align_right ltx_border_b ltx_border_r">0.83349</td>
+<td id="S3.T4.1.4.3.3" class="ltx_td ltx_align_right ltx_border_b ltx_border_r">0.83362</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 4: </span>Final ensemble component score</figcaption>
+</figure>
+<figure id="S3.T5" class="ltx_table">
+<table id="S3.T5.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S3.T5.1.1.1" class="ltx_tr">
+<th id="S3.T5.1.1.1.1" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t">Model</th>
+<th id="S3.T5.1.1.1.2" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">MoNNs</th>
+<th id="S3.T5.1.1.1.3" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">LSTMs</th>
+<th id="S3.T5.1.1.1.4" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">GRUs</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S3.T5.1.2.1" class="ltx_tr">
+<td id="S3.T5.1.2.1.1" class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_tt">MoNNs</td>
+<td id="S3.T5.1.2.1.2" class="ltx_td ltx_align_left ltx_border_r ltx_border_tt">1.0</td>
+<td id="S3.T5.1.2.1.3" class="ltx_td ltx_align_left ltx_border_r ltx_border_tt">0.9588</td>
+<td id="S3.T5.1.2.1.4" class="ltx_td ltx_align_left ltx_border_r ltx_border_tt">0.9611</td>
+</tr>
+<tr id="S3.T5.1.3.2" class="ltx_tr">
+<td id="S3.T5.1.3.2.1" class="ltx_td ltx_align_left ltx_border_l ltx_border_r">LSTMs</td>
+<td id="S3.T5.1.3.2.2" class="ltx_td ltx_border_r"></td>
+<td id="S3.T5.1.3.2.3" class="ltx_td ltx_align_left ltx_border_r">1.0</td>
+<td id="S3.T5.1.3.2.4" class="ltx_td ltx_align_left ltx_border_r">0.9772</td>
+</tr>
+<tr id="S3.T5.1.4.3" class="ltx_tr">
+<td id="S3.T5.1.4.3.1" class="ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r">GRUs</td>
+<td id="S3.T5.1.4.3.2" class="ltx_td ltx_border_b ltx_border_r"></td>
+<td id="S3.T5.1.4.3.3" class="ltx_td ltx_border_b ltx_border_r"></td>
+<td id="S3.T5.1.4.3.4" class="ltx_td ltx_align_left ltx_border_b ltx_border_r">1.0</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 5: </span>Final ensemble component correlation</figcaption>
+</figure>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Model Training Techniques</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p id="S4.p1.1" class="ltx_p">The baseline models provided by the organizers were much more than what has ever been seen on Kaggle. It included basic implementations of Logistic Regression, Mixture of Experts (MoE), Long Short Term Memory (LSTM) and Deep Bag of Frames (DBoF). Each of them has many parameters to pick or tune. The code was well structured for further experimentation. In this section we will briefly describe several ideas we tried and state if they worked for us or not.</p>
+</div>
+<section id="S4.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.1 </span>Run-time Validation</h3>
+
+<div id="S4.SS1.p1" class="ltx_para">
+<p id="S4.SS1.p1.1" class="ltx_p">When training video level models, one of the most helpful techniques we have introduced was the run-time validation.
+Every 10-50 steps we run the evaluation of currently trained model on a holdout sample. In the beginning we run it on the validation sample prepared by the organizers, but after we included it in the training dataset we run it on a randomly selected holdout subset. This allowed us to clearly see the in-sample and out-of-sample performance of the training, and allowed us to stop the training when it has entered the over-fitting regime. For MoNN models, we found that the best out-of-sample performance was achieved between 2.5 and 4 epochs over the augmented data set.</p>
+</div>
+</section>
+<section id="S4.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.2 </span>Dropout</h3>
+
+<div id="S4.SS2.p1" class="ltx_para">
+<p id="S4.SS2.p1.1" class="ltx_p">The very first novelty in the code we introduced was dropout layers, originally described in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib3" title="" class="ltx_ref">3</a>]</cite>. The ides behind it is to randomly drop some neurons during training phase to prevent over-fitting but during inference use all of them. Introducing dropout extends learning time significantly and adds a couple more parameters to train. For this data set, we saw mixed performance from dropout layers. Our final models did not use dropout.</p>
+</div>
+</section>
+<section id="S4.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.3 </span>Truncated Labels</h3>
+
+<div id="S4.SS3.p1" class="ltx_para">
+<p id="S4.SS3.p1.1" class="ltx_p">The vocabulary of labels consisted of 4716 expressions. Some of them were really popular, like Games (865k), Vehicle (683k), Video Game (522k), Car (373k), and some really rare Russian Pyramid (102), or PBS Kids (101). We decided to explore models that would work on a smaller vocabulary, i.e. excluding bottom 1k labels. We hoped that by focusing on a small subset of labels, we could avoid variances introduced by less popular labels. The best single model prediction, which fitted only the first 3100 labels, achieved a score of 0.80082 on the Public Leaderboard without any ensemble or EMA. Although the correlation between truncated model prediction and the regular predictions is low (e.g., 0.92%), the truncation predictions did not add value to ensemble due to their lower scores. We did not use any of them in our final models.</p>
+</div>
+</section>
+<section id="S4.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.4 </span>Exponential Moving Average</h3>
+
+<div id="S4.SS4.p1" class="ltx_para">
+<p id="S4.SS4.p1.1" class="ltx_p">For both video level and frame level models, we calculated the exponential moving average of model variables. And in the prediction phase, we can choose either the EMA or the snapshot variable values to perform the inference. We found that, for single checkpoint, using EMA we were able to increase the MoNN model GAP score by 0.006 and LSTM model by 0.004. However, the ensembles of the EMA based predictions only improved by 0.0015 for MoNN family. We think this indicates that the variance reductions by model ensemble and by EMA have overlapping components. Still, EMA concretely helped to improve the overall model performance.</p>
+</div>
+</section>
+<section id="S4.SS5" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.5 </span>Batch normalization and global normalization</h3>
+
+<div id="S4.SS5.p1" class="ltx_para">
+<p id="S4.SS5.p1.1" class="ltx_p">When training the video level models, we experimented with batch L2 normalization, global L2 normalization, and in the end found our models performed better without any L2 normalization. Batch normalization is expected to make the training converge sooner, however at the same time it introduces variation as the values for one observation may depend on what other observations happened to be in the same batch. We observed that this data set is highly homogeneous and decided to calculate the global moments of each feature dimension based on the train data. We then applied a global L2 normalization using the calculated train data moments. The model converged as fast as the L2 normalization case and reached a slightly higher validation GAP. Later on we found that the models performed even better if no L2 normalization was applied. We believe that the relative value among the different dimensions of the data carried information. This reason may come from the way the data were prepared. The PCA process naturally lined up the components with decreasing variance and the relative variance carried information. An L2 normalization step would remove this information.</p>
+</div>
+</section>
+<section id="S4.SS6" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.6 </span>Compression</h3>
+
+<div id="S4.SS6.p1" class="ltx_para">
+<p id="S4.SS6.p1.1" class="ltx_p">Although, Google was very generous to give some Google Cloud ML credits for competition’s participants, they were only enough to test a couple of big models. Most of the work was still done locally. One of the challenges was to feed data as fast as possible to the GPU, to keep it fully utilized. One of the ways to increase I/O is data compression. As CPU is barely utilized when you run models on a GPU it can be used to decompress the data without any performance hits. Also compressed files are smaller so using them should result in faster reading speeds from HDD (due to the size of data we used spinning drives instead of solid state drives). As a result we should obtain close to full GPU utilization during the whole learning process.</p>
+</div>
+</section>
+<section id="S4.SS7" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.7 </span>Training on Folds of Data sub-Sample</h3>
+
+<div id="S4.SS7.p1" class="ltx_para">
+<p id="S4.SS7.p1.1" class="ltx_p">As discussed in the previous section, each of our model (beside LSTM) was trained on five folds of data sub-sample. Early in the data analysis stage, we came to conclusion that the data is well shuffled and highly homogeneous. Therefore for each fold we simply selected every fifth file for validation and used the other four for training. By sub-sampling the data into folds, we introduced further randomization to the trained models, and were able to achieve higher per model score by averaging the folds and checkpoints.</p>
+</div>
+</section>
+<section id="S4.SS8" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.8 </span>Boosting Network</h3>
+
+<div id="S4.SS8.p1" class="ltx_para">
+<p id="S4.SS8.p1.1" class="ltx_p">Boosting is a technique widely used in statistical learning. In this competition, we designed and implemented a simple boosting network. The design is as follows. The first layer is a neural network model such as MoNN3L, or the LogisticModel from the starter code. A second neural network model will then be built to train on the errors between the first layer model’s prediction and the true labels. We call this second layer model as the boosting model. The final prediction is the sum of the base model prediction plus the correction from the boosting model. There was no feedback from the boosting model to the base model.</p>
+</div>
+<div id="S4.SS8.p2" class="ltx_para">
+<p id="S4.SS8.p2.1" class="ltx_p">Since the errors of the base model range in [-1, +1], we used a <math id="S4.SS8.p2.1.m1.1" class="ltx_Math" alttext="\tanh" display="inline"><semantics id="S4.SS8.p2.1.m1.1a"><mi id="S4.SS8.p2.1.m1.1.1" xref="S4.SS8.p2.1.m1.1.1.cmml">tanh</mi><annotation-xml encoding="MathML-Content" id="S4.SS8.p2.1.m1.1b"><tanh id="S4.SS8.p2.1.m1.1.1.cmml" xref="S4.SS8.p2.1.m1.1.1"></tanh></annotation-xml><annotation encoding="application/x-tex" id="S4.SS8.p2.1.m1.1c">\tanh</annotation></semantics></math> activation function for the boosting model, and used an L2 loss function instead of the cross-entropy loss function. We hoped that the boosting model will add value in general. However, practically we saw the boostging model helped when the base model is a weaker model (<span id="S4.SS8.p2.1.1" class="ltx_text ltx_font_italic">e.g.</span>, LogisticModel) but didn’t see clear added value when the base model is large. Our experiments indicated that if the base model did not digest all the information from the features, then boosting can help. A practical use case is to feed complimentary features to the boost model, when the base model focus on the major features.</p>
+</div>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>Summary</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p id="S5.p1.1" class="ltx_p">In this report, we described our team’s models and training techniques to solving the YouTube 8M competition. We found that both video level and frame level models can achieve GAP at 0.834 level, and the ensemble can go beyond 0.841. We found that models of larger sizes performed better. For video level models of the same size, wider models seem to perform better than deeper models. This may indicate the importance of model memory. We think our experiment with data augmentation, sub-sampling, online validation helped us to achieve better performance. The boosting model idea may be worth further discussion.</p>
+</div>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">6 </span>Source Code</h2>
+
+<div id="S6.p1" class="ltx_para">
+<p id="S6.p1.1" class="ltx_p">The code we used to create all the models is available under https://github.com/mpekalski/Y8M and it is released under Apache License 2.0.</p>
+</div>
+</section>
+<section id="S7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7 </span>Acknowledgments</h2>
+
+<div id="S7.p1" class="ltx_para">
+<p id="S7.p1.1" class="ltx_p">The authors would like to thank Computational Biophysics group at University Pompeu Fabra for letting us use their GPU computational resources.
+We would also like to acknowledge Jose Jimenez for valuable discussion and feedback.
+<span id="S7.p1.1.1" class="ltx_text" style="font-size:90%;"></span></p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography" style="font-size:90%;">References</h2>
+
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock"><span id="bib.bib1.1.1" class="ltx_text" style="font-size:90%;">
+S. Abu-El-Haija, N. Kothari, J. Lee, P. Natsev, G. Toderici,
+B. Varadarajan, and S. Vijayanarasimhan.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib1.2.1" class="ltx_text" style="font-size:90%;">Youtube-8m: A large-scale video classification benchmark.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib1.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">CoRR</span><span id="bib.bib1.4.2" class="ltx_text" style="font-size:90%;">, abs/1609.08675, 2016.
+</span>
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock"><span id="bib.bib2.1.1" class="ltx_text" style="font-size:90%;">
+K. Cho, B. van Merrienboer, Ç. Gülçehre, F. Bougares,
+H. Schwenk, and Y. Bengio.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.2.1" class="ltx_text" style="font-size:90%;">Learning phrase representations using RNN encoder-decoder for
+statistical machine translation.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">CoRR</span><span id="bib.bib2.4.2" class="ltx_text" style="font-size:90%;">, abs/1406.1078, 2014.
+</span>
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock"><span id="bib.bib3.1.1" class="ltx_text" style="font-size:90%;">
+G. E. Hinton, N. Srivastava, A. Krizhevsky, I. Sutskever, and R. R.
+Salakhutdinov.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.2.1" class="ltx_text" style="font-size:90%;">Improving neural networks by preventing co-adaptation of feature
+detectors.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">ArXiv e-prints</span><span id="bib.bib3.4.2" class="ltx_text" style="font-size:90%;">, July 2012.
+</span>
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock"><span id="bib.bib4.1.1" class="ltx_text" style="font-size:90%;">
+S. Hochreiter and J. Urgen Schmidhuber.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib4.2.1" class="ltx_text" style="font-size:90%;">LONG SHORT-TERM MEMORY.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib4.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">Neural Computation</span><span id="bib.bib4.4.2" class="ltx_text" style="font-size:90%;">, 9(8):1735–1780, 1997.
+</span>
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock"><span id="bib.bib5.1.1" class="ltx_text" style="font-size:90%;">
+R. A. Jacobs, M. I. Jordan, S. J. Nowlan, and G. E. Hinton.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib5.2.1" class="ltx_text" style="font-size:90%;">Adaptive mixtures of local experts.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib5.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">Neural Comput.</span><span id="bib.bib5.4.2" class="ltx_text" style="font-size:90%;">, 3(1):79–87, Mar. 1991.
+</span>
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock"><span id="bib.bib6.1.1" class="ltx_text" style="font-size:90%;">
+J. L. Kelly.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.2.1" class="ltx_text" style="font-size:90%;">A new interpretation of information rate.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">The Bell System Technical Journal</span><span id="bib.bib6.4.2" class="ltx_text" style="font-size:90%;">, 35(4):917–926, July 1956.
+</span>
+</span>
+</li>
+<li id="bib.bib7" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[7]</span>
+<span class="ltx_bibblock"><span id="bib.bib7.1.1" class="ltx_text" style="font-size:90%;">
+A. Krizhevsky, I. Sutskever, and G. E. Hinton.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib7.2.1" class="ltx_text" style="font-size:90%;">Imagenet classification with deep convolutional neural networks.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib7.3.1" class="ltx_text" style="font-size:90%;">In F. Pereira, C. J. C. Burges, L. Bottou, and K. Q. Weinberger,
+editors, </span><span id="bib.bib7.4.2" class="ltx_text ltx_font_italic" style="font-size:90%;">Advances in Neural Information Processing Systems 25</span><span id="bib.bib7.5.3" class="ltx_text" style="font-size:90%;">, pages
+1097–1105. Curran Associates, Inc., 2012.
+</span>
+</span>
+</li>
+<li id="bib.bib8" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[8]</span>
+<span class="ltx_bibblock"><span id="bib.bib8.1.1" class="ltx_text" style="font-size:90%;">
+T. Lin, M. Maire, S. J. Belongie, L. D. Bourdev, R. B. Girshick, J. Hays,
+P. Perona, D. Ramanan, P. Dollár, and C. L. Zitnick.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.2.1" class="ltx_text" style="font-size:90%;">Microsoft COCO: common objects in context.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">CoRR</span><span id="bib.bib8.4.2" class="ltx_text" style="font-size:90%;">, abs/1405.0312, 2014.
+</span>
+</span>
+</li>
+<li id="bib.bib9" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[9]</span>
+<span class="ltx_bibblock"><span id="bib.bib9.1.1" class="ltx_text" style="font-size:90%;">
+O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang,
+A. Karpathy, A. Khosla, M. Bernstein, A. C. Berg, and L. Fei-Fei.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.2.1" class="ltx_text" style="font-size:90%;">ImageNet Large Scale Visual Recognition Challenge.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">International Journal of Computer Vision (IJCV)</span><span id="bib.bib9.4.2" class="ltx_text" style="font-size:90%;">,
+115(3):211–252, 2015.
+</span>
+</span>
+</li>
+<li id="bib.bib10" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[10]</span>
+<span class="ltx_bibblock"><span id="bib.bib10.1.1" class="ltx_text" style="font-size:90%;">
+O. Vinyals, A. Toshev, S. Bengio, and D. Erhan.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib10.2.1" class="ltx_text" style="font-size:90%;">Show and tell: A neural image caption generator.
+</span>
+</span>
+<span class="ltx_bibblock"><span id="bib.bib10.3.1" class="ltx_text ltx_font_italic" style="font-size:90%;">CoRR</span><span id="bib.bib10.4.2" class="ltx_text" style="font-size:90%;">, abs/1411.4555, 2014.
+</span>
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+<div class="ar5iv-footer"><a href="/html/1706.04571" class="ar5iv-nav-button ar5iv-nav-button-prev">◄</a>
+    <a class="ar5iv-home-button" href="/"><img height="40" alt="ar5iv homepage" src="/assets/ar5iv.png"></a>
+    <a href="/feeling_lucky" class="ar5iv-text-button">Feeling<br>lucky?</a>
+    <a href="/log/1706.04572" class="ar5iv-text-button ar5iv-severity-warning">Conversion<br>report</a>
+    <a class="ar5iv-text-button" target="_blank" href="https://github.com/dginev/ar5iv/issues/new?template=improve-article--arxiv-id-.md&title=Improve+article+1706.04572">Report<br>an issue</a>
+    <a href="https://arxiv.org/abs/1706.04572" class="ar5iv-text-button arxiv-ui-theme">View&nbsp;original<br>on&nbsp;arXiv</a><a href="/html/1706.04573" class="ar5iv-nav-button ar5iv-nav-button-next">►</a>
+</div><footer class="ltx_page_footer">
+<a class="ar5iv-toggle-color-scheme" href="javascript:toggleColorScheme()" title="Toggle ar5iv color scheme"><span class="color-scheme-icon"></span></a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/license" target="_blank">Copyright</a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/policies/privacy_policy" target="_blank">Privacy Policy</a>
+
+<div class="ltx_page_logo">Generated  on Sat Mar 16 03:41:26 2024 by <a target="_blank" href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+
+    <script>
+      var canMathML = typeof(MathMLElement) == "function";
+      if (!canMathML) {
+        var body = document.querySelector("body");
+        body.firstElementChild.setAttribute('style', 'opacity: 0;');
+        var loading = document.createElement("div");
+        loading.setAttribute("id", "mathjax-loading-spinner");
+        var message = document.createElement("div");
+        message.setAttribute("id", "mathjax-loading-message");
+        message.innerText = "Typesetting Equations...";
+        body.prepend(loading);
+        body.prepend(message);
+
+        var el = document.createElement("script");
+        el.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+        document.querySelector("head").appendChild(el);
+
+        window.MathJax = {
+          startup: {
+            pageReady: () => {
+              return MathJax.startup.defaultPageReady().then(() => {
+                body.removeChild(loading);
+                body.removeChild(message);
+                body.firstElementChild.removeAttribute('style');
+              }); } } };
+      }
+    </script>
+    <script>
+    // Auxiliary function, building the preview feature when
+    // an inline citation is clicked
+    function clicked_cite(e) {
+      e.preventDefault();
+      let cite = this.closest('.ltx_cite');
+      let next = cite.nextSibling;
+      if (next && next.nodeType == Node.ELEMENT_NODE && next.getAttribute('class') == "ar5iv-bibitem-preview") {
+        next.remove();
+        return; }
+      // Before adding a preview modal,
+      // cleanup older previews, in case they're still open
+      document.querySelectorAll('span.ar5iv-bibitem-preview').forEach(function(node) {
+        node.remove();
+      })
+
+      // Create the preview
+      preview = document.createElement('span');
+      preview.setAttribute('class','ar5iv-bibitem-preview');
+      let target = document.getElementById(this.getAttribute('href').slice(1));
+      target.childNodes.forEach(function (child) {
+        preview.append(child.cloneNode(true));
+      });
+      let close_x = document.createElement('button');
+      close_x.setAttribute("aria-label","Close modal for bibliography item preview");
+      close_x.textContent = "×";
+      close_x.setAttribute('class', 'ar5iv-button-close-preview');
+      close_x.setAttribute('onclick','this.parentNode.remove()');
+      preview.append(close_x);
+      preview.querySelectorAll('.ltx_tag_bibitem').forEach(function(node) {
+        node.remove();
+      });
+      cite.parentNode.insertBefore(preview, cite.nextSibling);
+      return;
+    }
+    // Global Document initialization:
+    // - assign the preview feature to all inline citation links
+    document.querySelectorAll(".ltx_cite .ltx_ref").forEach(function (link) {
+      link.addEventListener("click", clicked_cite);
+    });
+    </script>
+    </body>
+</html>

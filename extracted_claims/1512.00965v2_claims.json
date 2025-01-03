@@ -1,0 +1,330 @@
+[
+    {
+        "claim": [
+            "Query Type",
+            "Select_Where"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Example Queries with Annotated SQL-like Logical Forms",
+            "▷▷\\triangleright Q1subscript𝑄1Q_{1}: How many people participated in the game in Beijing?"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F1subscript𝐹1F_{1}: select #_participants, where host_city = Beijing"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "▷▷\\triangleright Q2subscript𝑄2Q_{2}: In which country was the game hosted in 2012?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F2subscript𝐹2F_{2}: select host_country, where year = 2012"
+        ],
+        "category": "dataset",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "Superlative"
+        ],
+        "category": "performance",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Example Queries with Annotated SQL-like Logical Forms",
+            "▷▷\\triangleright Q3subscript𝑄3Q_{3}: When was the lastest game hosted?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F3subscript𝐹3F_{3}: argmax(host_city, year)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "▷▷\\triangleright Q4subscript𝑄4Q_{4}: How big is the country which hosted the shortest game?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F4subscript𝐹4F_{4}: argmin(country_size, #_duration)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "Where_Superlative"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Example Queries with Annotated SQL-like Logical Forms",
+            "▷▷\\triangleright Q5subscript𝑄5Q_{5}: How long is the game with the most medals that has fewer than 3,000 participants?"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F5subscript𝐹5F_{5}: where #_participants << 3,000, argmax(#_duration, #_medals)"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "▷▷\\triangleright Q6subscript𝑄6Q_{6}: How many medals are in the first game after 2008?"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F6subscript𝐹6F_{6}: where #_year >> 2008, argmin(#_medals, #_year)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "Nest"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Example Queries with Annotated SQL-like Logical Forms",
+            "▷▷\\triangleright Q7subscript𝑄7Q_{7}: Which country hosted the longest game before the game in Athens?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F7subscript𝐹7F_{7}: where year<<(select year,where host_city=Athens),argmax(host_country,#_duration)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "▷▷\\triangleright Q8subscript𝑄8Q_{8}: How many people watched the earliest game that lasts for more days than the game in 1956?"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "F8subscript𝐹8F_{8}: where #_duration<<(select #_duration,where year=1956),argmin(#_audience,#_year)"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_1"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "Sempre"
+        ],
+        "category": "performance",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "N2N"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "93.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "96.2%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "97.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "98.9%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "34.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "80.4%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "34.4%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "60.5%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-25K",
+            "65.2%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Mixtured-100K",
+            "84.0%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_2"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "Accuracy"
+        ],
+        "category": "performance",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Select_Where",
+            "68.2%"
+        ],
+        "category": "comparison",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Superlative",
+            "84.8%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Where_Superlative",
+            "80.2%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Overall",
+            "77.7%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_3"
+    },
+    {
+        "claim": [
+            "Query Type",
+            "Accuracy"
+        ],
+        "category": "performance",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Non-Join",
+            "99.7%percent99.799.7\\%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Join",
+            "81.5%percent81.581.5\\%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    },
+    {
+        "claim": [
+            "Overall",
+            "91.3%percent91.391.3\\%"
+        ],
+        "category": "statistics",
+        "table_id": "id_table_4"
+    }
+]
