@@ -1,0 +1,8 @@
+[
+    "|{|, |, |Method, baseline [9]|, |Supervision, no|, |aero, 73.8|, |boat, 77.5|, |car, 72.9|, |cat, 72|, |cow, 78.2|, |dog, 75.6|, |horse, 76.2|, |sheep, 77.5|, |tv, 76.3|, |mean, 75.5|}, , |",
+    "|{|, Precision|, |Method, SegProg [25]|, |Supervision, yes|, |aero, 87.2|, |boat, 85.3|, |car, 82.8|, |cat, 82.3|, |cow, 85.5|, |dog, 83.9|, |horse, 81.7|, |sheep, 81.8|, |tv, 80.2|, |mean, 83.4|}, , |",
+    "|{|, |, |Method, SPT (ours)|, |Supervision, no|, |aero, 75.4|, |boat, 78.5|, |car, 84.2|, |cat, 78.3|, |cow, 83.8|, |dog, 83.3|, |horse, 78.5|, |sheep, 82.6|, |tv, 80.2|, |mean, 80.5|}, , |",
+    "|{|, |, |Method, baseline [9]|, |Supervision, no|, |aero, 32.7|, |boat, 31.9|, |car, 48.6|, |cat, 33|, |cow, 45.5|, |dog, 38.4|, |horse, 22.2|, |sheep, 43.7|, |tv, 48.9|, |mean, 38.3|}, , |",
+    "|{|, Jaccard|, |Method, SegProg [25]|, |Supervision, yes|, |aero, 59.5|, |boat, 48.6|, |car, 66.9|, |cat, 61.9|, |cow, 61.8|, |dog, 61.3|, |horse, 49.1|, |sheep, 55.9|, |tv, 61|, |mean, 58.5|}, , |",
+    "|{|, |, |Method, SPT (ours)|, |Supervision, no|, |aero, 43.5|, |boat, 44.7|, |car, 71.5|, |cat, 50.1|, |cow, 58.7|, |dog, 58.8|, |horse, 46.4|, |sheep, 55.9|, |tv, 59.9|, |mean, 54.4|}, , |"
+]

@@ -1,0 +1,17 @@
+[
+    "|{|Dataset, ATIS-small|, |#Splits, 35|, |Train, 127 - 128|, |Val, 500|, |Test, 893|}, , |",
+    "|{|Dataset, ATIS-medium|, |#Splits, 9|, |Train, 497 - 498|, |Val, 500|, |Test, 893|}, , |",
+    "|{|Dataset, ATIS|, |#Splits, 1|, |Train, 4,478|, |Val, 500|, |Test, 893|}, , |",
+    "|{|Dataset, Snips|, |#Splits, 1|, |Train, 13,084|, |Val, 700|, |Test, 700|}, , |",
+    "|{|Dataset, MIT Movie Eng|, |#Splits, 1|, |Train, 8,798|, |Val, 977|, |Test, 2,443|}, , |",
+    "|{|Dataset, MIT Movie Trivia|, |#Splits, 1|, |Train, 7,035|, |Val, 781|, |Test, 1,953|}, , |",
+    "|{|Dataset, MIT Restaurant|, |#Splits, 1|, |Train, 6,894|, |Val, 766|, |Test, 1,521|}, , |",
+    "|{|Dataset, ATIS|, |Model, JLUVA|, |Slot (F1), 94.44|, |Intent (F1), 97.09|}, , |",
+    "|{|Dataset, ATIS|, |Model, BiLSTM (Baseline)|, |Slot (F1), 95.34|, |Intent (F1), 97.21|}, , |",
+    "|{|Dataset, ATIS|, |Model, Deep LSTMa|, |Slot (F1), 95.66|, |Intent (F1), -|}, , |",
+    "|{|Dataset, ATIS|, |Model, Slot-Gated (Full)b,d|, |Slot (F1), 95.66|, |Intent (F1), 96.08|}, , |",
+    "|{|Dataset, ATIS|, |Model, Att. Encoder-Decoderc|, |Slot (F1), 95.87|, |Intent (F1), 98.43|}, , |",
+    "|{|Dataset, ATIS|, |Model, Att. BiRNNc|, |Slot (F1), 95.98|, |Intent (F1), 98.21|}, , |",
+    "|{|Dataset, ATIS+|, |Model, BiLSTM (Baseline)|, |Slot (F1), 95.75|, |Intent (F1), 97.54|}, , |",
+    "|{|Dataset, ATIS+|, |Model, Slot-Gated (Full)b,d|, |Slot (F1), 96.04|, |Intent (F1), 96.75|}, , |"
+]

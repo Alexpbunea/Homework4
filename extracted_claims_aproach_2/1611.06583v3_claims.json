@@ -1,0 +1,13 @@
+[
+    "|{|, binary|, |max, 2.002.002.00|, |mean, 1.571.571.57|, |s.d., 0.620.620.62|}, , |",
+    "|{|, descriptive|, |max, 2.002.002.00|, |mean, 0.610.610.61|, |s.d., 0.690.690.69|}, , |",
+    "|{|, computational|, |max, 4.004.004.00|, |mean, 2.732.732.73|, |s.d., 1.151.151.15|}, , |",
+    "|{|, total|, |max, 8.008.008.00|, |mean, 4.914.914.91|, |s.d., 1.871.871.87|}, , |",
+    "|{|, binary + descriptive|, |ρTsubscript𝜌𝑇\\rho_{T}, 0.610.610.61|}, , |",
+    "|{|, descriptive + computational|, |ρTsubscript𝜌𝑇\\rho_{T}, 0.580.580.58|}, , |",
+    "|{|, computational + binary|, |ρTsubscript𝜌𝑇\\rho_{T}, 0.210.210.21|}, , |",
+    "|{|, all three|, |ρTsubscript𝜌𝑇\\rho_{T}, 0.560.560.56|}, , |",
+    "|{|, binary + descriptive|, |r𝑟r, 0.440.440.44|}, , |",
+    "|{|, descriptive + computational|, |r𝑟r, 0.460.460.46|}, , |",
+    "|{|, computational + binary|, |r𝑟r, 0.140.140.14|}, , |"
+]

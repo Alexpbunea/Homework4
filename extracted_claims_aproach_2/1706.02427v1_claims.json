@@ -1,0 +1,20 @@
+[
+    "|{|, # of tables|, |WQT dataset, 273,816|, |WTQ dataset, 2,108|}, , |",
+    "|{|, Avg # of columns|, |WQT dataset, 4.55|, |WTQ dataset, 6.38|}, , |",
+    "|{|, Max # of columns|, |WQT dataset, 52|, |WTQ dataset, 25|}, , |",
+    "|{|, Min # of columns|, |WQT dataset, 1|, |WTQ dataset, 3|}, , |",
+    "|{|, Avg # of rows|, |WQT dataset, 9.15|, |WTQ dataset, 28.50|}, , |",
+    "|{|, Max # of rows|, |WQT dataset, 1,517|, |WTQ dataset, 754|}, , |",
+    "|{|, Min # of rows|, |WQT dataset, 2|, |WTQ dataset, 5|}, , |",
+    "|{|, # of questions|, |WQT dataset, 21,113|, |WTQ dataset, 22,033|}, , |",
+    "|{|, Avg # of questions|, |WQT dataset, 4.61|, |WTQ dataset, 11.25|}, , |",
+    "|{|Setting, BM25|, |MAP, 58.23|, |P@1, 47.12|}, , |",
+    "|{|Setting, Feature|, |MAP, 61.02|, |P@1, 47.79|}, , |",
+    "|{|Setting, NeuralNet|, |MAP, 61.94|, |P@1, 49.02|}, , |",
+    "|{|Setting, Feature + NeuralNet|, |MAP, 67.18|, |P@1, 54.15|}, , |",
+    "|{|Setting, BM25|, |MAP, 51.02|, |P@1, 41.02|}, , |",
+    "|{|Setting, CDSSM-Header|, |MAP, 45.92|, |P@1, 31.58|}, , |",
+    "|{|Setting, Feature|, |MAP, 67.70|, |P@1, 56.25|}, , |",
+    "|{|Setting, NeuralNet|, |MAP, 67.44|, |P@1, 54.95|}, , |",
+    "|{|Setting, Feature + NeuralNet|, |MAP, 72.49|, |P@1, 61.50|}, , |"
+]
