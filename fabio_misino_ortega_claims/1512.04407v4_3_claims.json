@@ -1,0 +1,44 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Priors (top 5 GT replacers)"
+            }
+        },
+        "Measure": "Top-5 accuracy",
+        "Outcome": " 0.2453"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Anomaly detection (object that \u201cfits\u201d into scene)"
+            }
+        },
+        "Measure": "Top-5 accuracy",
+        "Outcome": " 0.0769"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Our model"
+            }
+        },
+        "Measure": "Top-5 accuracy",
+        "Outcome": " 0.2965"
+    }
+}

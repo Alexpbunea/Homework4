@@ -1,0 +1,170 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>a1</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.035"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>a2</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.020"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>a3</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.025"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>b1</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.024"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>b2</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.018"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>b3</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.023"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>b4</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.017"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>c1</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.027"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>c2</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.009"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>d1</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.024"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>d2</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.026"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Coupling constants estimation"
+            },
+            "1": {
+                "name": "Coupling constants",
+                "value": "g<sub>d3</sub>"
+            }
+        },
+        "Measure": "Value",
+        "Outcome": " 0.029"
+    }
+}

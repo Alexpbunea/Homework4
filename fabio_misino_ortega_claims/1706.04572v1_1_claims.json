@@ -1,0 +1,254 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 36050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82126"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 36050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82135"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 48050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82297"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 48050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82294"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 54050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82274"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 54050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82265"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 60050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82216"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 60050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82209"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 66050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82034"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ckpt 66050"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82016"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ensemble one fold ckpts 36k 48k 54k 60k"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82411"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "ensemble one fold ckpts 36k 48k 54k 60k"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82408"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "new ensemble 5 folds ckpts 36k 48k 54k 60k"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83093"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "3 layer MoNN with EMA"
+            },
+            "1": {
+                "name": "Used in prediction",
+                "value": "new ensemble 5 folds ckpts 36k 48k 54k 60k"
+            },
+            "2": {
+                "name": "Task",
+                "value": "Leaderboard"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83087"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "question answering"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Phase",
+                "value": "Cand. Gen."
+            }
+        },
+        "Measure": "Execution Time (seconds)",
+        "Outcome": " 1.22"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "question answering"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Phase",
+                "value": "Utter. Gen."
+            }
+        },
+        "Measure": "Execution Time (seconds)",
+        "Outcome": " 0.22"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "question answering"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Phase",
+                "value": "Highlights Gen."
+            }
+        },
+        "Measure": "Execution Time (seconds)",
+        "Outcome": " 1.36"
+    }
+}

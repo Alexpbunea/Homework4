@@ -1,0 +1,218 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 90.1"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 62.0"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 89.7"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 65.9"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 88.7"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 60.2"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 89.3"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "Bing Subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 63.3"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "ImageNet"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 80.5"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "ImageNet"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 54.4"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "ImageNet"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 82.5"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "semantic segmentation"
+            },
+            "1": {
+                "name": "method",
+                "value": "SPT+L"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "ImageNet"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 55.7"
+    }
+}

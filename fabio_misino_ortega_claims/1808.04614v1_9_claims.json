@@ -1,0 +1,146 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "1650"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "1650"
+            }
+        },
+        "Measure": "correctness",
+        "Outcome": " 49.8%"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "1650"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "1650"
+            }
+        },
+        "Measure": "MRR",
+        "Outcome": " 0.586"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "1650"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "0"
+            }
+        },
+        "Measure": "correctness",
+        "Outcome": " 41.8%"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "1650"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "0"
+            }
+        },
+        "Measure": "MRR",
+        "Outcome": " 0.499"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "11000"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "1650"
+            }
+        },
+        "Measure": "correctness",
+        "Outcome": " 51.6%"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "11000"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "1650"
+            }
+        },
+        "Measure": "MRR",
+        "Outcome": " 0.60"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "11000"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "0"
+            }
+        },
+        "Measure": "correctness",
+        "Outcome": " 49.5%"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "train ex.",
+                "value": "11000"
+            },
+            "2": {
+                "name": "annotations",
+                "value": "0"
+            }
+        },
+        "Measure": "MRR",
+        "Outcome": " 0.570"
+    }
+}

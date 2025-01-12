@@ -1,0 +1,170 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(a1)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.003"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(a2)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.015"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(a3)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.011"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(b1)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.153"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(b2)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.056"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(b3)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.330"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(b4)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.113"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(c1)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.032"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(c2)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.166"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(d1)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.016"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(d2)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.024"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Total cross section of \u03c0\u2212\u200bp\u2192\u03c0\u2212\u200bJ/\u03c8\u200bp"
+            },
+            "1": {
+                "name": "Diagram #",
+                "value": "(d3)"
+            }
+        },
+        "Measure": "Cross Section",
+        "Outcome": " 0.056"
+    }
+}

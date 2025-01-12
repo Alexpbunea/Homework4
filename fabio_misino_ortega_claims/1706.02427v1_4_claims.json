@@ -1,0 +1,222 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "BM25"
+            },
+            "3": {
+                "name": "Features",
+                "value": "None"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 51.02"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "BM25"
+            },
+            "3": {
+                "name": "Features",
+                "value": "None"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 41.02"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "CDSSM-Header"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Header Grounding"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 45.92"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "CDSSM-Header"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Header Grounding"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 31.58"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Feature"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Designed Features"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 67.70"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Feature"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Designed Features"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 56.25"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "NeuralNet"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Neural Networks"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 67.44"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "NeuralNet"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Neural Networks"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 54.95"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Feature + NeuralNet"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Designed Features + Neural Networks"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 72.49"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "table ranking"
+            },
+            "1": {
+                "name": "Dataset",
+                "value": "WikiTableQuestions"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Feature + NeuralNet"
+            },
+            "3": {
+                "name": "Features",
+                "value": "Designed Features + Neural Networks"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 61.50"
+    }
+}

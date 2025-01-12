@@ -1,0 +1,142 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Priors (do not replace)"
+            }
+        },
+        "Measure": "Avg. Cl. Acc.",
+        "Outcome": " 50%"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Priors (do not replace)"
+            }
+        },
+        "Measure": "Acc.",
+        "Outcome": " 79.86%"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Priors (object\u2019s tendency to be replaced)"
+            }
+        },
+        "Measure": "Avg. Cl. Acc.",
+        "Outcome": " 73.13%"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Priors (object\u2019s tendency to be replaced)"
+            }
+        },
+        "Measure": "Acc.",
+        "Outcome": " 71.5%"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Anomaly detection (threshold distance)"
+            }
+        },
+        "Measure": "Avg. Cl. Acc.",
+        "Outcome": " 62.16%"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Anomaly detection (threshold distance)"
+            }
+        },
+        "Measure": "Acc.",
+        "Outcome": " 58.30%"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Anomaly detection (top-K objects)"
+            }
+        },
+        "Measure": "Avg. Cl. Acc.",
+        "Outcome": " 63.01%"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Anomaly detection (top-K objects)"
+            }
+        },
+        "Measure": "Acc.",
+        "Outcome": " 64.31%"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Our model"
+            }
+        },
+        "Measure": "Avg. Cl. Acc.",
+        "Outcome": " 74.45%"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "altering a funny scene to make it unfunny"
+            },
+            "1": {
+                "name": "Method",
+                "value": "Our model"
+            }
+        },
+        "Measure": "Acc.",
+        "Outcome": " 74.74%"
+    }
+}

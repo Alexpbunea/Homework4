@@ -1,0 +1,58 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Tau Equivalent Reliability"
+            },
+            "1": {
+                "name": "Question Combination",
+                "value": "binary + descriptive"
+            }
+        },
+        "Measure": "\u03c1<sub>T</sub>",
+        "Outcome": " 0.61"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Tau Equivalent Reliability"
+            },
+            "1": {
+                "name": "Question Combination",
+                "value": "descriptive + computational"
+            }
+        },
+        "Measure": "\u03c1<sub>T</sub>",
+        "Outcome": " 0.58"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Tau Equivalent Reliability"
+            },
+            "1": {
+                "name": "Question Combination",
+                "value": "computational + binary"
+            }
+        },
+        "Measure": "\u03c1<sub>T</sub>",
+        "Outcome": " 0.21"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Tau Equivalent Reliability"
+            },
+            "1": {
+                "name": "Question Combination",
+                "value": "all three"
+            }
+        },
+        "Measure": "\u03c1<sub>T</sub>",
+        "Outcome": " 0.56"
+    }
+}

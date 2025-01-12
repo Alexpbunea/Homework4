@@ -1,0 +1,114 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "binary"
+            }
+        },
+        "Measure": "Mean",
+        "Outcome": " 1.57"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "binary"
+            }
+        },
+        "Measure": "Standard Deviation",
+        "Outcome": " 0.62"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "descriptive"
+            }
+        },
+        "Measure": "Mean",
+        "Outcome": " 0.61"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "descriptive"
+            }
+        },
+        "Measure": "Standard Deviation",
+        "Outcome": " 0.69"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "computational"
+            }
+        },
+        "Measure": "Mean",
+        "Outcome": " 2.73"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "computational"
+            }
+        },
+        "Measure": "Standard Deviation",
+        "Outcome": " 1.15"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "total"
+            }
+        },
+        "Measure": "Mean",
+        "Outcome": " 4.91"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Question Answering"
+            },
+            "1": {
+                "name": "Question Type",
+                "value": "total"
+            }
+        },
+        "Measure": "Standard Deviation",
+        "Outcome": " 1.87"
+    }
+}

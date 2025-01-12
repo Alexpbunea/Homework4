@@ -1,0 +1,44 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Correlation between responses to three questions"
+            },
+            "1": {
+                "name": "Question",
+                "value": "binary + descriptive"
+            }
+        },
+        "Measure": "Pearson correlation coefficient",
+        "Outcome": " 0.44"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Correlation between responses to three questions"
+            },
+            "1": {
+                "name": "Question",
+                "value": "descriptive + computational"
+            }
+        },
+        "Measure": "Pearson correlation coefficient",
+        "Outcome": " 0.46"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Correlation between responses to three questions"
+            },
+            "1": {
+                "name": "Question",
+                "value": "computational + binary"
+            }
+        },
+        "Measure": "Pearson correlation coefficient",
+        "Outcome": " 0.14"
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "User Study Correctness"
+            },
+            "1": {
+                "name": "System",
+                "value": "Parser"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 37.1%"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "User Study Correctness"
+            },
+            "1": {
+                "name": "System",
+                "value": "User"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 44.6%"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "User Study Correctness"
+            },
+            "1": {
+                "name": "System",
+                "value": "Hybrid"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 48.7%"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "User Study Correctness"
+            },
+            "1": {
+                "name": "System",
+                "value": "Bound"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 56%"
+    }
+}
