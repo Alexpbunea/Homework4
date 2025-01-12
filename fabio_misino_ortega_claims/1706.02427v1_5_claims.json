@@ -2,7 +2,7 @@
     "0": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -20,7 +20,7 @@
     "1": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -38,7 +38,7 @@
     "2": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -56,7 +56,7 @@
     "3": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -74,7 +74,7 @@
     "4": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -92,7 +92,7 @@
     "5": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -110,7 +110,7 @@
     "6": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -128,7 +128,7 @@
     "7": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -146,7 +146,7 @@
     "8": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
@@ -164,7 +164,7 @@
     "9": {
         "Specifications": {
             "0": {
-                "name": "{dataset",
+                "name": "dataset",
                 "value": "WikiTableQuestions"
             },
             "1": {
