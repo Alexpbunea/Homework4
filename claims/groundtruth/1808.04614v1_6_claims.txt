@@ -1,0 +1,4 @@
+|{|Task, correctness|, |Method, Parser|, |Correct Examples, 260/700|}, Correctness, 37.1%|
+|{|Task, correctness|, |Method, Users|, |Correct Examples, 312/700|}, Correctness, 44.6%|
+|{|Task, correctness|, |Method, Hybrid|, |Correct Examples, 341/700|}, Correctness, 48.7%|
+|{|Task, correctness|, |Method, Bound|, |Correct Examples, 392/700|}, Correctness, 56%|

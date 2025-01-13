@@ -1,0 +1,10 @@
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, BM25|, |Features, None|}, MAP, 51.02|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, BM25|, |Features, None|}, P@1, 41.02|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, CDSSM-Header|, |Features, Header Grounding|}, MAP, 45.92|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, CDSSM-Header|, |Features, Header Grounding|}, P@1, 31.58|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, Feature|, |Features, Designed Features|}, MAP, 67.70|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, Feature|, |Features, Designed Features|}, P@1, 56.25|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, NeuralNet|, |Features, Neural Networks|}, MAP, 67.44|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, NeuralNet|, |Features, Neural Networks|}, P@1, 54.95|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, Feature + NeuralNet|, |Features, Designed Features + Neural Networks|}, MAP, 72.49|
+|{|Task, table ranking|, |Dataset, WikiTableQuestions|, |Setting, Feature + NeuralNet|, |Features, Designed Features + Neural Networks|}, P@1, 61.50|

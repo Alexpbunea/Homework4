@@ -1,0 +1,14 @@
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 36050|, |Leaderboard, Public|}, GAP, 0.82126|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 36050|, |Leaderboard, Private|}, GAP, 0.82135|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 48050|, |Leaderboard, Public|}, GAP, 0.82297|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 48050|, |Leaderboard, Private|}, GAP, 0.82294|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 54050|, |Leaderboard, Public|}, GAP, 0.82274|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 54050|, |Leaderboard, Private|}, GAP, 0.82265|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 60050|, |Leaderboard, Public|}, GAP, 0.82216|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 60050|, |Leaderboard, Private|}, GAP, 0.82209|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 66050|, |Leaderboard, Public|}, GAP, 0.82034|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ckpt 66050|, |Leaderboard, Private|}, GAP, 0.82016|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ensemble one fold ckpts 36k48k54k60k|, |Leaderboard, Public|}, GAP, 0.82411|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, ensemble one fold ckpts 36k48k54k60k|, |Leaderboard, Private|}, GAP, 0.82408|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, new ensemble 5 folds ckpts 36k48k54k60k|, |Leaderboard, Public|}, GAP, 0.83093|
+|{|Task, Prediction|, |Model, MoNN3Lw|, |Used in prediction, new ensemble 5 folds ckpts 36k48k54k60k|, |Leaderboard, Private|}, GAP, 0.83087|

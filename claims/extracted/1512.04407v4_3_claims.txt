@@ -1,0 +1,3 @@
+|{ |Task, altering a funny scene to make it unfunny|, |Method, Priors (top 5 GT replacers)| }, Top-5 accuracy, 0.2453|
+|{ |Task, altering a funny scene to make it unfunny|, |Method, Anomaly detection (object that “fits” into scene)| }, Top-5 accuracy, 0.0769|
+|{ |Task, altering a funny scene to make it unfunny|, |Method, Our model| }, Top-5 accuracy, 0.2965|

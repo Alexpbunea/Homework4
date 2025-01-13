@@ -1,0 +1,12 @@
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (a1)|}, Cross Section, 0.003|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (a2)|}, Cross Section, 0.015|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (a3)|}, Cross Section, 0.011|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (b1)|}, Cross Section, 0.153|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (b2)|}, Cross Section, 0.056|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (b3)|}, Cross Section, 0.330|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (b4)|}, Cross Section, 0.113|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (c1)|}, Cross Section, 0.032|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (c2)|}, Cross Section, 0.166|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (d1)|}, Cross Section, 0.016|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (d2)|}, Cross Section, 0.024|
+|{|Task, Total cross section of π−​p→π−​J/ψ​p|, |Diagram #, (d3)|}, Cross Section, 0.056|

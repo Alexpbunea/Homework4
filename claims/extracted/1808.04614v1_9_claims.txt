@@ -1,0 +1,8 @@
+|{|Task, semantic parsing|, |train ex., 1650|, |annotations, 1650|}, correctness, 49.8%|
+|{|Task, semantic parsing|, |train ex., 1650|, |annotations, 1650|}, MRR, 0.586|
+|{|Task, semantic parsing|, |train ex., 1650|, |annotations, 0|}, correctness, 41.8%|
+|{|Task, semantic parsing|, |train ex., 1650|, |annotations, 0|}, MRR, 0.499|
+|{|Task, semantic parsing|, |train ex., 11000|, |annotations, 1650|}, correctness, 51.6%|
+|{|Task, semantic parsing|, |train ex., 11000|, |annotations, 1650|}, MRR, 0.60|
+|{|Task, semantic parsing|, |train ex., 11000|, |annotations, 0|}, correctness, 49.5%|
+|{|Task, semantic parsing|, |train ex., 11000|, |annotations, 0|}, MRR, 0.570|

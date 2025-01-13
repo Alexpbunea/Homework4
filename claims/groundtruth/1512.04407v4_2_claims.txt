@@ -1,0 +1,10 @@
+|{|task, humor detection|, |method, Priors (do not replace)|}, Average Class Accuracy, 50.00|
+|{|task, humor detection|, |method, Priors (object's tendency)|}, Average Class Accuracy, 73.13|
+|{|task, humor detection|, |method, Anomaly detection threshold|}, Average Class Accuracy, 62.16|
+|{|task, humor detection|, |method, Anomaly detection top-K|}, Average Class Accuracy, 63.01|
+|{|task, humor detection|, |method, Our model|}, Average Class Accuracy, 74.45|
+|{|task, humor detection|, |method, Priors (do not replace)|}, Accuracy, 79.86|
+|{|task, humor detection|, |method, Priors (object's tendency)|}, Accuracy, 71.50|
+|{|task, humor detection|, |method, Anomaly detection threshold|}, Accuracy, 58.30|
+|{|task, humor detection|, |method, Anomaly detection top-K|}, Accuracy, 64.31|
+|{|task, humor detection|, |method, Our model|}, Accuracy, 74.74|

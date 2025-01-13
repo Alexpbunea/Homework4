@@ -1,0 +1,4 @@
+|{ |Task, semantic parsing|, |Model, Neural Enquirer|, |Query Type, Select_Where| }, Accuracy, 0.682|
+|{ |Task, semantic parsing|, |Model, Neural Enquirer|, |Query Type, Superlative| }, Accuracy, 0.848|
+|{ |Task, semantic parsing|, |Model, Neural Enquirer|, |Query Type, Where_Superlative| }, Accuracy, 0.802|
+|{ |Task, semantic parsing|, |Model, Neural Enquirer|, |Query Type, Overall| }, Accuracy, 0.777|

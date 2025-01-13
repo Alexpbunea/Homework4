@@ -1,0 +1,84 @@
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Car|, |data, full|}, Precision, 83.4|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Car|, |data, full|}, Jaccard, 63.4|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Car|, |data, full|}, Precision, 87.1|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Car|, |data, full|}, Jaccard, 64.7|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Car|, |data, full|}, Precision, 85.7|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Car|, |data, full|}, Jaccard, 69.1|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Car|, |data, full|}, Precision, 88.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Car|, |data, full|}, Jaccard, 69.9|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Horse|, |data, full|}, Precision, 83.7|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Horse|, |data, full|}, Jaccard, 53.9|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Horse|, |data, full|}, Precision, 89.0|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Horse|, |data, full|}, Jaccard, 57.6|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Horse|, |data, full|}, Precision, 78.7|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Horse|, |data, full|}, Jaccard, 44.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Horse|, |data, full|}, Precision, 91.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Horse|, |data, full|}, Jaccard, 59.0|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Plane|, |data, full|}, Precision, 86.1|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Plane|, |data, full|}, Jaccard, 55.6|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Plane|, |data, full|}, Precision, 90.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Plane|, |data, full|}, Jaccard, 60.0|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Plane|, |data, full|}, Precision, 72.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Plane|, |data, full|}, Jaccard, 31.3|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Plane|, |data, full|}, Precision, 91.0|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Plane|, |data, full|}, Jaccard, 57.1|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Car|, |data, subset|}, Precision, 58.7|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Car|, |data, subset|}, Jaccard, 37.15|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Car|, |data, subset|}, Precision, 59.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Car|, |data, subset|}, Jaccard, 35.15|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Car|, |data, subset|}, Precision, 68.85|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Car|, |data, subset|}, Jaccard, 0.04|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Car|, |data, subset|}, Precision, 85.38|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Car|, |data, subset|}, Jaccard, 64.42|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Car|, |data, subset|}, Precision, 87.65|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Car|, |data, subset|}, Jaccard, 64.86|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Car|, |data, subset|}, Precision, 85.41|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Car|, |data, subset|}, Jaccard, 70.04|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Car|, |data, subset|}, Precision, 88.27|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Car|, |data, subset|}, Jaccard, 70.14|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Horse|, |data, subset|}, Precision, 63.84|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Horse|, |data, subset|}, Jaccard, 30.16|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Horse|, |data, subset|}, Precision, 64.22|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Horse|, |data, subset|}, Jaccard, 29.53|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Horse|, |data, subset|}, Precision, 75.12|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Horse|, |data, subset|}, Jaccard, 6.43|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Horse|, |data, subset|}, Precision, 82.81|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Horse|, |data, subset|}, Jaccard, 51.65|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Horse|, |data, subset|}, Precision, 86.16|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Horse|, |data, subset|}, Jaccard, 33.39|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Horse|, |data, subset|}, Precision, 77.39|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Horse|, |data, subset|}, Jaccard, 41.58|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Horse|, |data, subset|}, Precision, 89.01|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Horse|, |data, subset|}, Jaccard, 54.12|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Plane|, |data, subset|}, Precision, 49.25|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Plane|, |data, subset|}, Jaccard, 15.36|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Plane|, |data, subset|}, Precision, 47.48|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Plane|, |data, subset|}, Jaccard, 11.72|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Plane|, |data, subset|}, Precision, 80.2|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Plane|, |data, subset|}, Jaccard, 7.9|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Plane|, |data, subset|}, Precision, 88.04|
+|{|task, image segmentation|, |dataset, Bing|, |method, [37]|, |category, Plane|, |data, subset|}, Jaccard, 55.81|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Plane|, |data, subset|}, Precision, 90.25|
+|{|task, image segmentation|, |dataset, Bing|, |method, [6]|, |category, Plane|, |data, subset|}, Jaccard, 40.33|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Plane|, |data, subset|}, Precision, 71.59|
+|{|task, image segmentation|, |dataset, Bing|, |method, [9] baseline|, |category, Plane|, |data, subset|}, Jaccard, 31.22|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Plane|, |data, subset|}, Precision, 88.85|
+|{|task, image segmentation|, |dataset, Bing|, |method, SPT|, |category, Plane|, |data, subset|}, Jaccard, 56.19|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Car|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Car|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Car|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Car|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Car|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Car|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Horse|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Horse|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Horse|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Horse|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Horse|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Horse|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Plane|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [18]|, |category, Plane|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Plane|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [19]|, |category, Plane|, |data, full|}, Jaccard, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Plane|, |data, full|}, Precision, -|
+|{|task, image segmentation|, |dataset, Bing|, |method, [22]|, |category, Plane|, |data, full|}, Jaccard, -|

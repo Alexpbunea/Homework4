@@ -1,0 +1,5 @@
+|{|task, funniness prediction|, |features, Avg. Prediction Baseline|}, Average Relative Error, 0.3151|
+|{|task, funniness prediction|, |features, Embedding|}, Average Relative Error, 0.2516|
+|{|task, funniness prediction|, |features, Cardinality|}, Average Relative Error, 0.2450|
+|{|task, funniness prediction|, |features, Location|}, Average Relative Error, 0.2400|
+|{|task, funniness prediction|, |features, Embedding + Cardinality + Location|}, Average Relative Error, 0.2400|

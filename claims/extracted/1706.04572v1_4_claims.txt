@@ -1,0 +1,6 @@
+|{|model, MoNNs|, |task, ensemble prediction|}, Private LB, 0.83496|
+|{|model, MoNNs|, |task, ensemble prediction|}, Public LB, 0.83484|
+|{|model, LSTMs|, |task, ensemble prediction|}, Private LB, 0.83482|
+|{|model, LSTMs|, |task, ensemble prediction|}, Public LB, 0.83489|
+|{|model, GRUs|, |task, ensemble prediction|}, Private LB, 0.83349|
+|{|model, GRUs|, |task, ensemble prediction|}, Public LB, 0.83362|

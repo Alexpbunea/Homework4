@@ -1,0 +1,4 @@
+|{|Task, Tau Equivalent Reliability|, |Question Combination, binary + descriptive|}, ρT, 0.61|
+|{|Task, Tau Equivalent Reliability|, |Question Combination, descriptive + computational|}, ρT, 0.58|
+|{|Task, Tau Equivalent Reliability|, |Question Combination, computational + binary|}, ρT, 0.21|
+|{|Task, Tau Equivalent Reliability|, |Question Combination, all three|}, ρT, 0.56|

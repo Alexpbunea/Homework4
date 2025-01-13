@@ -1,0 +1,20 @@
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Header (H)|, |Model, Feature|}, MAP, 22.39|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Header (H)|, |Model, Feature|}, P@1, 9.76|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Header (H)|, |Model, NeuralNet|}, MAP, 26.03|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Header (H)|, |Model, NeuralNet|}, P@1, 13.35|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Cell (Cel)|, |Model, Feature|}, MAP, 28.85|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Cell (Cel)|, |Model, Feature|}, P@1, 14.95|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Cell (Cel)|, |Model, NeuralNet|}, MAP, 27.47|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Cell (Cel)|, |Model, NeuralNet|}, P@1, 12.92|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Caption (Cap)|, |Model, Feature|}, MAP, 57.12|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Caption (Cap)|, |Model, Feature|}, P@1, 56.83|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Caption (Cap)|, |Model, NeuralNet|}, MAP, 60.16|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, Caption (Cap)|, |Model, NeuralNet|}, P@1, 48.48|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel|, |Model, Feature|}, MAP, 31.99|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel|, |Model, Feature|}, P@1, 17.08|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel|, |Model, NeuralNet|}, MAP, 30.73|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel|, |Model, NeuralNet|}, P@1, 16.25|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel + Cap|, |Model, Feature|}, MAP, 61.02|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel + Cap|, |Model, Feature|}, P@1, 47.79|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel + Cap|, |Model, NeuralNet|}, MAP, 61.94|
+|{|Task, table retrieval|, |Dataset, WebQueryTable|, |Setting, H + Cel + Cap|, |Model, NeuralNet|}, P@1, 49.02|

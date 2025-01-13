@@ -1,0 +1,8 @@
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, BM25|}, MAP, 58.23|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, BM25|}, P@1, 47.12|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, Feature|}, MAP, 61.02|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, Feature|}, P@1, 47.79|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, NeuralNet|}, MAP, 61.94|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, NeuralNet|}, P@1, 49.02|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, Feature + NeuralNet|}, MAP, 67.18|
+|{|Task, Table retrieval|, |Dataset, WebQueryTable|, |Setting, Feature + NeuralNet|}, P@1, 54.15|

@@ -1,0 +1,20 @@
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Header (H)|, |model, Feature| }, MAP, 46.36|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Header (H)|, |model, Feature| }, P@1, 32.52|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Header (H)|, |model, NeuralNet| }, MAP, 52.93|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Header (H)|, |model, NeuralNet| }, P@1, 36.47|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Cell (Cel)|, |model, Feature| }, MAP, 44.33|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Cell (Cel)|, |model, Feature| }, P@1, 30.97|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Cell (Cel)|, |model, NeuralNet| }, MAP, 43.49|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Cell (Cel)|, |model, NeuralNet| }, P@1, 26.41|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Caption (Cap)|, |model, Feature| }, MAP, 33.36|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Caption (Cap)|, |model, Feature| }, P@1, 24.79|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Caption (Cap)|, |model, NeuralNet| }, MAP, 46.83|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, Caption (Cap)|, |model, NeuralNet| }, P@1, 31.54|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel|, |model, Feature| }, MAP, 60.03|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel|, |model, Feature| }, P@1, 47.42|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel|, |model, NeuralNet| }, MAP, 60.55|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel|, |model, NeuralNet| }, P@1, 45.71|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel + Cap|, |model, Feature| }, MAP, 67.70|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel + Cap|, |model, Feature| }, P@1, 56.25|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel + Cap|, |model, NeuralNet| }, MAP, 67.44|
+|{ |task, table ranking|, |dataset, WikiTableQuestions|, |setting, H + Cel + Cap|, |model, NeuralNet| }, P@1, 54.95|

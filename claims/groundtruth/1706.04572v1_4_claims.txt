@@ -1,0 +1,6 @@
+|{|Task, Final ensemble component score|, |Leaderboard, Private|, |Model, MoNNs|}, GAP, 0.83496|
+|{|Task, Final ensemble component score|, |Leaderboard, Public|, |Model, MoNNs|}, GAP, 0.83484|
+|{|Task, Final ensemble component score|, |Leaderboard, Private|, |Model, LSTMs|}, GAP, 0.83482|
+|{|Task, Final ensemble component score|, |Leaderboard, Public|, |Model, LSTMs|}, GAP, 0.83489|
+|{|Task, Final ensemble component score|, |Leaderboard, Private|, |Model, GRUs|}, GAP, 0.83349|
+|{|Task, Final ensemble component score|, |Leaderboard, Public|, |Model, GRUs|}, GAP, 0.83362|

@@ -1,0 +1,4 @@
+|{|Task, semantic parsing|, |Query Type, Select_Where|, |Dataset, large knowledge source simulation|}, Accuracy, 68.2%|
+|{|Task, semantic parsing|, |Query Type, Superlative|, |Dataset, large knowledge source simulation|}, Accuracy, 84.8%|
+|{|Task, semantic parsing|, |Query Type, Where_Superlative|, |Dataset, large knowledge source simulation|}, Accuracy, 80.2%|
+|{|Task, semantic parsing|, |Query Type, Overall|, |Dataset, large knowledge source simulation|}, Accuracy, 77.7%|
