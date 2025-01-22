@@ -1,0 +1,170 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 1 checkpoint"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.81547"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 1 checkpoint"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.81592"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 3 checkpoints"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82244"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 3 checkpoints"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82276"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "2 models 3 checkpoints"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83085"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "2 models 3 checkpoints"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83100"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 1 checkpoint, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.81978"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "1 model, 1 checkpoint, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.82012"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "2 models 3 checkpoints, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83183"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "2 models 3 checkpoints, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83183"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "final ensemble 3 model, 3 checkpoints, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83482"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Model",
+                "value": "final ensemble 3 model, 3 checkpoints, EMA"
+            },
+            "1": {
+                "name": "Task",
+                "value": "LSTM predictions"
+            }
+        },
+        "Measure": "GAP",
+        "Outcome": " 0.83489"
+    }
+}

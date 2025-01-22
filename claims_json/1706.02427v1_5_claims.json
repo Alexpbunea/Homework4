@@ -1,0 +1,182 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Header (H)"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 46.36"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Header (H)"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 32.52"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 44.33"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 30.97"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 33.36"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 24.79"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "H + Cel"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 60.03"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "H + Cel"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 47.42"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 67.70"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "1": {
+                "name": "task",
+                "value": "study the effects of different aspects"
+            },
+            "2": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 56.25"
+    }
+}

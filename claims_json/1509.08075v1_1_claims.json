@@ -1,0 +1,2186 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.4"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 63.4"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 87.1"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 64.7"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 85.7"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 69.1"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 88.2"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 69.9"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.7"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 53.9"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 89.0"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 57.6"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 78.7"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 44.2"
+    },
+    "14": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 91.2"
+    },
+    "15": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 59.0"
+    },
+    "16": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 86.1"
+    },
+    "17": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 55.6"
+    },
+    "18": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 90.2"
+    },
+    "19": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 60.0"
+    },
+    "20": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 72.2"
+    },
+    "21": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 31.3"
+    },
+    "22": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 91.0"
+    },
+    "23": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 57.1"
+    },
+    "24": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 58.7"
+    },
+    "25": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 37.15"
+    },
+    "26": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 59.2"
+    },
+    "27": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 35.15"
+    },
+    "28": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 68.85"
+    },
+    "29": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 0.04"
+    },
+    "30": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 85.38"
+    },
+    "31": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 64.42"
+    },
+    "32": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 87.65"
+    },
+    "33": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 64.86"
+    },
+    "34": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 85.41"
+    },
+    "35": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 70.04"
+    },
+    "36": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 88.27"
+    },
+    "37": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 70.14"
+    },
+    "38": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 63.84"
+    },
+    "39": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 30.16"
+    },
+    "40": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 64.22"
+    },
+    "41": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 29.53"
+    },
+    "42": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 75.12"
+    },
+    "43": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 6.43"
+    },
+    "44": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 82.81"
+    },
+    "45": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 51.65"
+    },
+    "46": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 86.16"
+    },
+    "47": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 33.39"
+    },
+    "48": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 77.39"
+    },
+    "49": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 41.58"
+    },
+    "50": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 89.01"
+    },
+    "51": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 54.12"
+    },
+    "52": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 49.25"
+    },
+    "53": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 15.36"
+    },
+    "54": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 47.48"
+    },
+    "55": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 11.72"
+    },
+    "56": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 80.2"
+    },
+    "57": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 7.9"
+    },
+    "58": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 88.04"
+    },
+    "59": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[37]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 55.81"
+    },
+    "60": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 90.25"
+    },
+    "61": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[6]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 40.33"
+    },
+    "62": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 71.59"
+    },
+    "63": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[9] baseline"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 31.22"
+    },
+    "64": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 88.85"
+    },
+    "65": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "subset"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 56.19"
+    },
+    "66": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "67": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "68": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "69": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "70": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "71": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Car"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "72": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "73": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "74": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "75": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "76": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "77": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Horse"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "78": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "79": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[18]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "80": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "81": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[19]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    },
+    "82": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " -"
+    },
+    "83": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Bing"
+            },
+            "2": {
+                "name": "method",
+                "value": "[22]"
+            },
+            "3": {
+                "name": "category",
+                "value": "Plane"
+            },
+            "4": {
+                "name": "data",
+                "value": "full"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " -"
+    }
+}

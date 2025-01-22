@@ -1,0 +1,662 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 96.2%"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.7%"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 90.3%"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.3%"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 100.0%"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Select_Where"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 97.6%"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 98.9%"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.5%"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 98.2%"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.9%"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 100.0%"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.7%"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 80.4%"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 94.3%"
+    },
+    "14": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 79.1%"
+    },
+    "15": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 98.5%"
+    },
+    "16": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.8%"
+    },
+    "17": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Where_Superlative"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 98.0%"
+    },
+    "18": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 60.5%"
+    },
+    "19": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 92.1%"
+    },
+    "20": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 57.7%"
+    },
+    "21": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 64.7%"
+    },
+    "22": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.7%"
+    },
+    "23": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Nest"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 63.9%"
+    },
+    "24": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 84.0%"
+    },
+    "25": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 96.4%"
+    },
+    "26": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Sempre"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 81.3%"
+    },
+    "27": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 90.6%"
+    },
+    "28": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "SbS"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.9%"
+    },
+    "29": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Overall Accuracy"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "Mixtured-25K"
+            },
+            "2": {
+                "name": "model",
+                "value": "Neural Enquirer"
+            },
+            "3": {
+                "name": "training_setting",
+                "value": "N2N-OOV"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 89.8%"
+    }
+}

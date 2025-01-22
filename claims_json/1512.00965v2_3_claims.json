@@ -1,0 +1,74 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "Model",
+                "value": "Neural Enquirer"
+            },
+            "2": {
+                "name": "Query Type",
+                "value": "Select_Where"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 0.682"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "Model",
+                "value": "Neural Enquirer"
+            },
+            "2": {
+                "name": "Query Type",
+                "value": "Superlative"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 0.848"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "Model",
+                "value": "Neural Enquirer"
+            },
+            "2": {
+                "name": "Query Type",
+                "value": "Where_Superlative"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 0.802"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "semantic parsing"
+            },
+            "1": {
+                "name": "Model",
+                "value": "Neural Enquirer"
+            },
+            "2": {
+                "name": "Query Type",
+                "value": "Overall"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 0.777"
+    }
+}

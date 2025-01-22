@@ -1,0 +1,10 @@
+|{|Task, altering a funny scene to make it unfunny|, |Method, Priors (do not replace)|}, Avg. Cl. Acc., 50%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Priors (do not replace)|}, Acc., 79.86%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Priors (object’s tendency to be replaced)|}, Avg. Cl. Acc., 73.13%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Priors (object’s tendency to be replaced)|}, Acc., 71.5%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Anomaly detection (threshold distance)|}, Avg. Cl. Acc., 62.16%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Anomaly detection (threshold distance)|}, Acc., 58.30%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Anomaly detection (top-K objects)|}, Avg. Cl. Acc., 63.01%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Anomaly detection (top-K objects)|}, Acc., 64.31%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Our model|}, Avg. Cl. Acc., 74.45%|
+|{|Task, altering a funny scene to make it unfunny|, |Method, Our model|}, Acc., 74.74%|

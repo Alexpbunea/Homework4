@@ -1,0 +1,8 @@
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances + Highlights|}, Average Work-Time, 16.2m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances + Highlights|}, Median Work-Time, 16.6m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances + Highlights|}, Minimum Work-Time, 6.45m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances + Highlights|}, Maximum Work-Time, 22.5m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances|}, Average Work-Time, 24.7m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances|}, Median Work-Time, 20.7m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances|}, Minimum Work-Time, 17.5m|
+|{|Task, Question Answering| , |Dataset, WikiTableQuestions|, |method, Utterances|}, Maximum Work-Time, 35.4m|

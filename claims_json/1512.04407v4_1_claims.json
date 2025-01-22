@@ -1,0 +1,72 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "predicting funniness score of a scene"
+            },
+            "1": {
+                "name": "Features",
+                "value": "Avg. Prediction Baseline"
+            }
+        },
+        "Measure": "Avg. Rel. Err.",
+        "Outcome": " 0.3151"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "predicting funniness score of a scene"
+            },
+            "1": {
+                "name": "Features",
+                "value": "Embedding"
+            }
+        },
+        "Measure": "Avg. Rel. Err.",
+        "Outcome": " 0.2516"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "predicting funniness score of a scene"
+            },
+            "1": {
+                "name": "Features",
+                "value": "Cardinality"
+            }
+        },
+        "Measure": "Avg. Rel. Err.",
+        "Outcome": " 0.2450"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "predicting funniness score of a scene"
+            },
+            "1": {
+                "name": "Features",
+                "value": "Location"
+            }
+        },
+        "Measure": "Avg. Rel. Err.",
+        "Outcome": " 0.2400"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "predicting funniness score of a scene"
+            },
+            "1": {
+                "name": "Features",
+                "value": "Embedding + Cardinality + Location"
+            }
+        },
+        "Measure": "Avg. Rel. Err.",
+        "Outcome": " 0.2400"
+    }
+}

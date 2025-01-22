@@ -1,0 +1,12 @@
+|{|constant, ga1|, |task, coupling constant calculation|}, Coupling constants, 0.035|
+|{|constant, ga2|, |task, coupling constant calculation|}, Coupling constants, 0.020|
+|{|constant, ga3|, |task, coupling constant calculation|}, Coupling constants, 0.025|
+|{|constant, gb1|, |task, coupling constant calculation|}, Coupling constants, 0.024|
+|{|constant, gb2|, |task, coupling constant calculation|}, Coupling constants, 0.018|
+|{|constant, gb3|, |task, coupling constant calculation|}, Coupling constants, 0.023|
+|{|constant, gb4|, |task, coupling constant calculation|}, Coupling constants, 0.017|
+|{|constant, gc1|, |task, coupling constant calculation|}, Coupling constants, 0.027|
+|{|constant, gc2|, |task, coupling constant calculation|}, Coupling constants, 0.009|
+|{|constant, gd1|, |task, coupling constant calculation|}, Coupling constants, 0.024|
+|{|constant, gd2|, |task, coupling constant calculation|}, Coupling constants, 0.026|
+|{|constant, gd3|, |task, coupling constant calculation|}, Coupling constants, 0.029|

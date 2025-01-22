@@ -1,0 +1,30 @@
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N|}, Accuracy, 96.2%|
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, SbS|}, Accuracy, 99.7%|
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N-OOV|}, Accuracy, 90.3%|
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N|}, Accuracy, 99.3%|
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, SbS|}, Accuracy, 100.0%|
+|{|Task, Select_Where|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N-OOV|}, Accuracy, 97.6%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N|}, Accuracy, 98.9%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, SbS|}, Accuracy, 99.5%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N-OOV|}, Accuracy, 98.2%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N|}, Accuracy, 99.9%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, SbS|}, Accuracy, 100.0%|
+|{|Task, Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N-OOV|}, Accuracy, 99.7%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N|}, Accuracy, 80.4%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, SbS|}, Accuracy, 94.3%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N-OOV|}, Accuracy, 79.1%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N|}, Accuracy, 98.5%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, SbS|}, Accuracy, 99.8%|
+|{|Task, Where_Superlative|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N-OOV|}, Accuracy, 98.0%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N|}, Accuracy, 60.5%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, SbS|}, Accuracy, 92.1%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N-OOV|}, Accuracy, 57.7%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N|}, Accuracy, 64.7%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, SbS|}, Accuracy, 99.7%|
+|{|Task, Nest|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N-OOV|}, Accuracy, 63.9%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N|}, Accuracy, 84.0%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, SbS|}, Accuracy, 96.4%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Sempre|, |training_setting, N2N-OOV|}, Accuracy, 81.3%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N|}, Accuracy, 90.6%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, SbS|}, Accuracy, 99.9%|
+|{|Task, Overall Accuracy|, |dataset, Mixtured-25K|, |model, Neural Enquirer|, |training_setting, N2N-OOV|}, Accuracy, 89.8%|

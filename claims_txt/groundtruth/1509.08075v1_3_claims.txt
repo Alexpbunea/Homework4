@@ -1,0 +1,12 @@
+|{|task, joint object discovery and segmentation|, |dataset, Bing Full|, |method, SPT|}, Precision, 90.1|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Full|, |method, SPT|}, Jaccard, 62.0|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Full|, |method, SPT+L|}, Precision, 89.7|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Full|, |method, SPT+L|}, Jaccard, 65.9|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Subset|, |method, SPT|}, Precision, 88.7|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Subset|, |method, SPT|}, Jaccard, 60.2|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Subset|, |method, SPT+L|}, Precision, 89.3|
+|{|task, joint object discovery and segmentation|, |dataset, Bing Subset|, |method, SPT+L|}, Jaccard, 63.3|
+|{|task, auto-annotation|, |dataset, ImageNet|, |method, SPT|}, Precision, 80.5|
+|{|task, auto-annotation|, |dataset, ImageNet|, |method, SPT|}, Jaccard, 54.4|
+|{|task, auto-annotation|, |dataset, ImageNet|, |method, SPT+L|}, Precision, 82.5|
+|{|task, auto-annotation|, |dataset, ImageNet|, |method, SPT+L|}, Jaccard, 55.7|

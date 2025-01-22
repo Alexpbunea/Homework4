@@ -1,0 +1,442 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Header (H)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 22.39"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Header (H)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 9.76"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Header (H)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 26.03"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Header (H)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 13.35"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 28.85"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 14.95"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 27.47"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Cell (Cel)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 12.92"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 57.12"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 56.83"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 60.16"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "Caption (Cap)"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 48.48"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 31.99"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 17.08"
+    },
+    "14": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 30.73"
+    },
+    "15": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 16.25"
+    },
+    "16": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 61.02"
+    },
+    "17": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            },
+            "2": {
+                "name": "Feature",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 47.79"
+    },
+    "18": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "MAP"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "MAP",
+        "Outcome": " 61.94"
+    },
+    "19": {
+        "Specifications": {
+            "0": {
+                "name": "Task",
+                "value": "Table retrieval"
+            },
+            "1": {
+                "name": "Setting",
+                "value": "H + Cel + Cap"
+            },
+            "2": {
+                "name": "NeuralNet",
+                "value": "P@1"
+            },
+            "3": {
+                "name": "dataset",
+                "value": "WebQueryTable"
+            }
+        },
+        "Measure": "P@1",
+        "Outcome": " 49.02"
+    }
+}

@@ -1,0 +1,12 @@
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>a1</sub>|}, Value, 0.035|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>a2</sub>|}, Value, 0.020|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>a3</sub>|}, Value, 0.025|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>b1</sub>|}, Value, 0.024|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>b2</sub>|}, Value, 0.018|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>b3</sub>|}, Value, 0.023|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>b4</sub>|}, Value, 0.017|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>c1</sub>|}, Value, 0.027|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>c2</sub>|}, Value, 0.009|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>d1</sub>|}, Value, 0.024|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>d2</sub>|}, Value, 0.026|
+|{|Task, Coupling constants estimation|, |Coupling constants, g<sub>d3</sub>|}, Value, 0.029|

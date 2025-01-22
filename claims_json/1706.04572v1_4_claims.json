@@ -1,0 +1,86 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "MoNNs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Private LB",
+        "Outcome": " 0.83496"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "MoNNs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Public LB",
+        "Outcome": " 0.83484"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "LSTMs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Private LB",
+        "Outcome": " 0.83482"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "LSTMs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Public LB",
+        "Outcome": " 0.83489"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "GRUs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Private LB",
+        "Outcome": " 0.83349"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "model",
+                "value": "GRUs"
+            },
+            "1": {
+                "name": "task",
+                "value": "ensemble prediction"
+            }
+        },
+        "Measure": "Public LB",
+        "Outcome": " 0.83362"
+    }
+}

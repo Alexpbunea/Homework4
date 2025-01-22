@@ -1,0 +1,35 @@
+|{|dataset, Mixtured-25K|, |model, Sempre|, |query type, select_where|, |task, query answering|}, Accuracy, 93.8%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N|, |query type, select_where|, |task, query answering|}, Accuracy, 96.2%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer SbS|, |query type, select_where|, |task, query answering|}, Accuracy, 99.7%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N - OOV|, |query type, select_where|, |task, query answering|}, Accuracy, 90.3%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N|, |query type, select_where|, |task, query answering|}, Accuracy, 99.3%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer SbS|, |query type, select_where|, |task, query answering|}, Accuracy, 100.0%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N - OOV|, |query type, select_where|, |task, query answering|}, Accuracy, 97.6%|
+|{|dataset, Mixtured-25K|, |model, Sempre|, |query type, superlative|, |task, query answering|}, Accuracy, 97.8%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N|, |query type, superlative|, |task, query answering|}, Accuracy, 98.9%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer SbS|, |query type, superlative|, |task, query answering|}, Accuracy, 99.5%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N - OOV|, |query type, superlative|, |task, query answering|}, Accuracy, 98.2%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N|, |query type, superlative|, |task, query answering|}, Accuracy, 99.9%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer SbS|, |query type, superlative|, |task, query answering|}, Accuracy, 100.0%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N - OOV|, |query type, superlative|, |task, query answering|}, Accuracy, 99.7%|
+|{|dataset, Mixtured-25K|, |model, Sempre|, |query type, where_superlative|, |task, query answering|}, Accuracy, 34.8%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N|, |query type, where_superlative|, |task, query answering|}, Accuracy, 80.4%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer SbS|, |query type, where_superlative|, |task, query answering|}, Accuracy, 94.3%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N - OOV|, |query type, where_superlative|, |task, query answering|}, Accuracy, 79.1%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N|, |query type, where_superlative|, |task, query answering|}, Accuracy, 98.5%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer SbS|, |query type, where_superlative|, |task, query answering|}, Accuracy, 99.8%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N - OOV|, |query type, where_superlative|, |task, query answering|}, Accuracy, 98.0%|
+|{|dataset, Mixtured-25K|, |model, Sempre|, |query type, nest|, |task, query answering|}, Accuracy, 34.4%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N|, |query type, nest|, |task, query answering|}, Accuracy, 60.5%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer SbS|, |query type, nest|, |task, query answering|}, Accuracy, 92.1%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N - OOV|, |query type, nest|, |task, query answering|}, Accuracy, 57.7%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N|, |query type, nest|, |task, query answering|}, Accuracy, 64.7%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer SbS|, |query type, nest|, |task, query answering|}, Accuracy, 99.7%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N - OOV|, |query type, nest|, |task, query answering|}, Accuracy, 63.9%|
+|{|dataset, Mixtured-25K|, |model, Sempre|, |query type, overall|, |task, query answering|}, Accuracy, 65.2%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N|, |query type, overall|, |task, query answering|}, Accuracy, 84.0%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer SbS|, |query type, overall|, |task, query answering|}, Accuracy, 96.4%|
+|{|dataset, Mixtured-25K|, |model, Neural Enquirer N2N - OOV|, |query type, overall|, |task, query answering|}, Accuracy, 81.3%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N|, |query type, overall|, |task, query answering|}, Accuracy, 90.6%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer SbS|, |query type, overall|, |task, query answering|}, Accuracy, 99.9%|
+|{|dataset, Mixtured-100K|, |model, Neural Enquirer N2N - OOV|, |query type, overall|, |task, query answering|}, Accuracy, 89.8%|

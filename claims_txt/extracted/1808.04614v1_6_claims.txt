@@ -1,0 +1,4 @@
+|{|Task, User Study Correctness|, |System, Parser|}, Accuracy, 37.1%|
+|{|Task, User Study Correctness|, |System, User|}, Accuracy, 44.6%|
+|{|Task, User Study Correctness|, |System, Hybrid|}, Accuracy, 48.7%|
+|{|Task, User Study Correctness|, |System, Bound|}, Accuracy, 56%|

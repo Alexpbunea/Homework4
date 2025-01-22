@@ -1,0 +1,12 @@
+|{|task, semantic segmentation|, |method, SPT|, |dataset, Bing Full|}, Precision, 90.1|
+|{|task, semantic segmentation|, |method, SPT|, |dataset, Bing Full|}, Jaccard, 62.0|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, Bing Full|}, Precision, 89.7|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, Bing Full|}, Jaccard, 65.9|
+|{|task, semantic segmentation|, |method, SPT|, |dataset, Bing Subset|}, Precision, 88.7|
+|{|task, semantic segmentation|, |method, SPT|, |dataset, Bing Subset|}, Jaccard, 60.2|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, Bing Subset|}, Precision, 89.3|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, Bing Subset|}, Jaccard, 63.3|
+|{|task, semantic segmentation|, |method, SPT|, |dataset, ImageNet|}, Precision, 80.5|
+|{|task, semantic segmentation|, |method, SPT|, |dataset, ImageNet|}, Jaccard, 54.4|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, ImageNet|}, Precision, 82.5|
+|{|task, semantic segmentation|, |method, SPT+L|, |dataset, ImageNet|}, Jaccard, 55.7|

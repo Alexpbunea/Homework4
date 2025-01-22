@@ -1,0 +1,8 @@
+|{|task, user work-time evaluation|, |method, Utterances + Highlights|, |dataset, WikiTableQuestions|, |group, 1|, |participants, 20|, |correctness, identical|}, avg, 16.2m|
+|{|task, user work-time evaluation|, |method, Utterances + Highlights|, |dataset, WikiTableQuestions|, |group, 1|, |participants, 20|, |correctness, identical|}, median, 16.6m|
+|{|task, user work-time evaluation|, |method, Utterances + Highlights|, |dataset, WikiTableQuestions|, |group, 1|, |participants, 20|, |correctness, identical|}, min, 6.45m|
+|{|task, user work-time evaluation|, |method, Utterances + Highlights|, |dataset, WikiTableQuestions|, |group, 1|, |participants, 20|, |correctness, identical|}, max, 22.5m|
+|{|task, user work-time evaluation|, |method, Utterances|, |dataset, WikiTableQuestions|, |group, 2|, |participants, 20|, |correctness, identical|}, avg, 24.7m|
+|{|task, user work-time evaluation|, |method, Utterances|, |dataset, WikiTableQuestions|, |group, 2|, |participants, 20|, |correctness, identical|}, median, 20.7m|
+|{|task, user work-time evaluation|, |method, Utterances|, |dataset, WikiTableQuestions|, |group, 2|, |participants, 20|, |correctness, identical|}, min, 17.5m|
+|{|task, user work-time evaluation|, |method, Utterances|, |dataset, WikiTableQuestions|, |group, 2|, |participants, 20|, |correctness, identical|}, max, 35.4m|

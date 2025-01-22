@@ -1,0 +1,1298 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 73.8"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 77.5"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 72.9"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 72.0"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 78.2"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 75.6"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 76.2"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 77.5"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 76.3"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 75.5"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 87.2"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 85.3"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 82.8"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 82.3"
+    },
+    "14": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 85.5"
+    },
+    "15": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.9"
+    },
+    "16": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 81.7"
+    },
+    "17": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 81.8"
+    },
+    "18": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 80.2"
+    },
+    "19": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.4"
+    },
+    "20": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 75.4"
+    },
+    "21": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 78.5"
+    },
+    "22": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 84.2"
+    },
+    "23": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 78.3"
+    },
+    "24": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.8"
+    },
+    "25": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 83.3"
+    },
+    "26": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 78.5"
+    },
+    "27": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 82.6"
+    },
+    "28": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 80.2"
+    },
+    "29": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            }
+        },
+        "Measure": "Precision",
+        "Outcome": " 80.5"
+    },
+    "30": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 32.7"
+    },
+    "31": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 31.9"
+    },
+    "32": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 48.6"
+    },
+    "33": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 33.0"
+    },
+    "34": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 45.5"
+    },
+    "35": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 38.4"
+    },
+    "36": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 22.2"
+    },
+    "37": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 43.7"
+    },
+    "38": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 48.9"
+    },
+    "39": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "baseline"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 38.3"
+    },
+    "40": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 59.5"
+    },
+    "41": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 48.6"
+    },
+    "42": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 66.9"
+    },
+    "43": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 61.9"
+    },
+    "44": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 61.8"
+    },
+    "45": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 61.3"
+    },
+    "46": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 49.1"
+    },
+    "47": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 55.9"
+    },
+    "48": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 61.0"
+    },
+    "49": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SegProg"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "yes"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 58.5"
+    },
+    "50": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "aero"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 43.5"
+    },
+    "51": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "boat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 44.7"
+    },
+    "52": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "car"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 71.5"
+    },
+    "53": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cat"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 50.1"
+    },
+    "54": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "cow"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 58.7"
+    },
+    "55": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "dog"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 58.8"
+    },
+    "56": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "horse"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 46.4"
+    },
+    "57": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "sheep"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 55.9"
+    },
+    "58": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            },
+            "3": {
+                "name": "category",
+                "value": "tv"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 59.9"
+    },
+    "59": {
+        "Specifications": {
+            "0": {
+                "name": "method",
+                "value": "SPT"
+            },
+            "1": {
+                "name": "task",
+                "value": "image segmentation"
+            },
+            "2": {
+                "name": "supervision",
+                "value": "no"
+            }
+        },
+        "Measure": "Jaccard",
+        "Outcome": " 54.4"
+    }
+}

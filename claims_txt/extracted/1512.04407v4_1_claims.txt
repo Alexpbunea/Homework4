@@ -1,0 +1,5 @@
+|{ |Task, predicting funniness score of a scene|, |Features, Avg. Prediction Baseline| }, Avg. Rel. Err., 0.3151|
+|{ |Task, predicting funniness score of a scene|, |Features, Embedding| }, Avg. Rel. Err., 0.2516|
+|{ |Task, predicting funniness score of a scene|, |Features, Cardinality| }, Avg. Rel. Err., 0.2450|
+|{ |Task, predicting funniness score of a scene|, |Features, Location| }, Avg. Rel. Err., 0.2400|
+|{ |Task, predicting funniness score of a scene|, |Features, Embedding + Cardinality + Location| }, Avg. Rel. Err., 0.2400|

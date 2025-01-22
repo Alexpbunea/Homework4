@@ -1,0 +1,242 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances + Highlights"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "1"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "avg",
+        "Outcome": " 16.2m"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances + Highlights"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "1"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "median",
+        "Outcome": " 16.6m"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances + Highlights"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "1"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "min",
+        "Outcome": " 6.45m"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances + Highlights"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "1"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "max",
+        "Outcome": " 22.5m"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "2"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "avg",
+        "Outcome": " 24.7m"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "2"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "median",
+        "Outcome": " 20.7m"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "2"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "min",
+        "Outcome": " 17.5m"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "user work-time evaluation"
+            },
+            "1": {
+                "name": "method",
+                "value": "Utterances"
+            },
+            "2": {
+                "name": "dataset",
+                "value": "WikiTableQuestions"
+            },
+            "3": {
+                "name": "group",
+                "value": "2"
+            },
+            "4": {
+                "name": "participants",
+                "value": "20"
+            },
+            "5": {
+                "name": "correctness",
+                "value": "identical"
+            }
+        },
+        "Measure": "max",
+        "Outcome": " 35.4m"
+    }
+}

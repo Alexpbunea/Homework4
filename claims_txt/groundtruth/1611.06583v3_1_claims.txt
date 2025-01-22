@@ -1,0 +1,12 @@
+|{|Task, Question Answering|, |Question Type, binary|}, Max, 2.00|
+|{|Task, Question Answering|, |Question Type, binary|}, Mean, 1.57|
+|{|Task, Question Answering|, |Question Type, binary|}, Standard Deviation, 0.62|
+|{|Task, Question Answering|, |Question Type, descriptive|}, Max, 2.00|
+|{|Task, Question Answering|, |Question Type, descriptive|}, Mean, 0.61|
+|{|Task, Question Answering|, |Question Type, descriptive|}, Standard Deviation, 0.69|
+|{|Task, Question Answering|, |Question Type, computational|}, Max, 4.00|
+|{|Task, Question Answering|, |Question Type, computational|}, Mean, 2.73|
+|{|Task, Question Answering|, |Question Type, computational|}, Standard Deviation, 1.15|
+|{|Task, Question Answering|, |Question Type, total|}, Max, 8.00|
+|{|Task, Question Answering|, |Question Type, total|}, Mean, 4.91|
+|{|Task, Question Answering|, |Question Type, total|}, Standard Deviation, 1.87|

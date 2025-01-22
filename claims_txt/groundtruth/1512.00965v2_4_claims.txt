@@ -1,0 +1,3 @@
+|{|Task, Query Answering|, |Query Type, Select_Where Non-Join|}, Accuracy, 99.7%|
+|{|Task, Query Answering|, |Query Type, Select_Where Join|}, Accuracy, 81.5%|
+|{|Task, Query Answering|, |Query Type, Select_Where Overall|}, Accuracy, 91.3%|

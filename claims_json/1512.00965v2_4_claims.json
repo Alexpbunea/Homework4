@@ -1,0 +1,80 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "Select_Where queries"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "100K examples"
+            },
+            "2": {
+                "name": "query type",
+                "value": "Non-Join"
+            },
+            "3": {
+                "name": "model",
+                "value": "Neural Enquirer-M"
+            },
+            "4": {
+                "name": "executors",
+                "value": "3"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 99.7%"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "Select_Where queries"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "100K examples"
+            },
+            "2": {
+                "name": "query type",
+                "value": "Join"
+            },
+            "3": {
+                "name": "model",
+                "value": "Neural Enquirer-M"
+            },
+            "4": {
+                "name": "executors",
+                "value": "3"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 81.5%"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "task",
+                "value": "Select_Where queries"
+            },
+            "1": {
+                "name": "dataset",
+                "value": "100K examples"
+            },
+            "2": {
+                "name": "query type",
+                "value": "Overall"
+            },
+            "3": {
+                "name": "model",
+                "value": "Neural Enquirer-M"
+            },
+            "4": {
+                "name": "executors",
+                "value": "3"
+            }
+        },
+        "Measure": "Accuracy",
+        "Outcome": " 91.3%"
+    }
+}

@@ -1,0 +1,14 @@
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 36050|, |Task, Leaderboard|}, GAP, 0.82126|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 36050|, |Task, Leaderboard|}, GAP, 0.82135|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 48050|, |Task, Leaderboard|}, GAP, 0.82297|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 48050|, |Task, Leaderboard|}, GAP, 0.82294|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 54050|, |Task, Leaderboard|}, GAP, 0.82274|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 54050|, |Task, Leaderboard|}, GAP, 0.82265|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 60050|, |Task, Leaderboard|}, GAP, 0.82216|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 60050|, |Task, Leaderboard|}, GAP, 0.82209|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 66050|, |Task, Leaderboard|}, GAP, 0.82034|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ckpt 66050|, |Task, Leaderboard|}, GAP, 0.82016|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ensemble one fold ckpts 36k 48k 54k 60k|, |Task, Leaderboard|}, GAP, 0.82411|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, ensemble one fold ckpts 36k 48k 54k 60k|, |Task, Leaderboard|}, GAP, 0.82408|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, new ensemble 5 folds ckpts 36k 48k 54k 60k|, |Task, Leaderboard|}, GAP, 0.83093|
+|{|Model, 3 layer MoNN with EMA|, |Used in prediction, new ensemble 5 folds ckpts 36k 48k 54k 60k|, |Task, Leaderboard|}, GAP, 0.83087|

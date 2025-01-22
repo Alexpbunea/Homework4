@@ -1,0 +1,3 @@
+|{|Task, question answering|, |Dataset, WikiTableQuestions|, |Phase, Cand. Gen.|}, Execution Time (seconds), 1.22|
+|{|Task, question answering|, |Dataset, WikiTableQuestions|, |Phase, Utter. Gen.|}, Execution Time (seconds), 0.22|
+|{|Task, question answering|, |Dataset, WikiTableQuestions|, |Phase, Highlights Gen.|}, Execution Time (seconds), 1.36|

@@ -1,0 +1,12 @@
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, a1|}, Cross Section [nb], 0.003|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, a2|}, Cross Section [nb], 0.015|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, a3|}, Cross Section [nb], 0.011|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, b1|}, Cross Section [nb], 0.153|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, b2|}, Cross Section [nb], 0.056|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, b3|}, Cross Section [nb], 0.330|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, b4|}, Cross Section [nb], 0.113|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, c1|}, Cross Section [nb], 0.032|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, c2|}, Cross Section [nb], 0.166|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, d1|}, Cross Section [nb], 0.016|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, d2|}, Cross Section [nb], 0.024|
+|{|task, cross section calculation|, |reaction, π−p→π−J/ψp|, |diagram, d3|}, Cross Section [nb], 0.056|

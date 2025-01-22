@@ -1,0 +1,1598 @@
+{
+    "0": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4317.7"
+    },
+    "1": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4318.5"
+    },
+    "2": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 0.773"
+    },
+    "3": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4151.4"
+    },
+    "4": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4152.1"
+    },
+    "5": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 0.75"
+    },
+    "6": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4459.9"
+    },
+    "7": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4460.7"
+    },
+    "8": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 0.806"
+    },
+    "9": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4293.5"
+    },
+    "10": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4294.3"
+    },
+    "11": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 0.78"
+    },
+    "12": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4524.5"
+    },
+    "13": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4527.7"
+    },
+    "14": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 3.28"
+    },
+    "15": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4293.5"
+    },
+    "16": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4296.7"
+    },
+    "17": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "a3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 3.14"
+    },
+    "18": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4708.0"
+    },
+    "19": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4726.3"
+    },
+    "20": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 18.4"
+    },
+    "21": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4293.5"
+    },
+    "22": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4310.2"
+    },
+    "23": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 16.7"
+    },
+    "24": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4750.9"
+    },
+    "25": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4794.5"
+    },
+    "26": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 43.7"
+    },
+    "27": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4151.4"
+    },
+    "28": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4189.2"
+    },
+    "29": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 37.8"
+    },
+    "30": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4750.9"
+    },
+    "31": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4773.5"
+    },
+    "32": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 22.7"
+    },
+    "33": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4293.5"
+    },
+    "34": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4314.0"
+    },
+    "35": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 20.4"
+    },
+    "36": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4874.3"
+    },
+    "37": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4893.4"
+    },
+    "38": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 19.1"
+    },
+    "39": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4459.9"
+    },
+    "40": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4477.1"
+    },
+    "41": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b3"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 17.3"
+    },
+    "42": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4917.2"
+    },
+    "43": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4962.4"
+    },
+    "44": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 45.2"
+    },
+    "45": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4317.7"
+    },
+    "46": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4356.7"
+    },
+    "47": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 39.0"
+    },
+    "48": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4917.2"
+    },
+    "49": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4940.7"
+    },
+    "50": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 23.5"
+    },
+    "51": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4459.9"
+    },
+    "52": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4481.0"
+    },
+    "53": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "b4''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 21.1"
+    },
+    "54": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4665.8"
+    },
+    "55": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4687.2"
+    },
+    "56": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 21.4"
+    },
+    "57": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4151.4"
+    },
+    "58": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4171.0"
+    },
+    "59": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 19.6"
+    },
+    "60": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4665.8"
+    },
+    "61": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4674.1"
+    },
+    "62": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 8.28"
+    },
+    "63": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4317.7"
+    },
+    "64": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4325.6"
+    },
+    "65": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 7.83"
+    },
+    "66": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4665.8"
+    },
+    "67": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4670.7"
+    },
+    "68": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 4.83"
+    },
+    "69": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4382.3"
+    },
+    "70": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4387.0"
+    },
+    "71": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c1'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 4.62"
+    },
+    "72": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4808.0"
+    },
+    "73": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4830.3"
+    },
+    "74": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 22.3"
+    },
+    "75": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4293.5"
+    },
+    "76": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4313.9"
+    },
+    "77": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 20.4"
+    },
+    "78": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4808.0"
+    },
+    "79": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4816.6"
+    },
+    "80": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 8.65"
+    },
+    "81": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4459.9"
+    },
+    "82": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4468.0"
+    },
+    "83": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 8.16"
+    },
+    "84": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 4808.0"
+    },
+    "85": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 4813.0"
+    },
+    "86": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 5.05"
+    },
+    "87": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4524.5"
+    },
+    "88": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4529.3"
+    },
+    "89": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "c2'''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 4.82"
+    },
+    "90": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 5013.7"
+    },
+    "91": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 5033.2"
+    },
+    "92": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 19.6"
+    },
+    "93": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4599.2"
+    },
+    "94": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4616.9"
+    },
+    "95": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d1"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 17.7"
+    },
+    "96": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 5049.5"
+    },
+    "97": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 5069.2"
+    },
+    "98": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 19.7"
+    },
+    "99": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4635.1"
+    },
+    "100": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4652.9"
+    },
+    "101": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d2"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 17.8"
+    },
+    "102": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 5092.4"
+    },
+    "103": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 5139.2"
+    },
+    "104": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 46.8"
+    },
+    "105": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4493.0"
+    },
+    "106": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4533.1"
+    },
+    "107": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3'"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 40.2"
+    },
+    "108": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1N)",
+        "Outcome": " 5092.4"
+    },
+    "109": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s1C)",
+        "Outcome": " 5116.7"
+    },
+    "110": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s1_max",
+        "Outcome": " 24.3"
+    },
+    "111": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2N)",
+        "Outcome": " 4635.1"
+    },
+    "112": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "sqrt(s2C)",
+        "Outcome": " 4656.8"
+    },
+    "113": {
+        "Specifications": {
+            "0": {
+                "name": "diagram",
+                "value": "d3''"
+            },
+            "1": {
+                "name": "task",
+                "value": "Triangle Singularity kinematic regions"
+            }
+        },
+        "Measure": "delta_s2_max",
+        "Outcome": " 21.8"
+    }
+}

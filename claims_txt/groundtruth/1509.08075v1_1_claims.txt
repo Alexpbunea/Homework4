@@ -1,0 +1,84 @@
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Precision, 58.7|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Precision, 63.84|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Precision, 49.25|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Jaccard, 37.15|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Jaccard, 30.16|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [18]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Jaccard, 15.36|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Precision, 59.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Precision, 64.22|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Precision, 47.48|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Jaccard, 35.15|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Jaccard, 29.53|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [19]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Jaccard, 11.72|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Precision, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Precision, 68.85|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Precision, 75.12|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Precision, 80.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Jaccard, –|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Jaccard, 0.04|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Jaccard, 6.43|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [22]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Jaccard, 7.9|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Precision, 83.4|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Precision, 83.7|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Precision, 86.1|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Precision, 85.38|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Precision, 82.81|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Precision, 88.04|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Jaccard, 63.4|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Jaccard, 53.9|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Jaccard, 55.6|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Jaccard, 64.42|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Jaccard, 51.65|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [37]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Jaccard, 55.81|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Precision, 87.1|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Precision, 89|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Precision, 90.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Precision, 87.65|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Precision, 86.16|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Precision, 90.25|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Car|}, Jaccard, 64.7|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Horse|}, Jaccard, 57.6|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Full set|, |Category, Plane|}, Jaccard, 60.0|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Car|}, Jaccard, 64.86|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Horse|}, Jaccard, 33.39|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [6]|, |Train/Test, yes|, |Data, Subset|, |Category, Plane|}, Jaccard, 40.33|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Car|}, Precision, 85.7|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Horse|}, Precision, 78.7|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Plane|}, Precision, 72.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Car|}, Precision, 85.41|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Horse|}, Precision, 77.39|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Plane|}, Precision, 71.59|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Car|}, Jaccard, 69.1|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Horse|}, Jaccard, 44.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Full set|, |Category, Plane|}, Jaccard, 31.3|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Car|}, Jaccard, 70.04|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Horse|}, Jaccard, 41.58|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, [9] baseline|, |Train/Test, no|, |Data, Subset|, |Category, Plane|}, Jaccard, 31.22|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Car|}, Precision, 88.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Horse|}, Precision, 91.2|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Plane|}, Precision, 91.0|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Car|}, Precision, 88.27|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Horse|}, Precision, 89.01|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Plane|}, Precision, 88.85|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Car|}, Jaccard, 69.9|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Horse|}, Jaccard, 59.0|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Full set|, |Category, Plane|}, Jaccard, 57.1|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Car|}, Jaccard, 70.14|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Horse|}, Jaccard, 54.12|
+|{|Task, Segmentation|, |Dataset, Bing|, |Method, SPT (ours)|, |Train/Test, no|, |Data, Subset|, |Category, Plane|}, Jaccard, 56.19|

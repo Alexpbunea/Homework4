@@ -1,0 +1,12 @@
+|{|Model, 1 model, 1 checkpoint|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.81547|
+|{|Model, 1 model, 1 checkpoint|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.81592|
+|{|Model, 1 model, 3 checkpoints|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.82244|
+|{|Model, 1 model, 3 checkpoints|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.82276|
+|{|Model, 2 models 3 checkpoints|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.83085|
+|{|Model, 2 models 3 checkpoints|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.83100|
+|{|Model, 1 model, 1 checkpoint, EMA|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.81978|
+|{|Model, 1 model, 1 checkpoint, EMA|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.82012|
+|{|Model, 2 models 3 checkpoints, EMA|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.83183|
+|{|Model, 2 models 3 checkpoints, EMA|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.83183|
+|{|Model, 3 model, 3 checkpoints, EMA|, |Task, LSTM predictions|, |Leaderboard, Public|}, GAP score, 0.83482|
+|{|Model, 3 model, 3 checkpoints, EMA|, |Task, LSTM predictions|, |Leaderboard, Private|}, GAP score, 0.83489|

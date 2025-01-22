@@ -1,0 +1,10 @@
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Header (H)|}, MAP, 46.36|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Header (H)|}, P@1, 32.52|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Cell (Cel)|}, MAP, 44.33|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Cell (Cel)|}, P@1, 30.97|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Caption (Cap)|}, MAP, 33.36|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, Caption (Cap)|}, P@1, 24.79|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, H + Cel|}, MAP, 60.03|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, H + Cel|}, P@1, 47.42|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, H + Cel + Cap|}, MAP, 67.70|
+|{|dataset, WikiTableQuestions|, |task, study the effects of different aspects|, |Setting, H + Cel + Cap|}, P@1, 56.25|
